@@ -5,3 +5,11 @@ $toolkit-font-stack: $helvetica-regular;
 $toolkit-font-stack-tabular: $helvetica-regular;
 
 @import "govuk_tech_docs";
+
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit's url-helpers partial
+// $path: "/public/images/";
+
+// Import some bits of GOV.UK elements
+@import "govuk_frontend_toolkit/design-patterns/buttons";
+@import "elements";
