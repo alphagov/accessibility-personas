@@ -168,3 +168,14 @@ table.register-data-table {
   display: block;
 }
 
+button.red {
+  background-color: $error-colour;
+}
+
+button.blue {
+  background-color: $link-colour;
+}
+
+.game-button {
+  display: inline-block;
+}

@@ -1,0 +1,21 @@
+---
+title: Page with accessibility issues fixed for Claudia
+---
+
+<% content_for :head do %>
+<style>
+#content {
+  max-width: 32em;
+}
+</style>
+<% end %>
+
+<a href="index.html" class="link-back">Back</a>
+
+# <%= current_page.data.title %>
+
+<%= partial "/_example_snippets/timer/timer" %>
+
+<%= partial "/_example_snippets/complex_language/good" %>
+
+<%= partial "/_example_snippets/refer_to_colour/good" %>
