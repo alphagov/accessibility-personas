@@ -1,0 +1,22 @@
+---
+title: Page with accessibility issues for Ron
+---
+
+<% content_for :head do %>
+<style>
+#content {
+  max-width: 50em;
+}
+</style>
+<% end %>
+
+<a href="index.html" class="link-back">Back</a>
+
+# <%= current_page.data.title %>
+
+<%= partial "/_example_snippets/large_blocks_of_text/bad", locals: { include_intro_box: true } %>
+
+
+## More information
+
+<%= partial "/_example_snippets/pagination/bad" %>

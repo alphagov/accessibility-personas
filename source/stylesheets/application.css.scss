@@ -83,3 +83,24 @@ fieldset {
     background: file-url("icon-arrow-left.png") no-repeat 0 4px;
   }
 }
+
+
+/* ____________ example snippets ____________ */
+
+.pagination {
+  padding-top: 1em;
+}
+
+.pagination.good a {
+  padding: .7em 1em;
+  border: 1px solid;
+  margin-right: .5em;
+}
+
+.govuk-box-highlight.bad {
+  color: $panel-colour;
+}
+
+.govuk-box-highlight.good {
+  @include core-24;
+}
