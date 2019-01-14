@@ -1,0 +1,26 @@
+---
+title: Page with accessibility issues fixed for Claudia
+---
+
+<% content_for :head do %>
+<style>
+#content {
+  max-width: 32em;
+}
+</style>
+<% end %>
+
+<a href="index.html" class="link-back">Back</a>
+
+# <%= current_page.data.title %>
+
+<%= partial "/_example_snippets/large_blocks_of_text/good" %>
+
+
+## Quiz questions
+
+<form action="/fake.html" method="get">
+  <%= partial "/_example_snippets/form_fields_right_no_label/good" %>
+
+  <button class="button" type="submit">Send</button>
+</form>

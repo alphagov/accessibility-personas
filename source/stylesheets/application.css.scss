@@ -13,3 +13,73 @@ $toolkit-font-stack-tabular: $helvetica-regular;
 // Import some bits of GOV.UK elements
 @import "govuk_frontend_toolkit/design-patterns/buttons";
 @import "elements";
+
+/* ____________ other manual imports from Elements ____________ */
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 3px solid $focus-colour;
+  outline-offset: 0;
+}
+
+form {
+  margin-top: 1em;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+// Back link styles - with left pointing arrow
+
+.link-back {
+  @include inline-block;
+  position: relative;
+
+  @include core-16;
+
+  margin-top: $gutter-half;
+  margin-bottom: $gutter-half;
+  padding-left: 14px;
+
+  color: $black;
+
+  &:link,
+  &:visited,
+  &:hover,
+  a#{&}:focus,
+  &:active {
+    color: $black;
+  }
+
+  text-decoration: none;
+  border-bottom: 1px solid $black;
+
+  // Back arrow - left pointing black arrow
+  &::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+
+    border-top: 5px solid transparent;
+    border-right: 6px solid $text-colour;
+    border-bottom: 5px solid transparent;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+  }
+
+  // Fallback
+  // IE8 doesn't support rgba and only supports the single colon syntax for :before
+  // IE7 doesn't support pseudo-elements, let's fallback to an image instead.
+  // Ref: http://caniuse.com/#search=%3Abefore, http://caniuse.com/#search=rgba
+  @include ie-lte(8) {
+    background: file-url("icon-arrow-left.png") no-repeat 0 4px;
+  }
+}
