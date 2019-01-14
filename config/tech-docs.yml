@@ -1,10 +1,10 @@
 # Host to use for canonical URL generation (without trailing slash)
-host: 
+host:
 
 # Header-related options
 show_govuk_logo: false
 service_name: Accessibility Personas
-service_link: https://alphagov.github.io/TODO/
+service_link: https://alphagov.github.io/accessibility-personas/
 phase: Beta
 
 # Links to show on right-hand-side of header
@@ -33,4 +33,4 @@ max_toc_heading_level: 6
 prevent_indexing: false
 
 show_contribution_banner: true
-github_repo: alphagov/TODO
+github_repo: alphagov/accessibility-personas
