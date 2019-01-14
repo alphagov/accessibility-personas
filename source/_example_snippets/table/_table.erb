@@ -1,0 +1,56 @@
+<table class="table register-data-table <%= type %>">
+  <thead>
+    <tr>
+      <th class="country">
+        Country
+        <% if type == 'good' %>
+          <%= partial "/_example_snippets/tooltip/good" %>
+        <% elsif type == 'bad' %>
+          <%= partial "/_example_snippets/tooltip/bad" %>
+        <% end %>
+      </th>
+      <th class="name">
+        Name
+      </th>
+      <th class="official-name">
+        Official name
+      </th>
+      <th class="citizen-names">
+        Citizen names
+      </th>
+      <th class="start-date">
+        Start date
+      </th>
+      <th class="end-date">
+        End date
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AF</td>
+      <td>Afghanistan</td>
+      <td>The Islamic Republic of Afghanistan</td>
+      <td>Afghan</td>
+      <td>No data</td>
+      <td>No data</td>
+    </tr>
+    <tr>
+      <td>AL</td>
+      <td>Albania</td>
+      <td>The Republic of Albania</td>
+      <td>Albanian</td>
+      <td>No data</td>
+      <td>No data</td>
+    </tr>
+    <tr>
+      <td>DZ</td>
+      <td>Algeria</td>
+      <td>The People's Democratic Republic of Algeria</td>
+      <td>Algerian</td>
+      <td>No data</td>
+      <td>No data</td>
+    </tr>
+
+  </tbody>
+</table>

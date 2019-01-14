@@ -1,0 +1,17 @@
+---
+title: Page with accessibility issues fixed for Christopher
+---
+
+<% content_for :head do %>
+<style>
+#content {
+  max-width: 50em;
+}
+</style>
+<% end %>
+
+<a href="index.html" class="link-back">Back</a>
+
+# <%= current_page.data.title %>
+
+<%= partial "/_example_snippets/table/good" %>

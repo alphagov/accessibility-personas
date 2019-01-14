@@ -24,7 +24,8 @@ button:focus {
   outline-offset: 0;
 }
 
-form {
+form,
+table {
   margin-top: 1em;
 }
 
@@ -84,6 +85,23 @@ fieldset {
   }
 }
 
+// Link styles
+.link {
+  color: $link-colour;
+  text-decoration: underline;
+}
+
+.link:visited {
+  color: $link-visited-colour;
+}
+
+.link:hover {
+  color: $link-hover-colour;
+}
+
+.link:active {
+  color: $link-colour;
+}
 
 /* ____________ example snippets ____________ */
 
@@ -104,3 +122,49 @@ fieldset {
 .govuk-box-highlight.good {
   @include core-24;
 }
+
+.fullscreen-scrollable-table {
+  overflow-x: auto;
+}
+
+table.register-data-table {
+  background-color: $highlight-colour;
+
+  th,
+  td {
+    padding-left: .5em;
+  }
+
+  &.bad th,
+  &.bad td {
+    padding-right: 2em;
+  }
+
+  // for tooltip
+  th {
+    position: relative;
+    white-space: nowrap;
+  }
+}
+
+.tooltip {
+  background-color: $white;
+  border: 3px solid $border-colour;
+  width: 10em;
+  padding: .5em;
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  white-space: normal;
+  font-weight: normal;
+  display: none;
+}
+
+.bad.tooltip-trigger:hover + .tooltip {
+  display: block;
+}
+
+.good.tooltip-trigger:focus + .tooltip {
+  display: block;
+}
+
