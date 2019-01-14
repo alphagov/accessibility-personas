@@ -20,7 +20,7 @@ title: Page with accessibility issues for Claudia
 ## Quiz questions
 
 <form action="/fake.html" method="get">
-  <%= partial "/_example_snippets/form_fields_right_no_label/bad" %>
+  <%= partial "/_example_snippets/form_fields_no_label/bad", locals: { right_align_inputs: true } %>
 
   <button class="button" type="submit">Send</button>
 </form>

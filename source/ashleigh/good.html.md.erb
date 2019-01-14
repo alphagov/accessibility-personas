@@ -1,5 +1,5 @@
 ---
-title: Page with accessibility issues fixed for Claudia
+title: Page with accessibility issues fixed for Ashleigh
 ---
 
 <% content_for :head do %>
@@ -11,16 +11,15 @@ title: Page with accessibility issues fixed for Claudia
 <% end %>
 
 <a href="index.html" class="link-back">Back</a>
-
 # <%= current_page.data.title %>
-
-<%= partial "/_example_snippets/large_blocks_of_text/good" %>
-
-
-## Quiz questions
 
 <form action="/fake.html" method="get">
   <%= partial "/_example_snippets/form_fields_no_label/good" %>
 
   <button class="button" type="submit">Send</button>
 </form>
+
+
+## Types of assistive technology used to access GOV.UK
+
+<%= partial "/_example_snippets/graph_no_alt/good" %>
