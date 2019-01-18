@@ -14,7 +14,7 @@ title: Example issues for Ashleigh
 
 # <%= current_page.data.title %>
 
-<form action="/fake.html" method="get">
+<form action="<%= url_for '/fake.html' %>" method="get">
   <%= partial "/_example_snippets/form_fields_no_label/bad", locals: { right_align_inputs: false } %>
 
   <button class="button" type="submit">Send</button>

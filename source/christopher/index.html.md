@@ -14,7 +14,7 @@ parent: /
 
 * Uses keyboard only, no mouse and just started using voice control
 
-More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/christopher-user-with-rheumatoid-arthritis) and [how to set it up](/setup.html#christopher)
+More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/christopher-user-with-rheumatoid-arthritis) and [how to set it up](../setup.html#christopher)
 
 
 ## Chromebook help

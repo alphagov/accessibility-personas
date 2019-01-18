@@ -40,7 +40,7 @@ All personas
 Claudia
 -------
 
-* [Info and training](/claudia/)
+* [Info and training](claudia/)
 * Status: Tested and iterated multiple times
 
 ### Simulation
@@ -68,14 +68,14 @@ Accessibility >
 Ashleigh
 --------
 
-* [Info and training](/ashleigh/)
+* [Info and training](ashleigh/)
 * Status: Tested and iterated once
 
 ### Simulation
 
 Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Open [heavy-blur.user.css](/stylesheets/heavy-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
+Open [heavy-blur.user.css](stylesheets/heavy-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
 
 ### Tools
 
@@ -90,20 +90,20 @@ Accessibility > ChromeVox (once per device)
 Ron
 ---
 
-* [Info and training](/ron/)
+* [Info and training](ron/)
 * Status: Tested and iterated multiple times
 
 ### Simulation
 
 Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Open [light-blur.user.css](/stylesheets/light-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
+Open [light-blur.user.css](stylesheets/light-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
 
 Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
 Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 
-Open [wobbly-mouse.user.js](/javascripts/wobbly-mouse.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
+Open [wobbly-mouse.user.js](javascripts/wobbly-mouse.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
 
 ### Tools
 
@@ -116,7 +116,7 @@ None
 Christopher
 -----------
 
-* [Info and training](/christopher/)
+* [Info and training](christopher/)
 * Status: Not yet tested and iterated
 
 ### Simulation
@@ -145,20 +145,20 @@ Handsfree for Web settings:
 Pawel
 -----
 
-* [Info and training](/pawel/)
+* [Info and training](pawel/)
 * Status: Tested and iterated once
 
 ### Simulation
 
 Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Open [distractions.user.css](/stylesheets/distractions.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
+Open [distractions.user.css](stylesheets/distractions.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
 
 Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
 Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 
-Open [distractions.user.js](/javascripts/distractions.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
+Open [distractions.user.js](javascripts/distractions.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
 
 ### Tools
 
@@ -171,7 +171,7 @@ Install extension: [Midnight Lizard](https://chrome.google.com/webstore/detail/m
 Simone
 ------
 
-* [Info and training](/simone/)
+* [Info and training](simone/)
 * Status: Not yet tested and iterated
 
 ### Simulation
@@ -180,7 +180,7 @@ Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tamp
 
 Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 
-Open [scramble-letters.user.js](/javascripts/scramble-letters.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
+Open [scramble-letters.user.js](javascripts/scramble-letters.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
 
 ### Tools
 
@@ -200,7 +200,7 @@ Accessibility > Select-to-Speak (shouldn't be used while simulation is running)
 Saleem
 ------
 
-* [Info and training](/saleem/)
+* [Info and training](saleem/)
 * Status: Not yet tested and iterated
 
 ### Simulation
@@ -209,7 +209,7 @@ Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tamp
 
 Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 
-Open [translate-to-piglatin.user.js](/javascripts/translate-to-piglatin.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
+Open [translate-to-piglatin.user.js](javascripts/translate-to-piglatin.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
 
 ### Tools
 

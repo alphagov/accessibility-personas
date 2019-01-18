@@ -19,7 +19,7 @@ title: Example fixes for Claudia
 
 ## Quiz questions
 
-<form action="/fake.html" method="get">
+<form action="<%= url_for '/fake.html' %>" method="get">
   <%= partial "/_example_snippets/form_fields_no_label/good" %>
 
   <button class="button" type="submit">Send</button>

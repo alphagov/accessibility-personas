@@ -14,7 +14,7 @@ parent: /
 
 * Adjusts things, like colours, to reduce potential stress and distractions
 
-More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/pawel-user-with-aspergers) and [how to set it up](/setup.html#pawel)
+More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/pawel-user-with-aspergers) and [how to set it up](../setup.html#pawel)
 
 
 ## Chromebook help
