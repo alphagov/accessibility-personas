@@ -19,4 +19,11 @@ Or you can do some specific quick training tasks we prepared on each persona's p
 * [Simone](simone/) is a dyslexic user
 * [Saleem](saleem/) is a profoundly deaf user
 
-Caveat: This is no substitute for including users with access needs into your user testing.
+
+## Caveats
+
+This is no substitute for including users with access needs into your user testing.
+
+A simulation is never a true representation of an impairment. It's only a tool trying to make some things roughly as difficult for someone without that impairment.
+
+The assistive technologies in this setup, especially the screen reader and voice control tool, are not appropriate for compatibility testing. Use [mainstream tools](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies) for that.
