@@ -1,3 +1,22 @@
+GIT
+  remote: https://github.com/alphagov/tech-docs-gem
+  revision: 29308186bf7ad94f08f8e0b6ec5efcafeba0f3b0
+  specs:
+    govuk_tech_docs (1.7.0)
+      activesupport
+      chronic (~> 0.10.2)
+      middleman (~> 4.0)
+      middleman-autoprefixer (~> 2.7.0)
+      middleman-compass (>= 4.0.0)
+      middleman-livereload
+      middleman-search-gds
+      middleman-sprockets (~> 4.0.0)
+      middleman-syntax (~> 3.0.0)
+      nokogiri
+      openapi3_parser
+      pry
+      redcarpet (~> 3.3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -44,20 +63,6 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.5)
     ffi (1.9.25)
-    govuk_tech_docs (1.7.0)
-      activesupport
-      chronic (~> 0.10.2)
-      middleman (~> 4.0)
-      middleman-autoprefixer (~> 2.7.0)
-      middleman-compass (>= 4.0.0)
-      middleman-livereload
-      middleman-search-gds
-      middleman-sprockets (~> 4.0.0)
-      middleman-syntax (~> 3.0.0)
-      nokogiri
-      openapi3_parser
-      pry
-      redcarpet (~> 3.3.2)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
@@ -176,7 +181,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  govuk_tech_docs
+  govuk_tech_docs!
   middleman-gh-pages
   tzinfo-data
   wdm (~> 0.1.0)
