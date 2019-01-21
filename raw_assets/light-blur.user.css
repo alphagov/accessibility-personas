@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name         Light blur
+@namespace    https://github.com/alphagov/accessibility-personas
+@version      1.0.0
+@license      MIT
+@author       Crown Copyright (Government Digital Service)
+@description  Blur the screen lightly to simulate some form of a mild visual impairment
+@homepageURL  https://alphagov.github.io/accessibility-personas/
+==/UserStyle== */
+
+
+body {
+  -webkit-filter: blur(1px) brightness(120%);
+          filter: blur(1px) brightness(120%);
+}

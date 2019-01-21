@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name         Heavy blur
+@namespace    https://github.com/alphagov/accessibility-personas
+@version      1.0.0
+@license      MIT
+@author       Crown Copyright (Government Digital Service)
+@description  Blur the screen heavily to simulate some form of blindness (makes text unreadable)
+@homepageURL  https://alphagov.github.io/accessibility-personas/
+==/UserStyle== */
+
+/* apply to every website and page except to https://alphagov.github.io/accessibility-personas/ashleigh/ */
+
+@-moz-document regexp("http?s:\/\/(?!alphagov\.github\.io\/accessibility\-personas\/ashleigh\/$).*") {
+  body {
+    filter: blur(7px) contrast(70%);
+  }
+}
+/* blur at least everything but the content on https://alphagov.github.io/accessibility-personas/ashleigh/ */
+@-moz-document url("https://alphagov.github.io/accessibility-personas/ashleigh/") {
+  header,
+  footer,
+  .contribution-banner {
+    filter: blur(7px) contrast(70%);
+  }
+}
