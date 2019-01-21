@@ -75,7 +75,7 @@ Ashleigh
 
 Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Open [heavy-blur.user.css](stylesheets/heavy-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
+Open [heavy-blur.user.css](raw_assets/heavy-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
 
 ### Tools
 
@@ -97,13 +97,13 @@ Ron
 
 Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Open [light-blur.user.css](stylesheets/light-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
+Open [light-blur.user.css](raw_assets/light-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
 
 Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
 Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 
-Open [wobbly-mouse.user.js](javascripts/wobbly-mouse.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
+Open [wobbly-mouse.user.js](raw_assets/wobbly-mouse.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
 
 ### Tools
 
@@ -152,13 +152,13 @@ Pawel
 
 Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Open [distractions.user.css](stylesheets/distractions.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
+Open [distractions.user.css](raw_assets/distractions.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
 
 Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
 Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 
-Open [distractions.user.js](javascripts/distractions.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
+Open [distractions.user.js](raw_assets/distractions.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
 
 ### Tools
 
@@ -180,7 +180,7 @@ Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tamp
 
 Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 
-Open [scramble-letters.user.js](javascripts/scramble-letters.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
+Open [scramble-letters.user.js](raw_assets/scramble-letters.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
 
 ### Tools
 
@@ -209,7 +209,7 @@ Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tamp
 
 Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 
-Open [translate-to-piglatin.user.js](javascripts/translate-to-piglatin.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
+Open [translate-to-piglatin.user.js](raw_assets/translate-to-piglatin.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
 
 ### Tools
 
