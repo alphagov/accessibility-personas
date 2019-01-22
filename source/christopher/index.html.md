@@ -26,7 +26,7 @@ Start using voice control (only in the browser) by saying "wake up". Other comma
 
 ## Training tasks
 
-Do the following tasks first on the page with issues and then on the page with fixes. Hint: Navigate with the tab key.
+Do the following tasks logged in as Christopher first on the page with issues and then on the page with fixes. Hint: Navigate with the tab key.
 
 1. What is the explanation behind the question mark in the 'country' column?
 2. What is the end date of the Algeria entry?

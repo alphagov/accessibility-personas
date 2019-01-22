@@ -24,7 +24,7 @@ As Ron is not very technical, don't use anything which might help. For example, 
 
 ## Training tasks
 
-Do the following tasks first on the page with issues and then on the page with fixes.
+Do the following tasks logged in as Ron first on the page with issues and then on the page with fixes.
 
 1. Find out how many Cabinet ministers there are
 2. Go to the second page (see pagination at the bottom)

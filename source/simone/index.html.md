@@ -19,7 +19,7 @@ More about the [persona on gov.uk](https://www.gov.uk/government/publications/un
 
 ## Chromebook help
 
-Let text be read out by selecting the text and pressing Search + S. The simulation has to be stopped for this to work properly (click the Funkify icon next to the address bar, then click "Stop").
+Let text be read out by selecting the text and pressing Search + S. The simulation has to be stopped for this to work properly (click the Tampermonkey icon <img src="https://tampermonkey.freetls.fastly.net/images/icon.png" style="width: 16px; height: 16px;" alt="" /> next to the address bar, then click "Enabled").
 
 
 ## Training tasks

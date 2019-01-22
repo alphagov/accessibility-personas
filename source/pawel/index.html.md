@@ -19,12 +19,12 @@ More about the [persona on gov.uk](https://www.gov.uk/government/publications/un
 
 ## Chromebook help
 
-The simulation needs to be re-activated by clicking the "Start" button on every new website and tab. Best use headphones and make them loud enough.
+Best use headphones and make them loud enough.
 
 
 ## Training tasks
 
-Do the following tasks first on the page with issues and then on the page with fixes.
+Do the following tasks logged in as Pawel first on the page with issues and then on the page with fixes.
 You have 2 minutes.
 
 1. Read the text. What should you do if you want to know more?

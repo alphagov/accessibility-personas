@@ -24,7 +24,7 @@ If you're lost, go back to the top left to re-orientate yourself.
 
 ## Training tasks
 
-Do the following tasks first on the page with issues and then on the page with fixes.
+Do the following tasks logged in as Claudia first on the page with issues and then on the page with fixes.
 
 1. Find out how many total ministers there are
 2. Fill in the form

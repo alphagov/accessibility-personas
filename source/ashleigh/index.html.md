@@ -26,7 +26,7 @@ Use Tab to move from links and form elements to the next, Shift + Tab to go back
 
 ## Training tasks
 
-Do the following tasks first on the page with issues and then on the page with fixes.
+Do the following tasks logged in as Ashleigh first on the page with issues and then on the page with fixes.
 
 1. Fill in the form
 2. Find out what the most used type of assistive technology is
