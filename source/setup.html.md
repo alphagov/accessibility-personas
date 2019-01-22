@@ -14,7 +14,7 @@ This will set up Chromebooks so you can log in as a persona with the following s
 | Ashleigh    | Screen reader                                | Blurred vision                            |
 | Ron         | (none)                                       | Mildly blurred vision, wobbly pointer     |
 | Christopher | Voice control                                | Disabled trackpad                         |
-| Pawel       | Soothing colours                             | Distracting images and animations         |
+| Pawel       | Soothing colours                             | Distracting sounds, images and animations |
 | Simone      | Tinted background, Dyslexia font, ruler, ... | Scrambled letters                         |
 | Saleem      | (none)                                       | Translated to Pig Latin                   |
 
@@ -149,6 +149,8 @@ Pawel
 * Status: Tested and iterated once
 
 ### Simulation
+
+Install extension: [Chrome Sound Effects](https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla)
 
 Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
