@@ -1,5 +1,5 @@
 # Host to use for canonical URL generation (without trailing slash)
-host:
+host: https://alphagov.github.io/accessibility-personas
 
 # Header-related options
 show_govuk_logo: false
