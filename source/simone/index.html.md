@@ -1,6 +1,6 @@
 ---
 title: Simone, dyslexic user
-parent: /
+parent: /index.html
 ---
 
 # Simone

@@ -1,6 +1,6 @@
 ---
 title: Pawel, user with Asperger's
-parent: /
+parent: /index.html
 ---
 
 # Pawel

@@ -1,6 +1,6 @@
 ---
 title: Claudia, sight impaired screen magnifier user
-parent: /
+parent: /index.html
 ---
 
 # Claudia

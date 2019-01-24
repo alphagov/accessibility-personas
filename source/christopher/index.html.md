@@ -1,6 +1,6 @@
 ---
 title: Christopher, user with rheumatoid arthritis
-parent: /
+parent: /index.html
 ---
 
 # Christopher

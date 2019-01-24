@@ -1,6 +1,6 @@
 ---
 title: Saleem, profoundly deaf user
-parent: /
+parent: /index.html
 ---
 
 # Saleem

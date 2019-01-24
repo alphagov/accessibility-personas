@@ -1,6 +1,6 @@
 ---
 title: Ron, older user with multiple conditions
-parent: /
+parent: /index.html
 ---
 
 # Ron

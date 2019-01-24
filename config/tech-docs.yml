@@ -9,7 +9,7 @@ phase: Beta
 
 # Links to show on right-hand-side of header
 header_links:
-  Personas: /
+  Personas: /index.html
   Setup: /setup.html
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.

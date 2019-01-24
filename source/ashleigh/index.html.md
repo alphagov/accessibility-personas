@@ -1,6 +1,6 @@
 ---
 title: Ashleigh, severely sight impaired screenreader user
-parent: /
+parent: /index.html
 ---
 
 # Ashleigh
