@@ -5,6 +5,8 @@ parent: /
 
 # Simone
 
+<div><img src="../images/persona-avatars/simone.png" class="profile" alt="" /></div>
+
 
 ## About the persona
 

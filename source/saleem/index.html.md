@@ -5,6 +5,8 @@ parent: /
 
 # Saleem
 
+<div><img src="../images/persona-avatars/saleem.png" class="profile" alt="" /></div>
+
 
 ## About the persona
 

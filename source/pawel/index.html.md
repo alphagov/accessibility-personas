@@ -5,6 +5,8 @@ parent: /
 
 # Pawel
 
+<div><img src="../images/persona-avatars/pawel.png" class="profile" alt="" /></div>
+
 
 ## About the persona
 

@@ -179,3 +179,17 @@ button.blue {
 .game-button {
   display: inline-block;
 }
+
+/* ____________ documentation pages ____________ */
+
+img.profile {
+  width: 128px;
+  height: 128px;
+  float: right;
+  margin: 0 0 .2em .5em;
+
+  @include media(tablet) {
+    width: 256px;
+    height: 256px;
+  }
+}

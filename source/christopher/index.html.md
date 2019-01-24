@@ -5,6 +5,8 @@ parent: /
 
 # Christopher
 
+<div><img src="../images/persona-avatars/christopher.png" class="profile" alt="" /></div>
+
 
 ## About the persona
 

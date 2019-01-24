@@ -5,6 +5,8 @@ parent: /
 
 # Claudia
 
+<div><img src="../images/persona-avatars/claudia.png" class="profile" alt="" /></div>
+
 
 ## About the persona
 

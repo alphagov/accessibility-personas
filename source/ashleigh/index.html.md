@@ -5,6 +5,8 @@ parent: /
 
 # Ashleigh
 
+<div><img src="../images/persona-avatars/ashleigh.png" class="profile" alt="" /></div>
+
 
 ## About the persona
 

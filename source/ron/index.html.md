@@ -5,6 +5,8 @@ parent: /
 
 # Ron
 
+<div><img src="../images/persona-avatars/ron.png" class="profile" alt="" /></div>
+
 
 ## About the persona
 
