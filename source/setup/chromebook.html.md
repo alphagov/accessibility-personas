@@ -1,23 +1,11 @@
 ---
 title: Setting up personas on Chromebooks
+parent: /setup/index.html
 layout: layout
 ---
 
 Setting up personas on Chromebooks
 ==================================
-
-This will set up Chromebooks so you can log in as a persona with the following simulations and tools.
-
-| Persona     | Use their tools                              | Simulate their condition                  |
-| ----------- | -------------------------------------------- | ----------------------------------------- |
-| Claudia     | Magnifier, high contrast, etc                | (none)                                    |
-| Ashleigh    | Screen reader                                | Blurred vision                            |
-| Ron         | (none)                                       | Mildly blurred vision, wobbly pointer     |
-| Christopher | Voice control                                | Disabled trackpad                         |
-| Pawel       | Soothing colours                             | Distracting sounds, images and animations |
-| Simone      | Tinted background, Dyslexia font, ruler, ... | Scrambled letters                         |
-| Saleem      | (none)                                       | Translated to Pig Latin                   |
-
 
 Everything needs to be done only once when setting up the profile, unless it's explicitly stated to do it once per device.
 
@@ -40,7 +28,7 @@ All personas
 Claudia
 -------
 
-* [Info and training](claudia/)
+* [Info and training](../claudia/)
 * Status: Tested and iterated multiple times
 
 ### Simulation
@@ -68,7 +56,7 @@ Accessibility >
 Ashleigh
 --------
 
-* [Info and training](ashleigh/)
+* [Info and training](../ashleigh/)
 * Status: Tested and iterated once
 
 ### Simulation
@@ -90,7 +78,7 @@ Accessibility > ChromeVox (once per device)
 Ron
 ---
 
-* [Info and training](ron/)
+* [Info and training](../ron/)
 * Status: Tested and iterated multiple times
 
 ### Simulation
@@ -116,7 +104,7 @@ None
 Christopher
 -----------
 
-* [Info and training](christopher/)
+* [Info and training](../christopher/)
 * Status: Not yet tested and iterated
 
 ### Simulation
@@ -145,7 +133,7 @@ Handsfree for Web settings:
 Pawel
 -----
 
-* [Info and training](pawel/)
+* [Info and training](../pawel/)
 * Status: Tested and iterated once
 
 ### Simulation
@@ -173,7 +161,7 @@ Install extension: [Midnight Lizard](https://chrome.google.com/webstore/detail/m
 Simone
 ------
 
-* [Info and training](simone/)
+* [Info and training](../simone/)
 * Status: Not yet tested and iterated
 
 ### Simulation
@@ -202,7 +190,7 @@ Accessibility > Select-to-Speak (shouldn't be used while simulation is running)
 Saleem
 ------
 
-* [Info and training](saleem/)
+* [Info and training](../saleem/)
 * Status: Not yet tested and iterated
 
 ### Simulation

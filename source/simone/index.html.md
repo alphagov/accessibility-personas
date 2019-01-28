@@ -16,7 +16,7 @@ parent: /index.html
 
 * Uses software which reads out and highlights text
 
-More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/simone-dyslexic-user) and [how to set it up](../setup.html#simone)
+More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/simone-dyslexic-user) and [how to set it up](../setup/chromebook.html#simone)
 
 
 ## Chromebook help

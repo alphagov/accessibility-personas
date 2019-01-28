@@ -5,7 +5,7 @@ title: Accessibility Personas
 # Experience the web as personas with access needs
 
 We have 7 different accessibility personas. Each persona has different access needs.
-You can [set up Chromebooks](setup.html) so that each persona has a different profile on them.
+You can [set up a device or browser](setup/) so that each persona has a different profile on them.
 Each profile has a different simulation of their persona’s condition and uses their tool(s).
 
 When using those profiles, you can experience the web generally from the perspective of these personas.

@@ -16,7 +16,7 @@ parent: /index.html
 
 * Uses a screen reader
 
-More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ashleigh-partially-sighted-screenreader-user) and [how to set it up](../setup.html#ashleigh)
+More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ashleigh-partially-sighted-screenreader-user) and [how to set it up](../setup/chromebook.html#ashleigh)
 
 
 ## Chromebook help

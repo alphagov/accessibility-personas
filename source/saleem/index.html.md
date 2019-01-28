@@ -16,7 +16,7 @@ parent: /index.html
 
 * BSL first, English second language, always has video captions switched on
 
-More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/saleem-profoundly-deaf-user) and [how to set it up](../setup.html#saleem)
+More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/saleem-profoundly-deaf-user) and [how to set it up](../setup/chromebook.html#saleem)
 
 
 ## Chromebook help

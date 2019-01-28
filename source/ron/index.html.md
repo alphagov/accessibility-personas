@@ -16,7 +16,7 @@ parent: /index.html
 
 * Doesn't use any assistive technology
 
-More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ron-older-user-with-multiple-conditions) and [how to set it up](../setup.html#ron)
+More about the [persona on gov.uk](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ron-older-user-with-multiple-conditions) and [how to set it up](../setup/chromebook.html#ron)
 
 
 ## Chromebook help
