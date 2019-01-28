@@ -47,8 +47,6 @@ Accessibility >
 * Highlight mouse cursor
 * Highlight object with keyboard focus
 
-[Non-Chromebook alternatives: zoom in (although not ideal), extension: High Contrast]
-
 
 
 
@@ -63,13 +61,11 @@ Ashleigh
 
 Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Open [heavy-blur.user.css](raw_assets/heavy-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
+Open [heavy-blur.user.css](raw_assets/heavy-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device)
 
 ### Tools
 
 Accessibility > ChromeVox (once per device)
-
-[Non-Chromebook alternative: ChromeVox extension]
 
 
 
@@ -85,7 +81,7 @@ Ron
 
 Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Open [light-blur.user.css](raw_assets/light-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
+Open [light-blur.user.css](raw_assets/light-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device)
 
 Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
@@ -124,8 +120,6 @@ Handsfree for Web settings:
 * Stop listening after 3 minutes of silence
 * Language: English (United Kingdom)
 
-[needs to be restarted often to avoid lagging, also crashes often]
-
 
 
 
@@ -142,7 +136,7 @@ Install extension: [Chrome Sound Effects](https://chrome.google.com/webstore/det
 
 Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Open [distractions.user.css](raw_assets/distractions.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device, create bookmark if used on many devices)
+Open [distractions.user.css](raw_assets/distractions.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device)
 
 Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
@@ -180,8 +174,6 @@ Install extensions:
 * [nOverlay](https://chrome.google.com/webstore/detail/noverlay/clhfmmanmdkmblpljegdibilonemohdo) (yellow)
 
 Accessibility > Select-to-Speak (shouldn't be used while simulation is running)
-
-[Non-Chromebook alternative: ClaroRead extension]
 
 
 

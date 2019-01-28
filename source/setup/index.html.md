@@ -1,5 +1,6 @@
 ---
 title: Setting up personas
+layout: layout
 ---
 
 # Setting up personas
@@ -19,4 +20,12 @@ Here are instructions on how to set up various devices or browsers so you can lo
 
 ## Chromebooks
 
-The easiest and most effective setup we found so far is using [personas on Chromebooks](chromebook.html).
+Using [personas on Chromebooks](chromebook.html) is the most effective setup we found so far.
+
+<br />
+[//]: # (we need space here, otherwise no-one can click on the link above due to alphagov/tech-docs-template#123)
+
+
+## Chrome browsers
+
+Alternatively, you can also set up [personas in Chrome browsers](chrome.html) on any operating system. But some of the tools will not be as effective as on Chromebooks.
