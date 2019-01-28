@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name         Remove cursor
+@namespace    https://github.com/alphagov/accessibility-personas
+@version      1.0.0
+@license      MIT
+@author       Crown Copyright (Government Digital Service)
+@description  Remove the cursor to make it harder to use the mouse or touchpad
+@homepageURL  https://alphagov.github.io/accessibility-personas/
+==/UserStyle== */
+
+
+* {
+  cursor: none !important;
+}
