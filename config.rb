@@ -11,3 +11,6 @@ end
 # use relative paths for links and sources
 activate :relative_assets
 set :relative_links, true
+
+# cache-busting
+activate :asset_hash, ignore: %r{^raw_assets/.*}
