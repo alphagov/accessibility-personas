@@ -97,10 +97,10 @@ None
 
 
 
-Christopher
------------
+Chris
+-----
 
-* [Info and training](../christopher/)
+* [Info and training](../chris/)
 * Status: Not yet tested and iterated
 
 ### Simulation

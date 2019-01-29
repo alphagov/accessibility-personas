@@ -25,7 +25,7 @@ Instead of using the ChromeVox version that comes with Chrome OS, install the [C
 Note: This will have different shortcuts than the Chrome OS version, for example, instead of "Search + Arrow Right/Left" to read the next/previous text, use "Shift + Alt + Arrow Right/Left" on Windwos and "Cmd + Ctrl + Arrow Right/Left" on Mac
 
 
-## Christopher
+## Chris
 
 Instead of disabling the touchpad, install the [Stylus extension](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and open [remove-cursor.user.css](raw_assets/remove-cursor.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device)
 

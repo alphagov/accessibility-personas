@@ -14,7 +14,7 @@ Or you can do some specific quick training tasks we prepared on each persona's p
 * [Claudia](claudia/) is a sight impaired screen magnifier user
 * [Ashleigh](ashleigh/) is a severely sight impaired screenreader user
 * [Ron](ron/) is an older user with multiple conditions
-* [Christopher](christopher/) is a user with rheumatoid arthritis
+* [Chris](chris/) is a user with rheumatoid arthritis
 * [Pawel](pawel/) is a user with Asperger's
 * [Simone](simone/) is a dyslexic user
 * [Saleem](saleem/) is a profoundly deaf user
