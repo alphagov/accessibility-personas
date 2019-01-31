@@ -30,7 +30,7 @@ collapsible_nav: false
 max_toc_heading_level: 6
 
 # Prevent robots from indexing (e.g. whilst in development)
-prevent_indexing: true
+prevent_indexing: false
 
 show_contribution_banner: true
 github_repo: alphagov/accessibility-personas

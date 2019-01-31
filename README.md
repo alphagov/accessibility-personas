@@ -2,7 +2,7 @@
 
 These pages include:
 
-* Documentation how to set up Chromebooks with 7 accessibility profiles
+* Documentation how to set up devices or browsers with 7 accessibility profiles
 * Basic introduction to personas with help how to use certain features
 * Quick training tasks for each persona
 
