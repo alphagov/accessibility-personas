@@ -200,5 +200,5 @@ img.profile {
    reported and can be removed again after this has been fixed:
    https://github.com/javoire/dyslexia-friendly/issues/18 */
 #ruler {
-  max-height: 20px !important;
+  pointer-events: none;
 }
