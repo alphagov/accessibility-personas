@@ -22,9 +22,6 @@ Here are instructions on how to set up various devices or browsers so you can lo
 
 Using [personas on Chromebooks](chromebook.html) is the most effective setup we found so far.
 
-<br />
-[//]: # (we need space here, otherwise no-one can click on the link above due to alphagov/tech-docs-template#123)
-
 
 ## Chrome browsers
 
