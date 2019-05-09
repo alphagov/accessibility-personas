@@ -10,27 +10,29 @@ parent: /index.html
 
 ## About the persona
 
-* 54 years old social worker
+* 54 year old social worker
 
-* Sight impaired (partially sighted)
+* sight impaired (partially sighted)
 
-* Uses a screen magnifier and changes colours to increase contrast
+* uses a screen magnifier and changes colours to increase contrast
 
 More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/claudia-partially-sighted-screen-magnifier-user) and [how to set it up](../setup/chromebook.html#claudia)
 
 
 ## Chromebook help
 
-If you're lost, go back to the top left to re-orientate yourself.
+If you get lost while using the screen magnifier, go back to the top left to re-orientate yourself.
 
 
 ## Training tasks
 
-Do the following tasks logged in as Claudia first on the page with issues and then on the page with fixes.
+There are 2 versions of an example page. Version 1 shows the issues Claudia experiences and version 2 shows the fixes that will help Claudia. Do version 1 before version 2.
 
-1. Find out how many total ministers there are
-2. Fill in the form
+Do the following tasks logged in as Claudia:
 
-[Example issues for Claudia](bad.html)
+1. Find out the total number of ministers.
+2. Fill in the form.
 
-[Example fixes for Claudia](good.html)
+[Version 1 - issues for Claudia](bad.html)
+
+[Version 2 - fixes for Claudia](good.html)

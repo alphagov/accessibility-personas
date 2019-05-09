@@ -6,7 +6,7 @@ layout: layout
 
 # Setting up personas in Chrome
 
-Follow the instructions on [setting up personas on Chromebooks](chromebook.html). Whenever a Chrome OS feature is not available on the Chrome browser, follow these instructions instead. Or skip it if there is no equivalent.
+Follow the instructions on [setting up personas on Chromebooks](chromebook.html). Whenever a feature is not available in the Chrome browser, follow the instructions below.
 
 
 ## Claudia

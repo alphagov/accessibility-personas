@@ -10,11 +10,11 @@ parent: /index.html
 
 ## About the persona
 
-* 24 years old arts graduate and administrative assistant
+* 24 year old arts graduate and administrative assistant
 
-* Severely sight impaired (blind)
+* severely sight impaired (blind)
 
-* Uses a screen reader
+* uses a screen reader
 
 More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ashleigh-partially-sighted-screenreader-user) and [how to set it up](../setup/chromebook.html#ashleigh)
 
@@ -23,16 +23,20 @@ More about the [persona on GOV.UK](https://www.gov.uk/government/publications/un
 
 Screen reader quick guide:
 
-Use Tab to move from links and form elements to the next, Shift + Tab to go back, Search + Arrow Right/Left to read text in between those.
+* press 'Tab' to go to the next link or form element
+* press 'Shift + Tab' to go back to the previous link or form element
+* press 'Search + Arrow Right/Left' to read text in between those
 
 
 ## Training tasks
 
-Do the following tasks logged in as Ashleigh first on the page with issues and then on the page with fixes.
+There are 2 versions of an example page. Version 1 shows the issues Ashleigh experiences and version 2 shows the fixes that will help Ashleigh. Do version 1 before version 2.
 
-1. Fill in the form
-2. Find out what the most used type of assistive technology is
+Do the following tasks logged in as Ashleigh:
 
-[Example issues for Ashleigh](bad.html)
+1. Fill in the form.
+2. Find out which type of assistive technology is used the most.
 
-[Example fixes for Ashleigh](good.html)
+[Version 1 - issues for Ashleigh](bad.html)
+
+[Version 2 - fixes for Ashleigh](good.html)

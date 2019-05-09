@@ -10,29 +10,33 @@ parent: /index.html
 
 ## About the persona
 
-* 53 years old management accountant
+* 53 year old management accountant
 
-* Rheumatoid arthritis
+* rheumatoid arthritis
 
-* Uses keyboard only, no mouse and just started using voice control
+* uses keyboard only, no mouse and just started using voice control
 
 More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/christopher-user-with-rheumatoid-arthritis) and [how to set it up](../setup/chromebook.html#chris)
 
 
 ## Chromebook help
 
+Navigate with the tab key. Navigate back with 'Shift + Tab'.
 If you're stuck, use the touchscreen. 'Ctrl + Alt + /' shows keyboard shortcuts.
 
 Start using voice control (only in the browser) by saying "wake up". Other commands: "click" (and then follow the on-screen instructions, often saying a number), "scroll down", "scroll up", "help".
+If it doesn’t work, restart the extension.
 
 
 ## Training tasks
 
-Do the following tasks logged in as Chris first on the page with issues and then on the page with fixes. Hint: Navigate with the tab key.
+There are 2 versions of an example page. Version 1 shows the issues Chris experiences and version 2 shows the fixes that will help Chris. Do version 1 before version 2.
 
-1. What is the explanation behind the question mark in the 'country' column?
-2. What is the end date of the Algeria entry?
+Do the following tasks logged in as Chris:
 
-[Example issues for Chris](bad.html)
+1. Find out what the explanation behind the question mark in the 'country' column is.
+2. Find out what the end date of the Algeria entry is.
 
-[Example fixes for Chris](good.html)
+[Version 1 - issues for Chris](bad.html)
+
+[Version 2 - fixes for Chris](good.html)
