@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scramble letters
 // @namespace    https://github.com/alphagov/accessibility-personas
-// @version      1.0
+// @version      1.0.1
 // @license      MIT
 // @author       Victor Widell, Andrew Kennedy [https://github.com/geon/geon.github.com/pull/3] and Crown Copyright (Government Digital Service)
 // @description  Scramble letters within words to simulate some form of dyslexia
