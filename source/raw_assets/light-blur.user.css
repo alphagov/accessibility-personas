@@ -9,5 +9,5 @@
 ==/UserStyle== */
 
 body {
-  filter: blur(1px) brightness(120%);
+  filter: blur(.1em) brightness(120%);
 }
