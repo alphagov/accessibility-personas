@@ -180,6 +180,16 @@ button.blue {
   display: inline-block;
 }
 
+/*
+  This fixes an odd behaviour with Claudia's bad example page:
+  Although we intentionally removed the labels before the form fields,
+  there is still a clickable area which focuses on the input,
+  which leads to people finding the input quicker than they otherwise would.
+*/
+.form-group:after {
+  width: 0;
+}
+
 /* ____________ documentation pages ____________ */
 
 img.profile {
