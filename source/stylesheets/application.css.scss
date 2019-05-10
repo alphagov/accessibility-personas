@@ -203,12 +203,3 @@ img.profile {
     height: 256px;
   }
 }
-
-/* the "Dyslexia Friendly" Chrome extension creates a ruler on the page
-   which overlaps the text on some pages like ours so that links cannot be clicked on;
-   this makes the ruler a bit smaller so links work again;
-   reported and can be removed again after this has been fixed:
-   https://github.com/javoire/dyslexia-friendly/issues/18 */
-#ruler {
-  pointer-events: none;
-}
