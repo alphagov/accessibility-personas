@@ -180,6 +180,16 @@ button.blue {
   display: inline-block;
 }
 
+/*
+  This fixes an odd behaviour with Claudia's bad example page:
+  Although we intentionally removed the labels before the form fields,
+  there is still a clickable area which focuses on the input,
+  which leads to people finding the input quicker than they otherwise would.
+*/
+.form-group:after {
+  width: 0;
+}
+
 /* ____________ documentation pages ____________ */
 
 img.profile {
@@ -192,13 +202,4 @@ img.profile {
     width: 256px;
     height: 256px;
   }
-}
-
-/* the "Dyslexia Friendly" Chrome extension creates a ruler on the page
-   which overlaps the text on some pages like ours so that links cannot be clicked on;
-   this makes the ruler a bit smaller so links work again;
-   reported and can be removed again after this has been fixed:
-   https://github.com/javoire/dyslexia-friendly/issues/18 */
-#ruler {
-  pointer-events: none;
 }
