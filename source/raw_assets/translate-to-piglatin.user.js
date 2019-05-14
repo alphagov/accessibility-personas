@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Translate to Pig Latin
 // @namespace    https://github.com/alphagov/accessibility-personas
-// @version      1.0
+// @version      1.0.0
 // @license      MIT
 // @author       Chazona Baum [https://codepen.io/chznbaum/pen/GNNwJZ] and Crown Copyright (Government Digital Service)
 // @description  Translate everything on the page into Pig Latin to simulate English as a second language
