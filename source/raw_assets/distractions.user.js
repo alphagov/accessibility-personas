@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Distractions
 // @namespace    https://github.com/alphagov/accessibility-personas
-// @version      1.0
+// @version      1.0.0
 // @license      ISC
 // @author       Metamatrix AB [https://github.com/Metamatrix/web-disability-simulator] and Crown Copyright (Government Digital Service)
 // @description  Clutter the screen with various distractions to simulate finding it hard to concentrate; has to be used together with distractions.user.css to work

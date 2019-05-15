@@ -26,4 +26,11 @@ Make sure the volume is switched off.
 
 ## Training tasks
 
-Coming soon...
+Do the following tasks logged in as Saleem first on the page with issues and then on the page with fixes. Make sure the volume is switched off.
+
+1. Read the text. Where can you get Tamiflu if you’re a U.S. Government employee abroad?
+2. Watch the video. How many people were provided with guide dogs "this year"?
+
+[Example issues for Saleem](bad.html)
+
+[Example fixes for Saleem](good.html)
