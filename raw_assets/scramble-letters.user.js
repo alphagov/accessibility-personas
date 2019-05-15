@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scramble letters
 // @namespace    https://github.com/alphagov/accessibility-personas
-// @version      1.0
+// @version      1.0.1
 // @license      MIT
 // @author       Victor Widell, Andrew Kennedy [https://github.com/geon/geon.github.com/pull/3] and Crown Copyright (Government Digital Service)
 // @description  Scramble letters within words to simulate some form of dyslexia
@@ -11,7 +11,7 @@
 // @nocompat     Chrome
 // ==/UserScript==
 
-(function() {
+(function () {
 
   'use strict';
 
@@ -19,19 +19,22 @@
   function getTextNodes() {
     var nodes = [];
     var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-    while(walker.nextNode()) {
+    while (walker.nextNode()) {
       nodes.push(walker.currentNode);
     }
     return nodes;
   }
   var textNodes = getTextNodes();
 
-  // iterate over each text node and mess up their values
-  setInterval(function() {
+  var iterateFunction = function () {
     for (var i = 0; i < textNodes.length; i++) {
       textNodes[i].nodeValue = messUpWords(textNodes[i].nodeValue);
     }
-  }, 10);
+    window.requestAnimationFrame(iterateFunction);
+  }
+
+  // iterate over each text node and mess up their values
+  window.requestAnimationFrame(iterateFunction);
 
   // parse words out of a string and mess them up
   function messUpWords(str) {
@@ -58,7 +61,7 @@
     var scrambledWord = '';
 
     // if it's a small word or ~randomness~, don't scramble it
-    if (word.length < 3 || Math.random() > 1/10) {
+    if (word.length < 3 || Math.random() > 1 / 10) {
       return word;
     }
 

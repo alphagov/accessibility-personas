@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Wobbly mouse
 // @namespace    https://github.com/alphagov/accessibility-personas
-// @version      1.0
+// @version      1.0.0
 // @license      ISC
 // @author       Metamatrix AB [https://github.com/Metamatrix/web-disability-simulator] and Crown Copyright (Government Digital Service)
 // @description  Wobble the cursor to simulate having issues using a mouse
