@@ -26,4 +26,12 @@ Let text be read out by selecting the text and pressing Search + S. The simulati
 
 ## Training tasks
 
-Coming soon...
+Do the following tasks logged in as Simone first on the page with issues and then on the page with fixes.
+
+1. Read the text. What should you do as a U.S. private citizen before you go abroad?
+2. Click on the YouTube link under the text.
+
+[Example issues for Simone](bad.html)
+
+[Example fixes for Simone](good.html)
+

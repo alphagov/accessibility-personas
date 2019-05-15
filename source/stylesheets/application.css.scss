@@ -181,6 +181,15 @@ button.blue {
   display: inline-block;
 }
 
+/* make icons from icon font bigger */
+.social-media > span {
+  font-size: 200%;
+}
+
+.social-media {
+  text-decoration: none;
+}
+
 /*
   This fixes an odd behaviour with Claudia's bad example page:
   Although we intentionally removed the labels before the form fields,
