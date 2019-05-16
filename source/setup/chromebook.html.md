@@ -170,7 +170,7 @@ Open [scramble-letters.user.js](raw_assets/scramble-letters.user.js) in the brow
 
 Install extensions:
 
-* [Dyslexia Friendly](https://chrome.google.com/webstore/detail/dyslexia-friendly/miepjgfkkommhllbbjaedffcpkncboeo)
+* [OpenDyslexic Font for Chrome](https://chrome.google.com/webstore/detail/opendyslexic-font-for-chr/cdnapgfjopgaggbmfgbiinmmbdcglnam)
 * [nOverlay](https://chrome.google.com/webstore/detail/noverlay/clhfmmanmdkmblpljegdibilonemohdo) (yellow)
 
 Accessibility > Select-to-Speak (shouldn't be used while simulation is running)
