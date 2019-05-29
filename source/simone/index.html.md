@@ -29,7 +29,7 @@ Let text be read out by selecting the text and pressing Search + S. The simulati
 Do the following tasks logged in as Simone first on the page with issues and then on the page with fixes.
 
 1. Read the text. What should you do as a U.S. private citizen before you go abroad?
-2. Click on the YouTube link under the text.
+2. There are a couple of links under the text. Click on the YouTube link.
 
 [Example issues for Simone](bad.html)
 
