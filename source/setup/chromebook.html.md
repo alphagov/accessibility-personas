@@ -101,7 +101,7 @@ Chris
 -----
 
 * [Info and training](../chris/)
-* Status: Not yet tested and iterated
+* Status: Tested and iterated once
 
 ### Simulation
 
@@ -128,7 +128,7 @@ Pawel
 -----
 
 * [Info and training](../pawel/)
-* Status: Tested and iterated once
+* Status: Tested and iterated multiple times
 
 ### Simulation
 
@@ -156,7 +156,7 @@ Simone
 ------
 
 * [Info and training](../simone/)
-* Status: Not yet tested and iterated
+* Status: Tested and iterated once
 
 ### Simulation
 
@@ -183,7 +183,7 @@ Saleem
 ------
 
 * [Info and training](../saleem/)
-* Status: Not yet tested and iterated
+* Status: Tested and iterated once
 
 ### Simulation
 
