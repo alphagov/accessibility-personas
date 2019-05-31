@@ -128,6 +128,16 @@ fieldset {
   overflow-x: auto;
 }
 
+.fullscreen-scrollable-table::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #ccc;
+}
+
+.fullscreen-scrollable-table::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
 table.register-data-table {
   background-color: $highlight-colour;
 
@@ -199,6 +209,16 @@ button.blue {
 .form-group:after {
   width: 0;
 }
+
+/*
+  Heading anchors are confusing screen reader users doing Ashleigh's tasks.
+  This hides their icons from anything without a sidebar. It's a bit of a hack.
+  Pages with sidebars are more likely to be documentation and to benefit from the anchors.
+*/
+.app-pane__body:not([data-module="in-page-navigation"]) .anchored-heading__icon {
+  display: none;
+}
+
 
 /* ____________ documentation pages ____________ */
 
