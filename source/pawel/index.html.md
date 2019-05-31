@@ -10,28 +10,29 @@ parent: /index.html
 
 ## About the persona
 
-* 24 years old chemistry graduate
+* 24 year old chemistry graduate
 
 * Asperger's and anxiety
 
-* Adjusts things, like colours, to reduce potential stress and distractions
+* adjusts things, like colours, to reduce potential stress and distractions
 
 More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/pawel-user-with-aspergers) and [how to set it up](../setup/chromebook.html#pawel)
 
 
 ## Chromebook help
 
-Best use headphones and make them loud enough.
+Use headphones and make them loud enough.
 
 
 ## Training tasks
 
-Do the following tasks logged in as Pawel first on the page with issues and then on the page with fixes.
-You have 2 minutes.
+There are 2 versions of an example page. Version 1 shows the issues Pawel experiences and version 2 shows the fixes that will help Pawel. Do version 1 before version 2.
 
-1. Read the text. Where can you get Tamiflu if you’re a U.S. Government employee abroad?
-2. Before the timer expires, click on the correct button below the text.
+You have 2 minutes to do the following tasks logged in as Pawel:
 
-[Example issues for Pawel](bad.html)
+1. Read the text. Find out where you can get Tamiflu if you are a U.S. Government employee abroad.
+2. There are a couple of buttons below the text. Try to select the correct button before the timer expires.
 
-[Example fixes for Pawel](good.html)
+[Version 1 - issues for Pawel](bad.html)
+
+[Version 2 - fixes for Pawel](good.html)

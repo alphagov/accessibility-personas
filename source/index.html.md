@@ -4,25 +4,28 @@ title: Accessibility Personas
 
 # Experience the web as personas with access needs
 
-We have 7 different accessibility personas. Each persona has different access needs.
-You can [set up a device or browser](setup/) so that each persona has a different profile on them.
-Each profile has a different simulation of their persona’s condition and uses their tool(s).
+The GDS Accessibility team has created 7 different accessibility personas. Each persona has different access needs. They are:
 
-When using those profiles, you can experience the web generally from the perspective of these personas.
-Or you can do some specific quick training tasks we prepared on each persona's page:
+* [Claudia](claudia/) -- a sight impaired screen magnifier user
+* [Ashleigh](ashleigh/) -- a severely sight impaired screenreader user
+* [Ron](ron/) -- an older user with multiple conditions
+* [Chris](chris/) -- a user with rheumatoid arthritis
+* [Pawel](pawel/) -- a user with Asperger's
+* [Simone](simone/) -- a dyslexic user
+* [Saleem](saleem/) -- a profoundly deaf user
 
-* [Claudia](claudia/) is a sight impaired screen magnifier user
-* [Ashleigh](ashleigh/) is a severely sight impaired screenreader user
-* [Ron](ron/) is an older user with multiple conditions
-* [Chris](chris/) is a user with rheumatoid arthritis
-* [Pawel](pawel/) is a user with Asperger's
-* [Simone](simone/) is a dyslexic user
-* [Saleem](saleem/) is a profoundly deaf user
+This website documents how you can [set up a device or browser](setup/) so that each persona has their own profile.
+Each profile has a different simulation of their persona's condition and runs the assistive technology they use to help them.
+
+You can use these profiles to experience the web from the perspective of the personas and gain more understanding of accessibility issues. Each persona's page has a basic introduction to those personas and includes help how to use certain features and quick training tasks.
+
+[Read our blog post](https://accessibility.blog.gov.uk/2019/02/11/using-persona-profiles-to-test-accessibility/) to learn more about how we have used the personas so far.
+
 
 
 ## Caveats
 
-This is no substitute for including users with access needs into your user testing.
+This is not a substitute for including users with access needs into your user testing.
 
 A simulation is never a true representation of an impairment. It's only a tool trying to make some things roughly as difficult for someone without that impairment.
 

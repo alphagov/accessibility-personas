@@ -7,19 +7,24 @@ layout: layout
 Setting up personas on Chromebooks
 ==================================
 
-Everything needs to be done only once when setting up the profile, unless it's explicitly stated to do it once per device.
+You need to create a Google account for each persona first. Be aware that setting up more than one account can be challenging.
+
+When you follow the instructions below to set up a profile you only need to do each action once, unless it explicitly states to do it once per device.
 
 
-All personas
-------------
+Change settings for all personas
+--------------------------------
 
-* Settings > Advanced > Accessibility > Always show accessibility options in the system menu
-* Settings > Device > Power > When idle > Keep display on (once per device)
-* Settings > Device > Power > Sleep when lid is closed > off (once per device)
-* Settings > People > Manage other people > Restrict sign-in to the following users... (once per device, can only be done by owner, i.e. first user to ever log in, and when every profile has logged in at least once)
-* Settings > enable Appearance: Show Home button > Enter custom web address: https://alphagov.github.io/accessibility-personas/[persona]/
-* Settings > On start-up > Open a specific page or set of pages > Add a new page > https://alphagov.github.io/accessibility-personas/[persona]/ [settings are retained but pages only open at start-up of the laptop, not when just starting the browser]
-* Unpin everything from shelf except Chrome
+Remove everything from the shelf/dock except Chrome. This helps people focus on the only app the persona should be using.
+
+Select the following options from the system menu. Go to:
+
+* Settings > Advanced > Accessibility > Always show accessibility options in the system menu - this makes it easier to access the accessibility settings
+* Settings > Device > Power > When idle > Keep display on (once per device) - this makes sense if you put the Chromebooks on display for lots of people to use so you don't need to login again and share any passwords
+* Settings > Device > Power > Sleep when lid is closed > off (once per device) - this makes sense if you put the Chromebooks on display as people tend to close the lid and they would need to login again
+* Settings > People > Manage other people > Restrict sign-in to the following users... (once per device, can only be done by the owner account once every profile has logged in) - this restricts people adding their own profiles if the Chromebook is on display
+* Settings > enable Appearance: Show Home button > Enter custom web address: https://alphagov.github.io/accessibility-personas/[persona]/ - this makes it easy to go back to each persona's page
+* Settings > On start-up > Open a specific page or set of pages > Add a new page > https://alphagov.github.io/accessibility-personas/[persona]/ (Note that the settings are retained, but the pages only open during system start-up.) - this makes sure the persona's page is already showing whenever the Chromebook gets restarted
 
 
 
@@ -28,25 +33,28 @@ All personas
 Claudia
 -------
 
-* [Info and training](../claudia/)
+### Simulate Claudia's condition
+
+There is no technical simulation for this persona, but you can use low tech solutions such as simulation glasses.
+
+### Use Claudia's assistive technology
+
+To set up the assistive technology used by Claudia go to the system menu and select:
+
+* Accessibility > High contrast mode
+* Accessibility > Full-screen magnifier
+* Accessibility > Settings > Manage accessibility features > Full-screen zoom level: 4x (once per device)
+* Accessibility > Large mouse cursor
+* Accessibility > Highlight text caret
+* Accessibility > Highlight mouse cursor
+* Accessibility > Highlight object with keyboard focus
+
+This will magnify the screen to 400%, adjust the colours and highlight interactive elements.
+
+### Information and status
+
+* [Information about Claudia](../claudia/)
 * Status: Tested and iterated multiple times
-
-### Simulation
-
-None (cannot be done realistically, would be made worse by zoom, but low tech solutions like simulation specs work)
-
-### Tools
-
-Accessibility >
-
-* High contrast mode
-* Full-screen magnifier
-* Settings > Manage accessibility features > Full-screen zoom level: 4x (once per device)
-* Large mouse cursor
-* Highlight text caret
-* Highlight mouse cursor
-* Highlight object with keyboard focus
-
 
 
 
@@ -54,19 +62,28 @@ Accessibility >
 Ashleigh
 --------
 
-* [Info and training](../ashleigh/)
+### Simulate Ashleigh's condition
+
+To set up the simulation for Ashleigh's condition:
+
+* install the extension [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+* open [heavy-blur.user.css](raw_assets/heavy-blur.user.css) in the browser (once per device)
+* when Stylus opens, select the "Install style" button (once per device)
+
+This will cause heavy blurring in the browser.
+
+### Use Ashleigh's assistive technology
+
+To set up the assistive technology used by Claudia go to the system menu and select:
+
+* Accessibility > ChromeVox (once per device)
+
+This will start a screen reader.
+
+### Information and status
+
+* [Information about Ashleigh](../ashleigh/)
 * Status: Tested and iterated once
-
-### Simulation
-
-Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-
-Open [heavy-blur.user.css](raw_assets/heavy-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device)
-
-### Tools
-
-Accessibility > ChromeVox (once per device)
-
 
 
 
@@ -74,24 +91,28 @@ Accessibility > ChromeVox (once per device)
 Ron
 ---
 
-* [Info and training](../ron/)
+### Simulate Ron's condition
+
+To set up the simulation for Ron's condition:
+
+* install the extension [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+* open [light-blur.user.css](raw_assets/light-blur.user.css) in the browser (once per device)
+* when Stylus opens, select the "Install style" button (once per device)
+* install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
+* open [wobbly-mouse.user.js](raw_assets/wobbly-mouse.user.js) in the browser
+* when Tampermonkey opens, select on the "Install" button
+
+This will cause light blurring in the browser and the mouse pointer to wobble.
+
+### Use Ron's assistive technology
+
+None, Ron doesn't use any assistive technology
+
+### Information and status
+
+* [Information about Ron](../ron/)
 * Status: Tested and iterated multiple times
-
-### Simulation
-
-Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-
-Open [light-blur.user.css](raw_assets/light-blur.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device)
-
-Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-
-Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
-
-Open [wobbly-mouse.user.js](raw_assets/wobbly-mouse.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
-
-### Tools
-
-None
 
 
 
@@ -100,26 +121,34 @@ None
 Chris
 -----
 
-* [Info and training](../chris/)
-* Status: Tested and iterated once
+### Simulate Chris' condition
 
-### Simulation
+To set up the simulation for Chris' condition:
 
-Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+* install the extension [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+* open [remove-cursor.user.css](raw_assets/remove-cursor.user.css) in the browser (once per device)
+* when Stylus opens, select the "Install style" button (once per device)
 
-Open [remove-cursor.user.css](raw_assets/remove-cursor.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device)
+This will cause the mouse pointer to disappear in the browser.
 
-### Tools
+### Use Chris' assistive technology
 
-Install extension: [Handsfree for Web](https://chrome.google.com/webstore/detail/handsfree-for-web-voice-c/ldfboinpfdahkgnljbkohgimhimmafip) (give permissions once per device)
+To set up the assistive technology used by Chris:
 
-When request to use your microphone pops up, click "Allow" button (once per device)
+* install the extension [Handsfree for Web](https://chrome.google.com/webstore/detail/handsfree-for-web-voice-c/ldfboinpfdahkgnljbkohgimhimmafip) (give permissions once per device)
+* when a request to use your microphone pops up, select the "Allow" button (once per device)
 
 Handsfree for Web settings:
 
 * Stop listening after 3 minutes of silence
 * Language: English (United Kingdom)
 
+This will start a voice control tool.
+
+### Information and status
+
+* [Information about Chris](../chris/)
+* Status: Tested and iterated once
 
 
 
@@ -127,27 +156,33 @@ Handsfree for Web settings:
 Pawel
 -----
 
-* [Info and training](../pawel/)
+### Simulate Pawel's condition
+
+To set up the simulation for Pawel's condition:
+
+* install the extension [Chrome Sound Effects](https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla)
+* nstall extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+* open [distractions.user.css](raw_assets/distractions.user.css) in the browser (once per device)
+* when Stylus opens, select the "Install style" button (once per device)
+* install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
+* open [distractions.user.js](raw_assets/distractions.user.js) in the browser
+* when Tampermonkey opens, select the "Install" button
+
+This will create distracting animations, images and sounds.
+
+### Use Pawel's assistive technology
+
+To set up the assistive technology used by Pawel:
+
+* install the extension [Midnight Lizard](https://chrome.google.com/webstore/detail/midnight-lizard/pbnndmlekkboofhnbonilimejonapojg) (enable extension and give permissions once per device)
+
+This will adjust the colours in the browser.
+
+### Information and status
+
+* [Information about Pawel](../pawel/)
 * Status: Tested and iterated multiple times
-
-### Simulation
-
-Install extension: [Chrome Sound Effects](https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla)
-
-Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-
-Open [distractions.user.css](raw_assets/distractions.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device)
-
-Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-
-Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
-
-Open [distractions.user.js](raw_assets/distractions.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
-
-### Tools
-
-Install extension: [Midnight Lizard](https://chrome.google.com/webstore/detail/midnight-lizard/pbnndmlekkboofhnbonilimejonapojg) (enable extension and give permissions once per device)
-
 
 
 
@@ -155,26 +190,31 @@ Install extension: [Midnight Lizard](https://chrome.google.com/webstore/detail/m
 Simone
 ------
 
-* [Info and training](../simone/)
+### Simulate Simone's condition
+
+To set up the simulation for Simone's condition:
+
+* install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
+* open [scramble-letters.user.js](raw_assets/scramble-letters.user.js) in the browser
+* when Tampermonkey opens, select the "Install" button
+
+This will cause the letters in the browser to scramble.
+
+### Use Simone's assistive technology
+
+To set up the assistive technology used by Simone:
+
+* install the extension [OpenDyslexic Font for Chrome](https://chrome.google.com/webstore/detail/opendyslexic-font-for-chr/cdnapgfjopgaggbmfgbiinmmbdcglnam)
+* install the extension [nOverlay](https://chrome.google.com/webstore/detail/noverlay/clhfmmanmdkmblpljegdibilonemohdo) (yellow)
+* go to the system menu and select: Accessibility > Select-to-Speak (this shouldn't be used while the simulation is running)
+
+This will give web pages a slight yellow tint, change the font and start a text to speech tool.
+
+### Information and status
+
+* [Information about Simone](../simone/)
 * Status: Tested and iterated once
-
-### Simulation
-
-Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-
-Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
-
-Open [scramble-letters.user.js](raw_assets/scramble-letters.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
-
-### Tools
-
-Install extensions:
-
-* [OpenDyslexic Font for Chrome](https://chrome.google.com/webstore/detail/opendyslexic-font-for-chr/cdnapgfjopgaggbmfgbiinmmbdcglnam)
-* [nOverlay](https://chrome.google.com/webstore/detail/noverlay/clhfmmanmdkmblpljegdibilonemohdo) (yellow)
-
-Accessibility > Select-to-Speak (shouldn't be used while simulation is running)
-
 
 
 
@@ -182,17 +222,23 @@ Accessibility > Select-to-Speak (shouldn't be used while simulation is running)
 Saleem
 ------
 
-* [Info and training](../saleem/)
-* Status: Tested and iterated once
+### Simulate Saleem's condition
 
-### Simulation
+To set up the simulation for Saleem's condition:
 
-Install extension: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
+* open [translate-to-piglatin.user.js](raw_assets/translate-to-piglatin.user.js) in the browser
+* when Tampermonkey opens, select the "Install" button
 
-Follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
+This will translate every text in the browser to Pig Latin.
 
-Open [translate-to-piglatin.user.js](raw_assets/translate-to-piglatin.user.js) in the browser; when Tampermonkey opens, click on the "Install" button
-
-### Tools
+### Use Saleem's assistive technology
 
 None
+
+### Information and status
+
+* [Information about Saleem](../saleem/)
+* Status: Tested and iterated once
+
