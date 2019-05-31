@@ -34,8 +34,8 @@ There are 2 versions of an example page. Version 1 shows the issues Ashleigh exp
 
 Do the following tasks logged in as Ashleigh:
 
-1. Fill in the form.
-2. Find out which type of assistive technology is used the most.
+1. There is a form with two questions. Try to fill it in.
+2. There is a graph underneath the form which lists types of assistive technology. Try to find out which one of them is used the most.
 
 [Version 1 - issues for Ashleigh](bad.html)
 

@@ -33,7 +33,7 @@ There are 2 versions of an example page. Version 1 shows the issues Simone exper
 Do the following tasks logged in as Simone:
 
 1. Read the text. Find out what you should do as a U.S. private citizen before you go abroad.
-2. There are a couple of links under the text. Click on the YouTube link.
+2. There are a couple of social media links under the text. Try to click on the YouTube link.
 
 [Example issues for Simone](bad.html)
 

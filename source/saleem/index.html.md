@@ -31,7 +31,7 @@ There are 2 versions of an example page. Version 1 shows the issues Saleem exper
 Do the following tasks logged in as Saleem:
 
 1. Read the text. Find out when we need to receive your application if you send it electronically.
-2. Watch the video. Find out how many people were provided with guide dogs "this year".
+2. Watch the video. Try to find out how many people were provided with guide dogs "this year".
 
 Hint: Make sure the volume is switched off.
 

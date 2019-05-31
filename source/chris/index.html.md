@@ -34,8 +34,8 @@ There are 2 versions of an example page. Version 1 shows the issues Chris experi
 
 Do the following tasks logged in as Chris:
 
-1. Find out what the explanation behind the question mark in the 'country' column is.
-2. Find out what the end date of the Algeria entry is.
+1. There is a table. Its country column includes an explanation indicated by a question mark. Try to select that question mark to find out what the explanation is.
+2. The end date column might be hidden. Try to find out what the end date of the Algeria entry is.
 
 [Version 1 - issues for Chris](bad.html)
 

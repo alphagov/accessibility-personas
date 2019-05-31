@@ -30,8 +30,8 @@ There are 2 versions of an example page. Version 1 shows the issues Ron experien
 
 Do the following tasks logged in as Ron:
 
-1. Find out the number of Cabinet ministers.
-2. Go to the second page (see pagination at the bottom).
+1. Read the text. Find out the number of Cabinet ministers.
+2. There is a pagination at the bottom of the text. Use it to go to the second page.
 
 [Version 1 - issues for Ron](bad.html)
 

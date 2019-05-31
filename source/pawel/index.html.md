@@ -30,8 +30,8 @@ There are 2 versions of an example page. Version 1 shows the issues Pawel experi
 
 You have 2 minutes to do the following tasks logged in as Pawel:
 
-1. Read the text. Find out where you can get Tamiflu if you’re a U.S. Government employee abroad.
-2. Click on the correct button below the text before the timer expires.
+1. Read the text. Find out where you can get Tamiflu if you are a U.S. Government employee abroad.
+2. There are a couple of buttons below the text. Try to select the correct button before the timer expires.
 
 [Version 1 - issues for Pawel](bad.html)
 

@@ -30,8 +30,8 @@ There are 2 versions of an example page. Version 1 shows the issues Claudia expe
 
 Do the following tasks logged in as Claudia:
 
-1. Find out the total number of ministers.
-2. Fill in the form.
+1. Read the text. Find out the total number of ministers.
+2. Fill in the form below the text.
 
 [Version 1 - issues for Claudia](bad.html)
 
