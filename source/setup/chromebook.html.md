@@ -105,9 +105,9 @@ Chris
 
 ### Simulation
 
-Enable "debugging keyboard shortcuts" in chrome://flags/#ash-debug-shortcuts (and restart) (once per device)
+Install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Toggle the touchpad off with Search + Shift + P
+Open [remove-cursor.user.css](raw_assets/remove-cursor.user.css) in the browser; when Stylus opens, click the "Install style" button (once per device)
 
 ### Tools
 
