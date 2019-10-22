@@ -1,26 +1,28 @@
-<div class="form-group">
-  <label class="form-label-bold" for="year">
+<div class="govuk-form-group">
+  <label class="govuk-label" for="year">
     What year is it?
   </label>
-  <input class="form-control form-control-1-4" id="year" name="year" type="text" autocomplete="off" />
+  <input class="govuk-input govuk-!-width-one-quarter" id="year" name="year" type="text" autocomplete="off"/>
 </div>
 
-<div class="form-group">
-  <fieldset>
-
-    <legend class="form-label-bold">
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend">
       Are you a human?
     </legend>
-
-    <div class="multiple-choice">
-      <input id="humantest-yes" type="radio" name="humantest" value="yes">
-      <label for="humantest-yes">Yes</label>
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="humantest-yes" name="humantest" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="humantest-yes">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="humantest-no" name="humantest" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="humantest-no">
+          No
+        </label>
+      </div>
     </div>
-
-    <div class="multiple-choice">
-      <input id="humantest-no" type="radio" name="humantest" value="no">
-      <label for="humantest-no">No</label>
-    </div>
-
   </fieldset>
 </div>

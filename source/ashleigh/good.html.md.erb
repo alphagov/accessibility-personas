@@ -10,13 +10,16 @@ title: Fixes for Ashleigh
 </style>
 <% end %>
 
-<a href="index.html" class="link-back">Back</a>
+<a href="index.html" class="govuk-back-link">Back</a>
+
 # <%= current_page.data.title %>
 
 <form action="<%= url_for '/fake.html' %>" method="get">
   <%= partial "/_example_snippets/form_fields_no_label/good" %>
 
-  <button class="button" type="submit">Send</button>
+  <button class="govuk-button" data-module="govuk-button">
+    Send
+  </button>
 </form>
 
 
