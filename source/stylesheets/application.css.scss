@@ -3,55 +3,13 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 
 @import "govuk_tech_docs";
 
-// Back link styles - with left pointing arrow
-
-.link-back {
-  display: inline-block;
-  position: relative;
-
-  @include govuk-font(16);
-
-  margin-top: $govuk-gutter-half;
-  margin-bottom: $govuk-gutter-half;
-  padding-left: 14px;
-
-  color: govuk-colour('black');
-
-  &:link,
-  &:visited,
-  &:hover,
-  a#{&}:focus,
-  &:active {
-    color: govuk-colour('black');
-  }
-
-  text-decoration: none;
-  border-bottom: 1px solid govuk-colour('black');
-
-  // Back arrow - left pointing black arrow
-  &::before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-
-    border-top: 5px solid transparent;
-    border-right: 6px solid $govuk-text-colour;
-    border-bottom: 5px solid transparent;
-
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -6px;
-  }
-
-  // Fallback
-  // IE8 doesn't support rgba and only supports the single colon syntax for :before
-  // Ref: http://caniuse.com/#search=%3Abefore, http://caniuse.com/#search=rgba
-  @include govuk-if-ie8 {
-    background: file-url("icon-arrow-left.png") no-repeat 0 4px;
-  }
+// GOV.UK Frontend components needed for this guidance
+@import "govuk/components/back-link/back-link";
+// Tech docs leaks global styles so we need to re-add the correct colour.
+.govuk-back-link {
+  color: $govuk-text-colour !important;
 }
+
 
 // Link styles
 .link {
