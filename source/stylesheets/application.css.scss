@@ -1,64 +1,32 @@
-// copied from frontend toolkit, no idea how to reference it otherwise before SASS files are called
-$helvetica-regular: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
-
-$toolkit-font-stack: $helvetica-regular;
-$toolkit-font-stack-tabular: $helvetica-regular;
+// Ensure that we're not using GDS Transport on a non-GOV.UK domain
+$govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
 
 @import "govuk_tech_docs";
-
-// Path to assets for use with the file-url function
-// in the govuk frontend toolkit's url-helpers partial
-// $path: "/public/images/";
-
-// Import some bits of GOV.UK elements
-@import "govuk_frontend_toolkit/design-patterns/buttons";
-@import "elements";
-
-/* ____________ other manual imports from Elements ____________ */
-
-input:focus,
-textarea:focus,
-select:focus,
-button:focus {
-  outline: 3px solid $focus-colour;
-  outline-offset: 0;
-}
-
-form,
-iframe,
-table {
-  margin-top: 1em;
-}
-
-fieldset {
-  border: none;
-  padding: 0;
-}
 
 // Back link styles - with left pointing arrow
 
 .link-back {
-  @include inline-block;
+  display: inline-block;
   position: relative;
 
-  @include core-16;
+  @include govuk-font(16);
 
-  margin-top: $gutter-half;
-  margin-bottom: $gutter-half;
+  margin-top: $govuk-gutter-half;
+  margin-bottom: $govuk-gutter-half;
   padding-left: 14px;
 
-  color: $black;
+  color: govuk-colour('black');
 
   &:link,
   &:visited,
   &:hover,
   a#{&}:focus,
   &:active {
-    color: $black;
+    color: govuk-colour('black');
   }
 
   text-decoration: none;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid govuk-colour('black');
 
   // Back arrow - left pointing black arrow
   &::before {
@@ -68,7 +36,7 @@ fieldset {
     height: 0;
 
     border-top: 5px solid transparent;
-    border-right: 6px solid $text-colour;
+    border-right: 6px solid $govuk-text-colour;
     border-bottom: 5px solid transparent;
 
     position: absolute;
@@ -79,29 +47,28 @@ fieldset {
 
   // Fallback
   // IE8 doesn't support rgba and only supports the single colon syntax for :before
-  // IE7 doesn't support pseudo-elements, let's fallback to an image instead.
   // Ref: http://caniuse.com/#search=%3Abefore, http://caniuse.com/#search=rgba
-  @include ie-lte(8) {
+  @include govuk-if-ie8 {
     background: file-url("icon-arrow-left.png") no-repeat 0 4px;
   }
 }
 
 // Link styles
 .link {
-  color: $link-colour;
+  color: $govuk-link-colour;
   text-decoration: underline;
 }
 
 .link:visited {
-  color: $link-visited-colour;
+  color: $govuk-link-visited-colour;
 }
 
 .link:hover {
-  color: $link-hover-colour;
+  color: $govuk-link-hover-colour;
 }
 
 .link:active {
-  color: $link-colour;
+  color: $govuk-link-colour;
 }
 
 /* ____________ example snippets ____________ */
@@ -117,11 +84,11 @@ fieldset {
 }
 
 .govuk-box-highlight.bad {
-  color: $panel-colour;
+  color: govuk-colour('green');
 }
 
 .govuk-box-highlight.good {
-  @include core-24;
+  @include govuk-font(24);
 }
 
 .fullscreen-scrollable-table {
@@ -139,7 +106,7 @@ fieldset {
 }
 
 table.register-data-table {
-  background-color: $highlight-colour;
+  background-color: govuk-colour('light-grey');
 
   th,
   td {
@@ -159,8 +126,8 @@ table.register-data-table {
 }
 
 .tooltip {
-  background-color: $white;
-  border: 3px solid $border-colour;
+  background-color: govuk-colour('white');
+  border: 3px solid $govuk-border-colour;
   width: 10em;
   padding: .5em;
   position: absolute;
@@ -180,11 +147,11 @@ table.register-data-table {
 }
 
 button.red {
-  background-color: $error-colour;
+  background-color: $govuk-error-colour;
 }
 
 button.blue {
-  background-color: $link-colour;
+  background-color: $govuk-link-colour;
 }
 
 .game-button {
@@ -228,7 +195,7 @@ img.profile {
   float: right;
   margin: 0 0 .2em .5em;
 
-  @include media(tablet) {
+  @include govuk-media-query($from: tablet) {
     width: 256px;
     height: 256px;
   }
