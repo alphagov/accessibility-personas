@@ -12,25 +12,6 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 @import "govuk/components/button/button";
 @import "govuk/components/radios/radios";
 
-
-// Link styles
-.link {
-  color: $govuk-link-colour;
-  text-decoration: underline;
-}
-
-.link:visited {
-  color: $govuk-link-visited-colour;
-}
-
-.link:hover {
-  color: $govuk-link-hover-colour;
-}
-
-.link:active {
-  color: $govuk-link-colour;
-}
-
 /* ____________ example snippets ____________ */
 
 .pagination {
@@ -65,8 +46,11 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
   background: #666;
 }
 
-table.register-data-table {
+.register-data-table {
   background-color: govuk-colour('light-grey');
+
+  // Tech docs leaks global styles so we need to force the table layout we need.
+  table-layout: auto !important;
 
   th,
   td {
@@ -85,25 +69,52 @@ table.register-data-table {
   }
 }
 
+.tooltip-trigger {
+  color: $govuk-link-colour;
+  text-decoration: underline;
+  padding: 0 .2em;
+
+  &:hover {
+    color: $govuk-link-hover-colour;
+  }
+
+  &:active {
+    color: $govuk-link-active-colour;
+  }
+
+  &:focus {
+    // Ensure that if colours are overriden that the focus is still visible
+    outline: 3px solid transparent;
+    color: $govuk-focus-text-colour;
+    background-color: $govuk-focus-colour;
+    box-shadow: 0 0 0 $govuk-focus-width $govuk-focus-colour;
+    box-shadow:
+      0 10px 0 1px $govuk-focus-colour,
+      0 -1px 0 1px $govuk-focus-colour;
+    text-decoration: none;
+  }
+}
+
 .tooltip {
   background-color: govuk-colour('white');
-  border: 3px solid $govuk-border-colour;
+  border: 3px solid $govuk-focus-text-colour;
   width: 10em;
   padding: .5em;
   position: absolute;
-  top: 1.5em;
+  top: calc(100% - 5px);
   left: 0;
   white-space: normal;
   font-weight: normal;
   display: none;
 }
 
-.bad.tooltip-trigger:hover + .tooltip {
+.tooltip-trigger.bad:hover + .tooltip {
   display: block;
 }
 
-.good.tooltip-trigger:focus + .tooltip {
+.tooltip-trigger.good:focus + .tooltip {
   display: block;
+  box-shadow: 0 0 0 $govuk-focus-width $govuk-focus-colour;
 }
 
 button.red {
