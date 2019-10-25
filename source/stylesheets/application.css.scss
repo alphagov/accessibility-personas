@@ -10,6 +10,7 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
   color: $govuk-text-colour !important;
 }
 @import "govuk/components/button/button";
+@import "govuk/components/panel/panel";
 @import "govuk/components/radios/radios";
 
 /* ____________ example snippets ____________ */
@@ -24,12 +25,12 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
   margin-right: .5em;
 }
 
-.govuk-box-highlight.bad {
-  color: govuk-colour('green');
+.govuk-panel.bad {
+  color: govuk-colour("light-green");
 }
 
-.govuk-box-highlight.good {
-  @include govuk-font(24);
+.govuk-panel.bad .govuk-panel__body {
+  font-size: 16px !important;
 }
 
 .fullscreen-scrollable-table {
