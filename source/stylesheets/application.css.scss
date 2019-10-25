@@ -117,11 +117,11 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
   box-shadow: 0 0 0 $govuk-focus-width $govuk-focus-colour;
 }
 
-button.red {
+.govuk-button.red {
   background-color: $govuk-error-colour;
 }
 
-button.blue {
+.govuk-button.blue {
   background-color: $govuk-link-colour;
 }
 
