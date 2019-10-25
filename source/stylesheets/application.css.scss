@@ -9,6 +9,8 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 .govuk-back-link {
   color: $govuk-text-colour !important;
 }
+@import "govuk/components/button/button";
+@import "govuk/components/radios/radios";
 
 
 // Link styles
