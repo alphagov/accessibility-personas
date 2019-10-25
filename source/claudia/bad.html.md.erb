@@ -22,5 +22,7 @@ title: Issues for Claudia
 <form action="<%= url_for '/fake.html' %>" method="get">
   <%= partial "/_example_snippets/form_fields_no_label/bad", locals: { right_align_inputs: true } %>
 
-  <button class="button" type="submit">Send</button>
+  <button class="govuk-button" data-module="govuk-button">
+    Send
+  </button>
 </form>
