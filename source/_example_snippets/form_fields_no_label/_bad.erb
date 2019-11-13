@@ -1,26 +1,28 @@
-<div class="form-group">
-  <div class="form-label-bold" <% if right_align_inputs %>style="float: left;"<% end %>>
+<div class="govuk-form-group">
+  <div class="govuk-label" <% if right_align_inputs %>style="float: left;"<% end %>>
     What year is it?
   </div>
-  <input class="form-control form-control-1-4" id="year" name="year" type="text" autocomplete="off" <% if right_align_inputs %>style="float: right;"<% end %> />
+  <input class="govuk-input govuk-!-width-one-quarter" id="year" name="year" type="text" autocomplete="off" <% if right_align_inputs %>style="float: right;"<% end %>/>
 </div>
 
-<div class="form-group">
-  <fieldset>
-
-    <div class="form-label-bold" <% if right_align_inputs %>style="float: left;"<% end %>>
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <div class="govuk-fieldset__legend" <% if right_align_inputs %>style="float: left;"<% end %>>
       Are you a human?
     </div>
-
-    <div class="multiple-choice" <% if right_align_inputs %>style="float: right;"<% end %>>
-      <input id="humantest-yes" type="radio" name="humantest" value="yes">
-      <label for="wrong-id">Yes</label>
+    <div class="govuk-radios govuk-radios--inline" <% if right_align_inputs %>style="float: right;"<% end %>>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="humantest-yes" name="humantest" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="wrong-id">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="humantest-no" name="humantest" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="wrong-id">
+          No
+        </label>
+      </div>
     </div>
-
-    <div class="multiple-choice" <% if right_align_inputs %>style="float: right;"<% end %>>
-      <input id="humantest-no" type="radio" name="humantest" value="no">
-      <label for="wrong-id">No</label>
-    </div>
-
   </fieldset>
 </div>
