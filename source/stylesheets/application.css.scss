@@ -56,6 +56,7 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 
   // Tech docs leaks global styles so we need to force the table layout we need.
   table-layout: auto !important;
+  margin-bottom: 0 !important;
 
   th,
   td {
