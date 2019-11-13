@@ -26,11 +26,15 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 }
 
 .govuk-panel.bad {
-  color: govuk-colour("light-green");
+  color: $govuk-border-colour;
 }
 
 .govuk-panel.bad .govuk-panel__body {
-  font-size: 16px !important;
+  font-size: 19px;
+}
+
+.govuk-panel.good .govuk-panel__body {
+  font-size: 24px;
 }
 
 .fullscreen-scrollable-table {
