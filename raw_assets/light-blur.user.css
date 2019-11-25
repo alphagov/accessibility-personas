@@ -8,7 +8,6 @@
 @homepageURL  https://alphagov.github.io/accessibility-personas/
 ==/UserStyle== */
 
-
 body {
   -webkit-filter: blur(.1em) brightness(120%);
           filter: blur(.1em) brightness(120%);
