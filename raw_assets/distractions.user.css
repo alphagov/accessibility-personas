@@ -171,23 +171,19 @@
 
 @-webkit-keyframes stretch {
   0% {
-    -webkit-transform: scale(1.0);
-            transform: scale(1.0);
+    transform: scale(1.0);
   }
   100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 
 @keyframes stretch {
   0% {
-    -webkit-transform: scale(1.0);
-            transform: scale(1.0);
+    transform: scale(1.0);
   }
   100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 
@@ -230,22 +226,18 @@
 
 @-webkit-keyframes smallPulse {
   0% {
-    -webkit-transform: scale(1.0);
-            transform: scale(1.0);
+    transform: scale(1.0);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
 @keyframes smallPulse {
   0% {
-    -webkit-transform: scale(1.0);
-            transform: scale(1.0);
+    transform: scale(1.0);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
 }

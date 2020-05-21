@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Setting up personas on Chromebooks | Accessibility Personas</title>
+    <title>Setting up personas on Chromebooks - Accessibility Personas</title>
 
     <link href="../stylesheets/manifest-19063aa4.css" rel="stylesheet" />
 
@@ -20,7 +20,7 @@
       <meta property="twitter:card" content="summary" />
       <meta property="twitter:domain" content="alphagov.github.io" />
       <meta property="twitter:image" content="https://alphagov.github.io/accessibility-personas/images/govuk-large.png" />
-      <meta property="twitter:title" content="Setting up personas on Chromebooks | Accessibility Personas" />
+      <meta property="twitter:title" content="Setting up personas on Chromebooks - Accessibility Personas" />
       <meta property="twitter:url" content="https://alphagov.github.io/accessibility-personas/setup/chromebook.html" />
 
     
@@ -44,7 +44,7 @@
         <strong class="govuk-tag">Beta</strong>
     </div>
     <div class="govuk-header__content">
-      <button type="button" role="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
       <nav>
         <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
@@ -199,6 +199,10 @@
 <li>Settings &gt; Device &gt; Power &gt; When idle &gt; Keep display on (once per device) - this makes sense if you put the Chromebooks on display for lots of people to use so you don&rsquo;t need to login again and share any passwords</li>
 <li>Settings &gt; Device &gt; Power &gt; Sleep when lid is closed &gt; off (once per device) - this makes sense if you put the Chromebooks on display as people tend to close the lid and they would need to login again</li>
 <li>Settings &gt; People &gt; Manage other people &gt; Restrict sign-in to the following users&hellip; (once per device, can only be done by the owner account once every profile has logged in) - this restricts people adding their own profiles if the Chromebook is on display</li>
+<li>Settings &gt; People &gt; Sync and Google services &gt; Manage sync &gt; untick &lsquo;Sync everything&rsquo; first and then &lsquo;History&rsquo;, &lsquo;Open Tabs&rsquo;, &lsquo;Password&rsquo;, &lsquo;Addresses, phone numbers and more&rsquo;, &lsquo;Payment methods and addresses using Google Play&rsquo; - this makes sure no-one accidentally shares their details when the persona is shared on multiple devices</li>
+<li>Settings &gt; Auto-fill &gt; Passwords &gt; untick &lsquo;Offer to save passwords&rsquo; and &lsquo;Auto Sign-in&rsquo; - this makes it less likely that people unintentionally share their passwords, which is especially useful when the devices are on display</li>
+<li>Settings &gt; Auto-fill &gt; Payment methods &gt; untick &lsquo;Save and fill payment methods&rsquo;</li>
+<li>Settings &gt; Auto-fill &gt; Addresses and more &gt; untick &lsquo;Save and fill addresses&rsquo;</li>
 <li>Settings &gt; enable Appearance: Show Home button &gt; Enter custom web address: https://alphagov.github.io/accessibility-personas/[persona]/ - this makes it easy to go back to each persona&rsquo;s page</li>
 <li>Settings &gt; On start-up &gt; Open a specific page or set of pages &gt; Add a new page &gt; https://alphagov.github.io/accessibility-personas/[persona]/ (Note that the settings are retained, but the pages only open during system start-up.) - this makes sure the persona&rsquo;s page is already showing whenever the Chromebook gets restarted</li>
 </ul>
@@ -287,7 +291,7 @@
 
 <ul>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla">Chrome Sound Effects</a></li>
-<li>nstall extension: <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Stylus</a></li>
+<li>install extension: <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Stylus</a></li>
 <li>open <a href="../raw_assets/distractions.user.css">distractions.user.css</a> in the browser (once per device)</li>
 <li>when Stylus opens, select the &ldquo;Install style&rdquo; button (once per device)</li>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a></li>
@@ -332,6 +336,7 @@
 <h2 id="saleem">Saleem</h2><h3 id="simulate-saleem-39-s-condition">Simulate Saleem&rsquo;s condition</h3><p>To set up the simulation for Saleem&rsquo;s condition:</p>
 
 <ul>
+<li>install the extension <a href="https://chrome.google.com/webstore/detail/clever-mute/eadinjjkfelcokdlmoechclnmmmjnpdh">Clever Mute</a></li>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a></li>
 <li>follow the <a href="https://tampermonkey.net/faq.php?ext=dhdg#Q105">instructions to allow script syncing</a> (once per device)</li>
 <li>open <a href="../raw_assets/translate-to-piglatin.user.js">translate-to-piglatin.user.js</a> in the browser</li>
@@ -362,7 +367,7 @@
 
 
       <svg
-        role="presentation"
+        aria-hidden="true"
         focusable="false"
         class="govuk-footer__licence-logo"
         xmlns="http://www.w3.org/2000/svg"
@@ -398,6 +403,6 @@
     </div>
 
     
-    <script src="../javascripts/application-f664be60.js"></script>
+    <script src="../javascripts/application-485def14.js"></script>
   </body>
 </html>
