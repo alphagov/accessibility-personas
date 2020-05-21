@@ -161,7 +161,7 @@ Pawel
 To set up the simulation for Pawel's condition:
 
 * install the extension [Chrome Sound Effects](https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla)
-* nstall extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+* install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 * open [distractions.user.css](raw_assets/distractions.user.css) in the browser (once per device)
 * when Stylus opens, select the "Install style" button (once per device)
 * install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
