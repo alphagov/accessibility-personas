@@ -23,6 +23,10 @@ Select the following options from the system menu. Go to:
 * Settings > Device > Power > When idle > Keep display on (once per device) - this makes sense if you put the Chromebooks on display for lots of people to use so you don't need to login again and share any passwords
 * Settings > Device > Power > Sleep when lid is closed > off (once per device) - this makes sense if you put the Chromebooks on display as people tend to close the lid and they would need to login again
 * Settings > People > Manage other people > Restrict sign-in to the following users... (once per device, can only be done by the owner account once every profile has logged in) - this restricts people adding their own profiles if the Chromebook is on display
+* Settings > People > Sync and Google services > Manage sync > untick 'Sync everything' first and then 'History', 'Open Tabs', 'Password', 'Addresses, phone numbers and more', 'Payment methods and addresses using Google Play' - this makes sure no-one accidentally shares their details when the persona is shared on multiple devices
+* Settings > Auto-fill > Passwords > untick 'Offer to save passwords' and 'Auto Sign-in' - this makes it less likely that people unintentionally share their passwords, which is especially useful when the devices are on display
+* Settings > Auto-fill > Payment methods > untick 'Save and fill payment methods'
+* Settings > Auto-fill > Addresses and more > untick 'Save and fill addresses'
 * Settings > enable Appearance: Show Home button > Enter custom web address: https://alphagov.github.io/accessibility-personas/[persona]/ - this makes it easy to go back to each persona's page
 * Settings > On start-up > Open a specific page or set of pages > Add a new page > https://alphagov.github.io/accessibility-personas/[persona]/ (Note that the settings are retained, but the pages only open during system start-up.) - this makes sure the persona's page is already showing whenever the Chromebook gets restarted
 
@@ -161,7 +165,7 @@ Pawel
 To set up the simulation for Pawel's condition:
 
 * install the extension [Chrome Sound Effects](https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla)
-* nstall extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+* install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 * open [distractions.user.css](raw_assets/distractions.user.css) in the browser (once per device)
 * when Stylus opens, select the "Install style" button (once per device)
 * install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
