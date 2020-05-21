@@ -230,6 +230,7 @@ Saleem
 
 To set up the simulation for Saleem's condition:
 
+* install the extension [Clever Mute](https://chrome.google.com/webstore/detail/clever-mute/eadinjjkfelcokdlmoechclnmmmjnpdh)
 * install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 * follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 * open [translate-to-piglatin.user.js](raw_assets/translate-to-piglatin.user.js) in the browser
