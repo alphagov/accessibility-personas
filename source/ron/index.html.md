@@ -14,14 +14,14 @@ parent: /index.html
 
 * multiple conditions: arthritis, hearing loss, cataracts, hip replacements
 
-* doesn't use any assistive technology
+* does not use any assistive technology
 
 More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ron-older-user-with-multiple-conditions) and [how to set it up](../setup/chromebook.html#ron)
 
 
 ## Chromebook help
 
-As Ron is not very technical, don't use anything which might help. For example, don't zoom into the page and don't use the keyboard to navigate.
+As Ron is not very technical, do not use anything which might help. For example, do not zoom into the page and do not use the keyboard to navigate.
 
 
 ## Training tasks
