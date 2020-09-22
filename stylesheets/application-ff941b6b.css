@@ -22,7 +22,7 @@
   .technical-documentation a:focus, .govuk-link:focus {
     color: #0b0c0c; }
   @media print {
-    .technical-documentation a[href^="/"]::after, [href^="/"].govuk-link::after, .technical-documentation a[href^="http://"]::after, [href^="http://"].govuk-link::after, .technical-documentation a[href^="https://"]::after, [href^="https://"].govuk-link::after {
+    .technical-documentation a[href^="/"]::after, .govuk-link[href^="/"]::after, .technical-documentation a[href^="http://"]::after, .govuk-link[href^="http://"]::after, .technical-documentation a[href^="https://"]::after, .govuk-link[href^="https://"]::after {
       content: " (" attr(href) ")";
       font-size: 90%;
       word-wrap: break-word; } }
@@ -2423,7 +2423,7 @@
   .highlight .vg,
   .highlight .vi {
     /* Name.Variable.Instance */
-    color: #B26749; }
+    color: #d4351c; }
   .highlight .nd {
     /* Name.Decorator */
     color: #1d70b8; }
@@ -3068,7 +3068,7 @@ html.has-search-results-open {
       text-decoration: none;
       color: #1d70b8; } }
     @media screen and (min-width: 40.0625em) {
-      .toc__list li a:link.toc-link--in-view, .toc__list li a:visited.toc-link--in-view {
+      .toc__list li a.toc-link--in-view:link, .toc__list li a.toc-link--in-view:visited {
         color: #003078;
         border-left-color: #003078;
         background-color: #f3f2f1; } }
@@ -3247,7 +3247,7 @@ html.has-search-results-open {
     display: block; }
 
 .collapsible__heading,
-.toc__list > ul > li > a:link.collapsible__heading {
+.toc__list > ul > li > a.collapsible__heading:link {
   margin-right: 30px; }
 
 .collapsible__toggle {
@@ -3468,7 +3468,7 @@ html.has-search-results-open {
     color: #0b0c0c; }
   .govuk-button--secondary:hover {
     background-color: #dbdad9; }
-    .govuk-button--secondary:hover[disabled] {
+    .govuk-button--secondary[disabled]:hover {
       background-color: #f3f2f1; }
 
 .govuk-button--warning {
@@ -3478,7 +3478,7 @@ html.has-search-results-open {
     color: #ffffff; }
   .govuk-button--warning:hover {
     background-color: #aa2a16; }
-    .govuk-button--warning:hover[disabled] {
+    .govuk-button--warning[disabled]:hover {
       background-color: #d4351c; }
 
 .govuk-button--start {
