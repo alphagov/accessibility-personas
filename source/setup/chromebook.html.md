@@ -20,14 +20,14 @@ Remove everything from the shelf/dock except Chrome. This helps people focus on 
 Select the following options from the system menu. Go to:
 
 * Settings > Advanced > Accessibility > Always show accessibility options in the system menu - this makes it easier to access the accessibility settings
-* Settings > Device > Power > When idle > Keep display on (once per device) - this makes sense if you put the Chromebooks on display for lots of people to use so you don't need to login again and share any passwords
+* Settings > Device > Power > When idle > Keep display on (once per device) - this makes sense if you put the Chromebooks on display for lots of people to use so you do not need to login again and share any passwords
 * Settings > Device > Power > Sleep when lid is closed > off (once per device) - this makes sense if you put the Chromebooks on display as people tend to close the lid and they would need to login again
 * Settings > People > Manage other people > Restrict sign-in to the following users... (once per device, can only be done by the owner account once every profile has logged in) - this restricts people adding their own profiles if the Chromebook is on display
 * Settings > People > Sync and Google services > Manage sync > untick 'Sync everything' first and then 'History', 'Open Tabs', 'Password', 'Addresses, phone numbers and more', 'Payment methods and addresses using Google Play' - this makes sure no-one accidentally shares their details when the persona is shared on multiple devices
 * Settings > Auto-fill > Passwords > untick 'Offer to save passwords' and 'Auto Sign-in' - this makes it less likely that people unintentionally share their passwords, which is especially useful when the devices are on display
 * Settings > Auto-fill > Payment methods > untick 'Save and fill payment methods'
 * Settings > Auto-fill > Addresses and more > untick 'Save and fill addresses'
-* Settings > enable Appearance: Show Home button > Enter custom web address: https://alphagov.github.io/accessibility-personas/[persona]/ - this makes it easy to go back to each persona's page
+* Settings > enable Appearance: Show Home button > Enter custom web address: https://alphagov.github.io/accessibility-personas/[persona]/ - this makes it easier to go back to each persona's page
 * Settings > On start-up > Open a specific page or set of pages > Add a new page > https://alphagov.github.io/accessibility-personas/[persona]/ (Note that the settings are retained, but the pages only open during system start-up.) - this makes sure the persona's page is already showing whenever the Chromebook gets restarted
 
 
@@ -55,7 +55,7 @@ To set up the assistive technology used by Claudia go to the system menu and sel
 
 This will magnify the screen to 400%, adjust the colours and highlight interactive elements.
 
-### Information and status
+### Information and status for Claudia
 
 * [Information about Claudia](../claudia/)
 * Status: Tested and iterated multiple times
@@ -84,7 +84,7 @@ To set up the assistive technology used by Claudia go to the system menu and sel
 
 This will start a screen reader.
 
-### Information and status
+### Information and status for Ashleigh
 
 * [Information about Ashleigh](../ashleigh/)
 * Status: Tested and iterated once
@@ -111,9 +111,9 @@ This will cause light blurring in the browser and the mouse pointer to wobble.
 
 ### Use Ron's assistive technology
 
-None, Ron doesn't use any assistive technology
+None, Ron does not use any assistive technology
 
-### Information and status
+### Information and status for Ron
 
 * [Information about Ron](../ron/)
 * Status: Tested and iterated multiple times
@@ -149,7 +149,7 @@ Handsfree for Web settings:
 
 This will start a voice control tool.
 
-### Information and status
+### Information and status for Chris
 
 * [Information about Chris](../chris/)
 * Status: Tested and iterated once
@@ -183,7 +183,7 @@ To set up the assistive technology used by Pawel:
 
 This will adjust the colours in the browser.
 
-### Information and status
+### Information and status for Pawel
 
 * [Information about Pawel](../pawel/)
 * Status: Tested and iterated multiple times
@@ -211,11 +211,11 @@ To set up the assistive technology used by Simone:
 
 * install the extension [OpenDyslexic Font for Chrome](https://chrome.google.com/webstore/detail/opendyslexic-font-for-chr/cdnapgfjopgaggbmfgbiinmmbdcglnam)
 * install the extension [nOverlay](https://chrome.google.com/webstore/detail/noverlay/clhfmmanmdkmblpljegdibilonemohdo) (yellow)
-* go to the system menu and select: Accessibility > Select-to-Speak (this shouldn't be used while the simulation is running)
+* go to the system menu and select: Accessibility > Select-to-Speak (this should not be used while the simulation is running)
 
 This will give web pages a slight yellow tint, change the font and start a text to speech tool.
 
-### Information and status
+### Information and status for Simone
 
 * [Information about Simone](../simone/)
 * Status: Tested and iterated once
@@ -242,8 +242,7 @@ This will translate every text in the browser to Pig Latin.
 
 None
 
-### Information and status
+### Information and status for Saleem
 
 * [Information about Saleem](../saleem/)
 * Status: Tested and iterated once
-

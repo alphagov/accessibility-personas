@@ -4,4 +4,4 @@ title: Fail
 
 # Fail
 
-That didn't seem to have worked.
+That did not seem to have worked.

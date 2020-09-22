@@ -11,6 +11,8 @@ phase: Beta
 header_links:
   Personas: /index.html
   Setup: /setup/index.html
+footer_links:
+  Accessibility: /accessibility.html
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: false
