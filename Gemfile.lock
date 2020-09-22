@@ -43,7 +43,7 @@ GEM
     execjs (2.7.0)
     fast_blank (1.0.0)
     fastimage (2.2.0)
-    ffi (1.13.1)
+    ffi (1.12.2)
     govuk_tech_docs (2.1.0)
       activesupport
       chronic (~> 0.10.2)
