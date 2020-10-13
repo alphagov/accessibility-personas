@@ -3918,7 +3918,16 @@ html.has-search-results-open {
   .govuk-radios--small .govuk-radios__item:hover .govuk-radios__input:focus + .govuk-radios__label::before {
     box-shadow: 0 0 0 4px #ffdd00; } }
 
+/*
+  Heading anchors are confusing screen reader users doing Ashleigh's tasks.
+  This hides their icons from anything without a sidebar. It's a bit of a hack.
+  Pages with sidebars are more likely to be documentation and to benefit from the anchors.
+*/
+.app-pane__body:not([data-module="in-page-navigation"]) .anchored-heading__icon {
+  display: none; }
+
 /* ____________ example snippets ____________ */
+/* pagination */
 .pagination {
   padding-top: 1em; }
 
@@ -3927,6 +3936,7 @@ html.has-search-results-open {
   border: 2px solid;
   margin-right: .5em; }
 
+/* large_blocks_of_text */
 .govuk-panel.bad {
   color: #b1b4b6; }
 
@@ -3936,6 +3946,7 @@ html.has-search-results-open {
 .govuk-panel.good .govuk-panel__body {
   font-size: 24px; }
 
+/* table */
 .fullscreen-scrollable-table {
   overflow-x: auto; }
 
@@ -3960,6 +3971,7 @@ html.has-search-results-open {
     position: relative;
     white-space: nowrap; }
 
+/* tooltip (used in table) */
 .tooltip-trigger {
   color: #1d70b8;
   text-decoration: underline;
@@ -3995,6 +4007,7 @@ html.has-search-results-open {
   display: block;
   box-shadow: 0 0 0 3px #ffdd00; }
 
+/* refer_to_colour */
 .govuk-button.red {
   background-color: #d4351c; }
 
@@ -4004,6 +4017,7 @@ html.has-search-results-open {
 .game-button {
   display: inline-block; }
 
+/* icon_font */
 /* make icons from icon font bigger */
 .social-media > span {
   font-size: 200%; }
@@ -4011,6 +4025,18 @@ html.has-search-results-open {
 .social-media {
   display: inline-block;
   text-decoration: none; }
+
+/* form_field */
+div.govuk-label,
+div.govuk-fieldset__legend {
+  float: left; }
+
+div.govuk-label + input,
+div.govuk-fieldset__legend + .govuk-radios {
+  float: right; }
+
+div.govuk-label + input.govuk-\!-width-one-quarter {
+  width: 25% !important; }
 
 /*
   This fixes an odd behaviour with Claudia's bad example page:
@@ -4020,14 +4046,6 @@ html.has-search-results-open {
 */
 .govuk-form-group:after {
   width: 0; }
-
-/*
-  Heading anchors are confusing screen reader users doing Ashleigh's tasks.
-  This hides their icons from anything without a sidebar. It's a bit of a hack.
-  Pages with sidebars are more likely to be documentation and to benefit from the anchors.
-*/
-.app-pane__body:not([data-module="in-page-navigation"]) .anchored-heading__icon {
-  display: none; }
 
 /* ____________ documentation pages ____________ */
 img.profile {
