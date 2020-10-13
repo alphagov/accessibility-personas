@@ -15,7 +15,7 @@ Instead of using High Contrast mode, install the [High Contrast extension](https
 
 Instead of using the magnifier, zoom in via Settings > Appearance > Page zoom: select "400%" (once per device)
 
-Note: This will be a different experience than using the magnifier and the training tasks will not make sense with this setup
+Note: This will be a different experience than using the magnifier
 
 
 ## Ashleigh

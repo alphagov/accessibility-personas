@@ -178,6 +178,10 @@ div.govuk-fieldset__legend + .govuk-radios {
   float: right;
 }
 
+div.govuk-label + input.govuk-\!-width-one-quarter {
+  width: 25% !important;
+}
+
 /*
   This fixes an odd behaviour with Claudia's bad example page:
   Although we intentionally removed the labels before the form fields,
