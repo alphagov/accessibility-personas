@@ -21,7 +21,7 @@ More about the [persona on GOV.UK](https://www.gov.uk/government/publications/un
 
 ## Chromebook help
 
-Selecting the text and pressing 'Search + S' will read out the text.
+Selecting the text and pressing 'Search + S' will read out the text. (When not on a Chromebook, just select the text.)
 
 You will have to stop the simulation for this to work properly: Select the Tampermonkey icon <img src="https://tampermonkey.freetls.fastly.net/images/icon.png" style="width: 16px; height: 16px;" alt="" /> next to the address bar and click "Enabled".
 

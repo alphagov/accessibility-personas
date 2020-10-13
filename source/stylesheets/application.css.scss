@@ -13,7 +13,18 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 @import "govuk/components/panel/panel";
 @import "govuk/components/radios/radios";
 
+/*
+  Heading anchors are confusing screen reader users doing Ashleigh's tasks.
+  This hides their icons from anything without a sidebar. It's a bit of a hack.
+  Pages with sidebars are more likely to be documentation and to benefit from the anchors.
+*/
+.app-pane__body:not([data-module="in-page-navigation"]) .anchored-heading__icon {
+  display: none;
+}
+
 /* ____________ example snippets ____________ */
+
+/* pagination */
 
 .pagination {
   padding-top: 1em;
@@ -24,6 +35,8 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
   border: 2px solid;
   margin-right: .5em;
 }
+
+/* large_blocks_of_text */
 
 .govuk-panel.bad {
   color: $govuk-border-colour;
@@ -36,6 +49,8 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 .govuk-panel.good .govuk-panel__body {
   font-size: 24px;
 }
+
+/* table */
 
 .fullscreen-scrollable-table {
   overflow-x: auto;
@@ -74,6 +89,8 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
     white-space: nowrap;
   }
 }
+
+/* tooltip (used in table) */
 
 .tooltip-trigger {
   color: $govuk-link-colour;
@@ -123,6 +140,8 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
   box-shadow: 0 0 0 $govuk-focus-width $govuk-focus-colour;
 }
 
+/* refer_to_colour */
+
 .govuk-button.red {
   background-color: $govuk-error-colour;
 }
@@ -135,6 +154,8 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
   display: inline-block;
 }
 
+/* icon_font */
+
 /* make icons from icon font bigger */
 .social-media > span {
   font-size: 200%;
@@ -145,6 +166,22 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
   text-decoration: none;
 }
 
+/* form_field */
+
+div.govuk-label,
+div.govuk-fieldset__legend {
+  float: left;
+}
+
+div.govuk-label + input,
+div.govuk-fieldset__legend + .govuk-radios {
+  float: right;
+}
+
+div.govuk-label + input.govuk-\!-width-one-quarter {
+  width: 25% !important;
+}
+
 /*
   This fixes an odd behaviour with Claudia's bad example page:
   Although we intentionally removed the labels before the form fields,
@@ -153,15 +190,6 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 */
 .govuk-form-group:after {
   width: 0;
-}
-
-/*
-  Heading anchors are confusing screen reader users doing Ashleigh's tasks.
-  This hides their icons from anything without a sidebar. It's a bit of a hack.
-  Pages with sidebars are more likely to be documentation and to benefit from the anchors.
-*/
-.app-pane__body:not([data-module="in-page-navigation"]) .anchored-heading__icon {
-  display: none;
 }
 
 

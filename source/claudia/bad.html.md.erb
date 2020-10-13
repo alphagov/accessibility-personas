@@ -6,6 +6,7 @@ title: Issues for Claudia
 <style>
 #content {
   max-width: 50em;
+  min-width:  960px;
 }
 </style>
 <% end %>
@@ -20,7 +21,7 @@ title: Issues for Claudia
 ## Quiz questions
 
 <form action="<%= url_for '/fake.html' %>" method="get">
-  <%= partial "/_example_snippets/form_fields_no_label/bad", locals: { right_align_inputs: true } %>
+  <%= partial "/_example_snippets/form_fields_no_label/bad" %>
 
   <button class="govuk-button" data-module="govuk-button">
     Send
