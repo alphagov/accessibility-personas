@@ -21,11 +21,30 @@ More about the [persona on GOV.UK](https://www.gov.uk/government/publications/un
 
 ## Chromebook help
 
-Navigate with the tab key. Navigate back with 'Shift + Tab'.
-If you're stuck, use the touchscreen. 'Ctrl + Alt + /' shows keyboard shortcuts.
+Navigate with the keyboard:
 
-Start using voice control (only in the browser) by saying "wake up". Other commands: "click" (and then follow the on-screen instructions, often saying a number), "scroll down", "scroll up", "help".
-If it doesn’t work, restart the extension.
+* press 'Tab' to go to the next link or form element
+* press 'Shift + Tab' to go back to the previous link or form element
+* press arrow keys to move between radio buttons
+* press 'Space' to select radio button or checkbox
+* press 'Enter' to follow a link or submit a form
+* press 'Esc' to close things
+
+If you're stuck, use the touchscreen.<br />
+'Ctrl + Alt + /' shows keyboard shortcuts (only on a Chromebook).
+
+Start voice control:
+
+* it might already be running, say a command (see below) to find out, there should be a round microphone icon in the bottom left corner
+* if it's running but 'asleep', say "wake up"
+* if it's not running, click on the 'Handsfree for Web' icon <img src="https://www.handsfreeforweb.com/img/favicon-16x16.png" style="width: 16px; height: 16px;" alt="" /> next to the address bar
+* if it's unresponsive, restart the extension
+
+Use voice control commands (only in the browser):
+
+* say "click" and then follow the on-screen instructions, often saying a number
+* say "scroll down" and "scroll up" to scroll the page
+* say "help" to show a list of useful commands
 
 
 ## Training tasks
