@@ -145,6 +145,16 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
   text-decoration: none;
 }
 
+div.govuk-label,
+div.govuk-fieldset__legend {
+  float: left;
+}
+
+div.govuk-label + input,
+div.govuk-fieldset__legend + .govuk-radios {
+  float: right;
+}
+
 /*
   This fixes an odd behaviour with Claudia's bad example page:
   Although we intentionally removed the labels before the form fields,
