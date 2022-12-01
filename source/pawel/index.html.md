@@ -1,5 +1,5 @@
 ---
-title: Pawel, user with Asperger's
+title: Pawel, an autistic user
 parent: /index.html
 ---
 
@@ -12,7 +12,7 @@ parent: /index.html
 
 * 24 year old chemistry graduate
 
-* Asperger's and anxiety
+* Autism and anxiety
 
 * adjusts things, like colours, to reduce potential stress and distractions
 

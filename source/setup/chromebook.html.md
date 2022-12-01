@@ -71,14 +71,15 @@ Ashleigh
 To set up the simulation for Ashleigh's condition:
 
 * install the extension [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-* open [heavy-blur.user.css](raw_assets/heavy-blur.user.css) in the browser (once per device)
-* when Stylus opens, select the "Install style" button (once per device)
+* open its options, select a cloud provider under "Sync to cloud" and connect to it (once per device)
+* open [heavy-blur.user.css](raw_assets/heavy-blur.user.css) in the browser
+* when Stylus opens, select the "Install style" button
 
 This will cause heavy blurring in the browser.
 
 ### Use Ashleigh's assistive technology
 
-To set up the assistive technology used by Claudia go to the system menu and select:
+To set up the assistive technology used by Ashleigh go to the system menu and select:
 
 * Accessibility > ChromeVox (once per device)
 
@@ -100,8 +101,9 @@ Ron
 To set up the simulation for Ron's condition:
 
 * install the extension [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-* open [light-blur.user.css](raw_assets/light-blur.user.css) in the browser (once per device)
-* when Stylus opens, select the "Install style" button (once per device)
+* open its options, select a cloud provider under "Sync to cloud" and connect to it (once per device)
+* open [light-blur.user.css](raw_assets/light-blur.user.css) in the browser
+* when Stylus opens, select the "Install style" button
 * install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 * follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 * open [wobbly-mouse.user.js](raw_assets/wobbly-mouse.user.js) in the browser
@@ -130,8 +132,9 @@ Chris
 To set up the simulation for Chris' condition:
 
 * install the extension [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-* open [remove-cursor.user.css](raw_assets/remove-cursor.user.css) in the browser (once per device)
-* when Stylus opens, select the "Install style" button (once per device)
+* open its options, select a cloud provider under "Sync to cloud" and connect to it (once per device)
+* open [remove-cursor.user.css](raw_assets/remove-cursor.user.css) in the browser
+* when Stylus opens, select the "Install style" button
 
 This will cause the mouse pointer to disappear in the browser.
 
@@ -166,8 +169,9 @@ To set up the simulation for Pawel's condition:
 
 * install the extension [Chrome Sound Effects](https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla)
 * install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-* open [distractions.user.css](raw_assets/distractions.user.css) in the browser (once per device)
-* when Stylus opens, select the "Install style" button (once per device)
+* open its options, select a cloud provider under "Sync to cloud" and connect to it (once per device)
+* open [distractions.user.css](raw_assets/distractions.user.css) in the browser
+* when Stylus opens, select the "Install style" button
 * install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 * follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 * open [distractions.user.js](raw_assets/distractions.user.js) in the browser
@@ -209,7 +213,7 @@ This will cause the letters in the browser to scramble.
 
 To set up the assistive technology used by Simone:
 
-* install the extension [OpenDyslexic Font for Chrome](https://chrome.google.com/webstore/detail/opendyslexic-font-for-chr/cdnapgfjopgaggbmfgbiinmmbdcglnam)
+* install the extension [Dyslexia Friendly](https://chrome.google.com/webstore/detail/dyslexia-friendly/miepjgfkkommhllbbjaedffcpkncboeo)
 * install the extension [nOverlay](https://chrome.google.com/webstore/detail/noverlay/clhfmmanmdkmblpljegdibilonemohdo) (yellow)
 * go to the system menu and select: Accessibility > Select-to-Speak (this should not be used while the simulation is running)
 

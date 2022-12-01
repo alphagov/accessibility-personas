@@ -26,7 +26,7 @@ Screen reader quick guide:
 * press 'Tab' to go to the next link or form element
 * press 'Shift + Tab' to go back to the previous link or form element
 * press 'Search + Arrow Right/Left' to read text in between those (or 'Shift + Alt + Arrow Right/Left' on Windows or 'Cmd + Ctrl + Arrow Right/Left' on Mac)
-* [learn more shortcuts](https://www.chromevox.com/keyboard_shortcuts.html)
+* learn more [shortcuts for Chromebooks](https://support.google.com/chromebook/answer/7031755) and [shortcuts for the Chrome extension](http://web.archive.org/web/20200121050553/https://www.chromevox.com/keyboard_shortcuts.html)
 
 
 ## Training tasks

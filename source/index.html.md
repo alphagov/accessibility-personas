@@ -10,7 +10,7 @@ The GDS Accessibility team has created 7 different accessibility personas. Each 
 * [Ashleigh](ashleigh/) -- a severely sight impaired screenreader user
 * [Ron](ron/) -- an older user with multiple conditions
 * [Chris](chris/) -- a user with rheumatoid arthritis
-* [Pawel](pawel/) -- a user with Asperger's
+* [Pawel](pawel/) -- an autistic user
 * [Simone](simone/) -- a dyslexic user
 * [Saleem](saleem/) -- a profoundly deaf user
 

@@ -14,7 +14,7 @@ parent: /index.html
 
 * Deaf
 
-* Uses BSL as his main language, English is his second language, always has video captions switched on
+* Uses British Sign Language as his main language, English is his second language, always has video captions switched on
 
 More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/saleem-profoundly-deaf-user) and [how to set it up](../setup/chromebook.html#saleem)
 
