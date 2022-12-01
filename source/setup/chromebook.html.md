@@ -209,7 +209,7 @@ This will cause the letters in the browser to scramble.
 
 To set up the assistive technology used by Simone:
 
-* install the extension [OpenDyslexic Font for Chrome](https://chrome.google.com/webstore/detail/opendyslexic-font-for-chr/cdnapgfjopgaggbmfgbiinmmbdcglnam)
+* install the extension [Dyslexia Friendly](https://chrome.google.com/webstore/detail/dyslexia-friendly/miepjgfkkommhllbbjaedffcpkncboeo)
 * install the extension [nOverlay](https://chrome.google.com/webstore/detail/noverlay/clhfmmanmdkmblpljegdibilonemohdo) (yellow)
 * go to the system menu and select: Accessibility > Select-to-Speak (this should not be used while the simulation is running)
 
