@@ -78,7 +78,7 @@ This will cause heavy blurring in the browser.
 
 ### Use Ashleigh's assistive technology
 
-To set up the assistive technology used by Claudia go to the system menu and select:
+To set up the assistive technology used by Ashleigh go to the system menu and select:
 
 * Accessibility > ChromeVox (once per device)
 
