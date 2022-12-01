@@ -25,7 +25,7 @@ You can also set up [personas in Chrome browsers](chrome.html) on any operating 
 | Claudia  | Magnifier, high contrast, etc    | (none)                                    |
 | Ashleigh | Screen reader                    | Blurred vision                            |
 | Ron      | (none)                           | Mildly blurred vision, wobbly pointer     |
-| Chris    | Voice control                    | Disabled mouse or trackpad                |
+| Chris    | Voice control                    | Disabled mouse or trackpad, grey colours  |
 | Pawel    | Soothing colours                 | Distracting sounds, images and animations |
 | Simone   | Tinted background, Dyslexia font | Scrambled letters                         |
 | Saleem   | (none)                           | Translated to Pig Latin                   |

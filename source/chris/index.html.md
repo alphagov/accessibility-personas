@@ -12,7 +12,7 @@ parent: /index.html
 
 * 53 year old management accountant
 
-* rheumatoid arthritis
+* rheumatoid arthritis and colour vision deficiency (colour blindness)
 
 * uses keyboard only, no mouse and just started using voice control
 

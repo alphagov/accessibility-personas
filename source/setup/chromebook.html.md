@@ -134,9 +134,10 @@ To set up the simulation for Chris' condition:
 * install the extension [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 * open its options, select a cloud provider under "Sync to cloud" and connect to it (once per device)
 * open [remove-cursor.user.css](raw_assets/remove-cursor.user.css) in the browser
+* open [monochrome.user.css](raw_assets/monochrome.user.css) in the browser
 * when Stylus opens, select the "Install style" button
 
-This will cause the mouse pointer to disappear in the browser.
+This will cause the mouse pointer to disappear in the browser and colours to turn grey.
 
 ### Use Chris' assistive technology
 
