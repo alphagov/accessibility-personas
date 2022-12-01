@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Scramble letters
 // @namespace    https://github.com/alphagov/accessibility-personas
-// @version      1.0.1
+// @version      1.0.2
 // @license      MIT
-// @author       Victor Widell, Andrew Kennedy [https://github.com/geon/geon.github.com/pull/3] and Crown Copyright (Government Digital Service)
+// @author       Victor Widell and Andrew Kennedy [https://github.com/geon/geon.github.com/pull/3] and Crown Copyright (Government Digital Service)
 // @description  Scramble letters within words to simulate some form of dyslexia
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
 // @include      *
@@ -15,16 +15,40 @@
 
   'use strict';
 
-  // create a list of text nodes to be messed up
-  function getTextNodes() {
-    var nodes = [];
-    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-    while (walker.nextNode()) {
-      nodes.push(walker.currentNode);
+  // general-purpose tree walker
+  // @source: https://gist.github.com/Sphinxxxx/ed372d176c5c2c1fd9ea1d8d6801989b
+  // @author: Andreas Borgen and Gavin Kistner
+  function walkNodeTree(root, options) {
+    options = options || {};
+
+    const inspect = options.inspect || (n => true),
+          collect = options.collect || (n => true);
+    const walker = document.createTreeWalker(
+      root,
+      NodeFilter.SHOW_ALL,
+      {
+        acceptNode: function(node) {
+          if(!inspect(node)) { return NodeFilter.FILTER_REJECT; }
+          if(!collect(node)) { return NodeFilter.FILTER_SKIP; }
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      }
+    );
+
+    const nodes = []; let n;
+    while(n = walker.nextNode()) {
+      options.callback && options.callback(n);
+      nodes.push(n);
     }
+
     return nodes;
   }
-  var textNodes = getTextNodes();
+
+  // create a list of text nodes to be messed up
+  var textNodes = walkNodeTree(document.body, {
+    inspect: n => !['STYLE', 'SCRIPT'].includes(n.nodeName),
+    collect: n => (n.nodeType === Node.TEXT_NODE)
+  });
 
   var iterateFunction = function () {
     for (var i = 0; i < textNodes.length; i++) {
