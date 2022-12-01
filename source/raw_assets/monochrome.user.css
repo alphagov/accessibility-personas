@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name         Monochrome
+@namespace    https://github.com/alphagov/accessibility-personas
+@version      1.0.0
+@license      MIT
+@author       Crown Copyright (Government Digital Service)
+@description  Remove colours and make everything monochrome to simulate some form of colour vision deficiency
+@homepageURL  https://alphagov.github.io/accessibility-personas/
+==/UserStyle== */
+
+* {
+  filter: grayscale(1) !important;
+}

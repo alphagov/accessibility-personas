@@ -12,7 +12,7 @@ parent: /index.html
 
 * 53 year old management accountant
 
-* rheumatoid arthritis
+* rheumatoid arthritis and colour vision deficiency (colour blindness)
 
 * uses keyboard only, no mouse and just started using voice control
 
@@ -54,7 +54,7 @@ There are 2 versions of an example page. Version 1 shows the issues Chris experi
 Do the following tasks logged in as Chris:
 
 1. There is a table. Its country column includes an explanation indicated by a question mark. Try to select that question mark to find out what the explanation is.
-2. The end date column might be hidden. Try to find out what the end date of the Algeria entry is.
+2. There are a couple of buttons below the table. Try to select the correct button.
 
 [Version 1 - issues for Chris](bad.html)
 
