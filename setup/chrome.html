@@ -31,7 +31,7 @@
 
     <div class="app-pane">
       <div class="app-pane__header toc-open-disabled">
-        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+        <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
         <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-header__container--full-width">
@@ -44,9 +44,9 @@
         <strong class="govuk-tag">Beta</strong>
     </div>
     <div class="govuk-header__content">
-      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-      <nav>
-        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="../">Personas</a>
             </li>
@@ -62,16 +62,16 @@
       </div>
 
         <div id="toc-heading" class="toc-show fixedsticky">
-          <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
+          <button type="button" class="toc-show__label js-toc-show" aria-controls="toc">
             Table of contents <span class="toc-show__icon"></span>
-          </a>
+          </button>
         </div>
 
       <div class="app-pane__body" data-module="in-page-navigation">
           <div class="app-pane__toc">
-            <div class="toc" data-module="table-of-contents">
+            <div class="toc" data-module="table-of-contents" tabindex="-1" aria-label="Table of contents" role="dialog">
               
-              <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
+              <button type="button" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></button>
               <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
                       <ul>
   <li>
@@ -97,13 +97,17 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="setting-up-personas-in-chrome">Setting up personas in Chrome</h1><p>Follow the instructions on <a href="chromebook.html">setting up personas on Chromebooks</a>. Whenever a feature is not available in the Chrome browser, follow the instructions below.</p>
-<h2 id="claudia">Claudia</h2><p>Instead of using High Contrast mode, install the <a href="https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph">High Contrast extension</a></p>
+            <h1 id="setting-up-personas-in-chrome">Setting up personas in Chrome</h1>
+<p>Follow the instructions on <a href="chromebook.html">setting up personas on Chromebooks</a>. Whenever a feature is not available in the Chrome browser, follow the instructions below.</p>
+<h2 id="claudia">Claudia</h2>
+<p>Instead of using High Contrast mode, install the <a href="https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph">High Contrast extension</a></p>
 <p>Instead of using the magnifier, zoom in via Settings &gt; Appearance &gt; Page zoom: select &ldquo;400%&rdquo; (once per device)</p>
 <p>Note: This will be a different experience than using the magnifier</p>
-<h2 id="ashleigh">Ashleigh</h2><p>Instead of using the ChromeVox version that comes with Chromebooks, install the <a href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn">ChromeVox extension</a></p>
+<h2 id="ashleigh">Ashleigh</h2>
+<p>Instead of using the ChromeVox version that comes with Chromebooks, install the <a href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn">ChromeVox extension</a></p>
 <p>Note: This will have different shortcuts than the Chromebook version, for example, instead of &lsquo;Search + Arrow Right/Left&rsquo; to read the next/previous text, use &lsquo;Shift + Alt + Arrow Right/Left&rsquo; on Windows and &lsquo;Cmd + Ctrl + Arrow Right/Left&rsquo; on Mac</p>
-<h2 id="simone">Simone</h2><p>Instead of using Select-to-Speak and the nOverlay extension, install the <a href="https://chrome.google.com/webstore/detail/claroread-chrome/ifgehbglgmidafhhdcopacejknmcmhcd">ClaroRead extension</a></p>
+<h2 id="simone">Simone</h2>
+<p>Instead of using Select-to-Speak and the nOverlay extension, install the <a href="https://chrome.google.com/webstore/detail/claroread-chrome/ifgehbglgmidafhhdcopacejknmcmhcd">ClaroRead extension</a></p>
 <p>Go to the settings and untick &ldquo;Click and play&rdquo;, switch to the &ldquo;Overlay&rdquo; tab and tick &ldquo;coloured overlay&rdquo; as well as choose some light yellow as the &ldquo;Overlay Colour&rdquo;</p>
 <p>Note: Let text be read out by just selecting the text, no need to press &lsquo;Search + S&rsquo;</p>
 
@@ -113,7 +117,7 @@
           <aside>
               <ul class="contribution-banner">
                 <li><a href="https://github.com/alphagov/accessibility-personas/blob/master/source/setup/chrome.html.md">View source</a></li>
-                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?labels=bug&amp;title=Re:%20'Setting%20up%20personas%20in%20Chrome'&amp;body=Problem%20with%20'Setting%20up%20personas%20in%20Chrome'%20(https://alphagov.github.io/accessibility-personas/setup/chrome.html)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?body=Problem+with+%27Setting+up+personas+in+Chrome%27+%28https%3A%2F%2Falphagov.github.io%2Faccessibility-personas%2Fsetup%2Fchrome.html%29&amp;labels=bug&amp;title=Re%3A+%27Setting+up+personas+in+Chrome%27">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/accessibility-personas">GitHub Repo</a></li>
               </ul>
           </aside>
@@ -165,6 +169,6 @@
     </div>
 
     
-    <script src="../javascripts/application-485def14.js"></script>
+    <script src="../javascripts/application-a35f3521.js"></script>
   </body>
 </html>

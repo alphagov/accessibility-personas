@@ -31,7 +31,7 @@
 
     <div class="app-pane">
       <div class="app-pane__header toc-open-disabled">
-        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+        <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
         <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-header__container--full-width">
@@ -44,9 +44,9 @@
         <strong class="govuk-tag">Beta</strong>
     </div>
     <div class="govuk-header__content">
-      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-      <nav>
-        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
               <a class="govuk-header__link" href="../">Personas</a>
             </li>
@@ -67,15 +67,18 @@
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <h1 id="chris">Chris</h1>
+
 <div><img src="../images/persona-avatars/chris-e6fe17a2.png" class="profile" alt="" /></div>
 <h2 id="about-the-persona">About the persona</h2>
+
 <ul>
 <li><p>53 year old management accountant</p></li>
-<li><p>rheumatoid arthritis</p></li>
+<li><p>rheumatoid arthritis and colour vision deficiency (colour blindness)</p></li>
 <li><p>uses keyboard only, no mouse and just started using voice control</p></li>
 </ul>
 <p>More about the <a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/christopher-user-with-rheumatoid-arthritis">persona on GOV.UK</a> and <a href="../setup/chromebook.html#chris">how to set it up</a></p>
-<h2 id="chromebook-help">Chromebook help</h2><p>Navigate with the keyboard:</p>
+<h2 id="chromebook-help">Chromebook help</h2>
+<p>Navigate with the keyboard:</p>
 
 <ul>
 <li>press &lsquo;Tab&rsquo; to go to the next link or form element</li>
@@ -102,12 +105,13 @@
 <li>say &ldquo;scroll down&rdquo; and &ldquo;scroll up&rdquo; to scroll the page</li>
 <li>say &ldquo;help&rdquo; to show a list of useful commands</li>
 </ul>
-<h2 id="training-tasks">Training tasks</h2><p>There are 2 versions of an example page. Version 1 shows the issues Chris experiences and version 2 shows the fixes that will help Chris. Do version 1 before version 2.</p>
+<h2 id="training-tasks">Training tasks</h2>
+<p>There are 2 versions of an example page. Version 1 shows the issues Chris experiences and version 2 shows the fixes that will help Chris. Do version 1 before version 2.</p>
 <p>Do the following tasks logged in as Chris:</p>
 
 <ol>
 <li>There is a table. Its country column includes an explanation indicated by a question mark. Try to select that question mark to find out what the explanation is.</li>
-<li>The end date column might be hidden. Try to find out what the end date of the Algeria entry is.</li>
+<li>There are a couple of buttons below the table. Try to select the correct button.</li>
 </ol>
 <p><a href="bad.html">Version 1 - issues for Chris</a></p>
 <p><a href="good.html">Version 2 - fixes for Chris</a></p>
@@ -118,7 +122,7 @@
           <aside>
               <ul class="contribution-banner">
                 <li><a href="https://github.com/alphagov/accessibility-personas/blob/master/source/chris/index.html.md">View source</a></li>
-                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?labels=bug&amp;title=Re:%20'Chris,%20user%20with%20rheumatoid%20arthritis'&amp;body=Problem%20with%20'Chris,%20user%20with%20rheumatoid%20arthritis'%20(https://alphagov.github.io/accessibility-personas/chris/)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?body=Problem+with+%27Chris%2C+user+with+rheumatoid+arthritis%27+%28https%3A%2F%2Falphagov.github.io%2Faccessibility-personas%2Fchris%2F%29&amp;labels=bug&amp;title=Re%3A+%27Chris%2C+user+with+rheumatoid+arthritis%27">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/accessibility-personas">GitHub Repo</a></li>
               </ul>
           </aside>
@@ -170,6 +174,6 @@
     </div>
 
     
-    <script src="../javascripts/application-485def14.js"></script>
+    <script src="../javascripts/application-a35f3521.js"></script>
   </body>
 </html>

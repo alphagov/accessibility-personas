@@ -31,7 +31,7 @@
 
     <div class="app-pane">
       <div class="app-pane__header toc-open-disabled">
-        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+        <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
         <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-header__container--full-width">
@@ -44,9 +44,9 @@
         <strong class="govuk-tag">Beta</strong>
     </div>
     <div class="govuk-header__content">
-      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-      <nav>
-        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
               <a class="govuk-header__link" href="../">Personas</a>
             </li>
@@ -67,23 +67,27 @@
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <h1 id="ashleigh">Ashleigh</h1>
+
 <div><img src="../images/persona-avatars/ashleigh-aa4bca8c.png" class="profile" alt="" /></div>
 <h2 id="about-the-persona">About the persona</h2>
+
 <ul>
 <li><p>24 year old arts graduate and administrative assistant</p></li>
 <li><p>severely sight impaired (blind)</p></li>
 <li><p>uses a screen reader</p></li>
 </ul>
 <p>More about the <a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ashleigh-partially-sighted-screenreader-user">persona on GOV.UK</a> and <a href="../setup/chromebook.html#ashleigh">how to set it up</a></p>
-<h2 id="chromebook-help">Chromebook help</h2><p>Screen reader quick guide:</p>
+<h2 id="chromebook-help">Chromebook help</h2>
+<p>Screen reader quick guide:</p>
 
 <ul>
 <li>press &lsquo;Tab&rsquo; to go to the next link or form element</li>
 <li>press &lsquo;Shift + Tab&rsquo; to go back to the previous link or form element</li>
 <li>press &lsquo;Search + Arrow Right/Left&rsquo; to read text in between those (or &lsquo;Shift + Alt + Arrow Right/Left&rsquo; on Windows or &lsquo;Cmd + Ctrl + Arrow Right/Left&rsquo; on Mac)</li>
-<li><a href="https://www.chromevox.com/keyboard_shortcuts.html">learn more shortcuts</a></li>
+<li>learn more <a href="https://support.google.com/chromebook/answer/7031755">shortcuts for Chromebooks</a> and <a href="http://web.archive.org/web/20200121050553/https://www.chromevox.com/keyboard_shortcuts.html">shortcuts for the Chrome extension</a></li>
 </ul>
-<h2 id="training-tasks">Training tasks</h2><p>There are 2 versions of an example page. Version 1 shows the issues Ashleigh experiences and version 2 shows the fixes that will help Ashleigh. Do version 1 before version 2.</p>
+<h2 id="training-tasks">Training tasks</h2>
+<p>There are 2 versions of an example page. Version 1 shows the issues Ashleigh experiences and version 2 shows the fixes that will help Ashleigh. Do version 1 before version 2.</p>
 <p>Do the following tasks logged in as Ashleigh:</p>
 
 <ol>
@@ -99,7 +103,7 @@
           <aside>
               <ul class="contribution-banner">
                 <li><a href="https://github.com/alphagov/accessibility-personas/blob/master/source/ashleigh/index.html.md">View source</a></li>
-                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?labels=bug&amp;title=Re:%20'Ashleigh,%20severely%20sight%20impaired%20screenreader%20user'&amp;body=Problem%20with%20'Ashleigh,%20severely%20sight%20impaired%20screenreader%20user'%20(https://alphagov.github.io/accessibility-personas/ashleigh/)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?body=Problem+with+%27Ashleigh%2C+severely+sight+impaired+screenreader+user%27+%28https%3A%2F%2Falphagov.github.io%2Faccessibility-personas%2Fashleigh%2F%29&amp;labels=bug&amp;title=Re%3A+%27Ashleigh%2C+severely+sight+impaired+screenreader+user%27">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/accessibility-personas">GitHub Repo</a></li>
               </ul>
           </aside>
@@ -151,6 +155,6 @@
     </div>
 
     
-    <script src="../javascripts/application-485def14.js"></script>
+    <script src="../javascripts/application-a35f3521.js"></script>
   </body>
 </html>

@@ -31,7 +31,7 @@
 
     <div class="app-pane">
       <div class="app-pane__header toc-open-disabled">
-        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+        <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
         <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-header__container--full-width">
@@ -44,9 +44,9 @@
         <strong class="govuk-tag">Beta</strong>
     </div>
     <div class="govuk-header__content">
-      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-      <nav>
-        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
               <a class="govuk-header__link" href="../">Personas</a>
             </li>
@@ -67,16 +67,20 @@
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <h1 id="ron">Ron</h1>
+
 <div><img src="../images/persona-avatars/ron-5a0bf1d7.png" class="profile" alt="" /></div>
 <h2 id="about-the-persona">About the persona</h2>
+
 <ul>
 <li><p>82 years old, retired</p></li>
 <li><p>multiple conditions: arthritis, hearing loss, cataracts, hip replacements</p></li>
 <li><p>does not use any assistive technology</p></li>
 </ul>
 <p>More about the <a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ron-older-user-with-multiple-conditions">persona on GOV.UK</a> and <a href="../setup/chromebook.html#ron">how to set it up</a></p>
-<h2 id="chromebook-help">Chromebook help</h2><p>As Ron is not very technical, do not use anything which might help. For example, do not zoom into the page and do not use the keyboard to navigate.</p>
-<h2 id="training-tasks">Training tasks</h2><p>There are 2 versions of an example page. Version 1 shows the issues Ron experiences and version 2 shows the fixes that will help Ron. Do version 1 before version 2.</p>
+<h2 id="chromebook-help">Chromebook help</h2>
+<p>As Ron is not very technical, do not use anything which might help. For example, do not zoom into the page and do not use the keyboard to navigate.</p>
+<h2 id="training-tasks">Training tasks</h2>
+<p>There are 2 versions of an example page. Version 1 shows the issues Ron experiences and version 2 shows the fixes that will help Ron. Do version 1 before version 2.</p>
 <p>Do the following tasks logged in as Ron:</p>
 
 <ol>
@@ -92,7 +96,7 @@
           <aside>
               <ul class="contribution-banner">
                 <li><a href="https://github.com/alphagov/accessibility-personas/blob/master/source/ron/index.html.md">View source</a></li>
-                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?labels=bug&amp;title=Re:%20'Ron,%20older%20user%20with%20multiple%20conditions'&amp;body=Problem%20with%20'Ron,%20older%20user%20with%20multiple%20conditions'%20(https://alphagov.github.io/accessibility-personas/ron/)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?body=Problem+with+%27Ron%2C+older+user+with+multiple+conditions%27+%28https%3A%2F%2Falphagov.github.io%2Faccessibility-personas%2Fron%2F%29&amp;labels=bug&amp;title=Re%3A+%27Ron%2C+older+user+with+multiple+conditions%27">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/accessibility-personas">GitHub Repo</a></li>
               </ul>
           </aside>
@@ -144,6 +148,6 @@
     </div>
 
     
-    <script src="../javascripts/application-485def14.js"></script>
+    <script src="../javascripts/application-a35f3521.js"></script>
   </body>
 </html>

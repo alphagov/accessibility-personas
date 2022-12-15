@@ -31,7 +31,7 @@
 
     <div class="app-pane">
       <div class="app-pane__header toc-open-disabled">
-        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+        <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
         <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-header__container--full-width">
@@ -44,9 +44,9 @@
         <strong class="govuk-tag">Beta</strong>
     </div>
     <div class="govuk-header__content">
-      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-      <nav>
-        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="../">Personas</a>
             </li>
@@ -62,16 +62,16 @@
       </div>
 
         <div id="toc-heading" class="toc-show fixedsticky">
-          <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
+          <button type="button" class="toc-show__label js-toc-show" aria-controls="toc">
             Table of contents <span class="toc-show__icon"></span>
-          </a>
+          </button>
         </div>
 
       <div class="app-pane__body" data-module="in-page-navigation">
           <div class="app-pane__toc">
-            <div class="toc" data-module="table-of-contents">
+            <div class="toc" data-module="table-of-contents" tabindex="-1" aria-label="Table of contents" role="dialog">
               
-              <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
+              <button type="button" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></button>
               <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
                       <ul>
   <li>
@@ -189,9 +189,11 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="setting-up-personas-on-chromebooks">Setting up personas on Chromebooks</h1><p>You need to create a Google account for each persona first. Be aware that setting up more than one account can be challenging.</p>
+            <h1 id="setting-up-personas-on-chromebooks">Setting up personas on Chromebooks</h1>
+<p>You need to create a Google account for each persona first. Be aware that setting up more than one account can be challenging.</p>
 <p>When you follow the instructions below to set up a profile you only need to do each action once, unless it explicitly states to do it once per device.</p>
-<h2 id="change-settings-for-all-personas">Change settings for all personas</h2><p>Remove everything from the shelf/dock except Chrome. This helps people focus on the only app the persona should be using.</p>
+<h2 id="change-settings-for-all-personas">Change settings for all personas</h2>
+<p>Remove everything from the shelf/dock except Chrome. This helps people focus on the only app the persona should be using.</p>
 <p>Select the following options from the system menu. Go to:</p>
 
 <ul>
@@ -206,8 +208,11 @@
 <li>Settings &gt; enable Appearance: Show Home button &gt; Enter custom web address: https://alphagov.github.io/accessibility-personas/[persona]/ - this makes it easier to go back to each persona&rsquo;s page</li>
 <li>Settings &gt; On start-up &gt; Open a specific page or set of pages &gt; Add a new page &gt; https://alphagov.github.io/accessibility-personas/[persona]/ (Note that the settings are retained, but the pages only open during system start-up.) - this makes sure the persona&rsquo;s page is already showing whenever the Chromebook gets restarted</li>
 </ul>
-<h2 id="claudia">Claudia</h2><h3 id="simulate-claudia-39-s-condition">Simulate Claudia&rsquo;s condition</h3><p>There is no technical simulation for this persona, but you can use low tech solutions such as simulation glasses.</p>
-<h3 id="use-claudia-39-s-assistive-technology">Use Claudia&rsquo;s assistive technology</h3><p>To set up the assistive technology used by Claudia go to the system menu and select:</p>
+<h2 id="claudia">Claudia</h2>
+<h3 id="simulate-claudia-39-s-condition">Simulate Claudia&rsquo;s condition</h3>
+<p>There is no technical simulation for this persona, but you can use low tech solutions such as simulation glasses.</p>
+<h3 id="use-claudia-39-s-assistive-technology">Use Claudia&rsquo;s assistive technology</h3>
+<p>To set up the assistive technology used by Claudia go to the system menu and select:</p>
 
 <ul>
 <li>Accessibility &gt; High contrast mode</li>
@@ -220,56 +225,72 @@
 </ul>
 <p>This will magnify the screen to 400%, adjust the colours and highlight interactive elements.</p>
 <h3 id="information-and-status-for-claudia">Information and status for Claudia</h3>
+
 <ul>
 <li><a href="../claudia/">Information about Claudia</a></li>
 <li>Status: Tested and iterated multiple times</li>
 </ul>
-<h2 id="ashleigh">Ashleigh</h2><h3 id="simulate-ashleigh-39-s-condition">Simulate Ashleigh&rsquo;s condition</h3><p>To set up the simulation for Ashleigh&rsquo;s condition:</p>
+<h2 id="ashleigh">Ashleigh</h2>
+<h3 id="simulate-ashleigh-39-s-condition">Simulate Ashleigh&rsquo;s condition</h3>
+<p>To set up the simulation for Ashleigh&rsquo;s condition:</p>
 
 <ul>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Stylus</a></li>
-<li>open <a href="../raw_assets/heavy-blur.user.css">heavy-blur.user.css</a> in the browser (once per device)</li>
-<li>when Stylus opens, select the &ldquo;Install style&rdquo; button (once per device)</li>
+<li>open its options, select a cloud provider under &ldquo;Sync to cloud&rdquo; and connect to it (once per device)</li>
+<li>open <a href="../raw_assets/heavy-blur.user.css">heavy-blur.user.css</a> in the browser</li>
+<li>when Stylus opens, select the &ldquo;Install style&rdquo; button</li>
 </ul>
 <p>This will cause heavy blurring in the browser.</p>
-<h3 id="use-ashleigh-39-s-assistive-technology">Use Ashleigh&rsquo;s assistive technology</h3><p>To set up the assistive technology used by Claudia go to the system menu and select:</p>
+<h3 id="use-ashleigh-39-s-assistive-technology">Use Ashleigh&rsquo;s assistive technology</h3>
+<p>To set up the assistive technology used by Ashleigh go to the system menu and select:</p>
 
 <ul>
 <li>Accessibility &gt; ChromeVox (once per device)</li>
 </ul>
 <p>This will start a screen reader.</p>
 <h3 id="information-and-status-for-ashleigh">Information and status for Ashleigh</h3>
+
 <ul>
 <li><a href="../ashleigh/">Information about Ashleigh</a></li>
 <li>Status: Tested and iterated once</li>
 </ul>
-<h2 id="ron">Ron</h2><h3 id="simulate-ron-39-s-condition">Simulate Ron&rsquo;s condition</h3><p>To set up the simulation for Ron&rsquo;s condition:</p>
+<h2 id="ron">Ron</h2>
+<h3 id="simulate-ron-39-s-condition">Simulate Ron&rsquo;s condition</h3>
+<p>To set up the simulation for Ron&rsquo;s condition:</p>
 
 <ul>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Stylus</a></li>
-<li>open <a href="../raw_assets/light-blur.user.css">light-blur.user.css</a> in the browser (once per device)</li>
-<li>when Stylus opens, select the &ldquo;Install style&rdquo; button (once per device)</li>
+<li>open its options, select a cloud provider under &ldquo;Sync to cloud&rdquo; and connect to it (once per device)</li>
+<li>open <a href="../raw_assets/light-blur.user.css">light-blur.user.css</a> in the browser</li>
+<li>when Stylus opens, select the &ldquo;Install style&rdquo; button</li>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a></li>
 <li>follow the <a href="https://tampermonkey.net/faq.php?ext=dhdg#Q105">instructions to allow script syncing</a> (once per device)</li>
 <li>open <a href="../raw_assets/wobbly-mouse.user.js">wobbly-mouse.user.js</a> in the browser</li>
 <li>when Tampermonkey opens, select on the &ldquo;Install&rdquo; button</li>
 </ul>
 <p>This will cause light blurring in the browser and the mouse pointer to wobble.</p>
-<h3 id="use-ron-39-s-assistive-technology">Use Ron&rsquo;s assistive technology</h3><p>None, Ron does not use any assistive technology</p>
+<h3 id="use-ron-39-s-assistive-technology">Use Ron&rsquo;s assistive technology</h3>
+<p>None, Ron does not use any assistive technology</p>
 <h3 id="information-and-status-for-ron">Information and status for Ron</h3>
+
 <ul>
 <li><a href="../ron/">Information about Ron</a></li>
 <li>Status: Tested and iterated multiple times</li>
 </ul>
-<h2 id="chris">Chris</h2><h3 id="simulate-chris-39-condition">Simulate Chris&rsquo; condition</h3><p>To set up the simulation for Chris&rsquo; condition:</p>
+<h2 id="chris">Chris</h2>
+<h3 id="simulate-chris-39-condition">Simulate Chris&rsquo; condition</h3>
+<p>To set up the simulation for Chris&rsquo; condition:</p>
 
 <ul>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Stylus</a></li>
-<li>open <a href="../raw_assets/remove-cursor.user.css">remove-cursor.user.css</a> in the browser (once per device)</li>
-<li>when Stylus opens, select the &ldquo;Install style&rdquo; button (once per device)</li>
+<li>open its options, select a cloud provider under &ldquo;Sync to cloud&rdquo; and connect to it (once per device)</li>
+<li>open <a href="../raw_assets/remove-cursor.user.css">remove-cursor.user.css</a> in the browser</li>
+<li>open <a href="../raw_assets/monochrome.user.css">monochrome.user.css</a> in the browser</li>
+<li>when Stylus opens, select the &ldquo;Install style&rdquo; button</li>
 </ul>
-<p>This will cause the mouse pointer to disappear in the browser.</p>
-<h3 id="use-chris-39-assistive-technology">Use Chris&rsquo; assistive technology</h3><p>To set up the assistive technology used by Chris:</p>
+<p>This will cause the mouse pointer to disappear in the browser and colours to turn grey.</p>
+<h3 id="use-chris-39-assistive-technology">Use Chris&rsquo; assistive technology</h3>
+<p>To set up the assistive technology used by Chris:</p>
 
 <ul>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/handsfree-for-web-voice-c/ldfboinpfdahkgnljbkohgimhimmafip">Handsfree for Web</a> (give permissions once per device)</li>
@@ -283,35 +304,43 @@
 </ul>
 <p>This will start a voice control tool.</p>
 <h3 id="information-and-status-for-chris">Information and status for Chris</h3>
+
 <ul>
 <li><a href="../chris/">Information about Chris</a></li>
 <li>Status: Tested and iterated once</li>
 </ul>
-<h2 id="pawel">Pawel</h2><h3 id="simulate-pawel-39-s-condition">Simulate Pawel&rsquo;s condition</h3><p>To set up the simulation for Pawel&rsquo;s condition:</p>
+<h2 id="pawel">Pawel</h2>
+<h3 id="simulate-pawel-39-s-condition">Simulate Pawel&rsquo;s condition</h3>
+<p>To set up the simulation for Pawel&rsquo;s condition:</p>
 
 <ul>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla">Chrome Sound Effects</a></li>
 <li>install extension: <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Stylus</a></li>
-<li>open <a href="../raw_assets/distractions.user.css">distractions.user.css</a> in the browser (once per device)</li>
-<li>when Stylus opens, select the &ldquo;Install style&rdquo; button (once per device)</li>
+<li>open its options, select a cloud provider under &ldquo;Sync to cloud&rdquo; and connect to it (once per device)</li>
+<li>open <a href="../raw_assets/distractions.user.css">distractions.user.css</a> in the browser</li>
+<li>when Stylus opens, select the &ldquo;Install style&rdquo; button</li>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a></li>
 <li>follow the <a href="https://tampermonkey.net/faq.php?ext=dhdg#Q105">instructions to allow script syncing</a> (once per device)</li>
 <li>open <a href="../raw_assets/distractions.user.js">distractions.user.js</a> in the browser</li>
 <li>when Tampermonkey opens, select the &ldquo;Install&rdquo; button</li>
 </ul>
 <p>This will create distracting animations, images and sounds.</p>
-<h3 id="use-pawel-39-s-assistive-technology">Use Pawel&rsquo;s assistive technology</h3><p>To set up the assistive technology used by Pawel:</p>
+<h3 id="use-pawel-39-s-assistive-technology">Use Pawel&rsquo;s assistive technology</h3>
+<p>To set up the assistive technology used by Pawel:</p>
 
 <ul>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/midnight-lizard/pbnndmlekkboofhnbonilimejonapojg">Midnight Lizard</a> (enable extension and give permissions once per device)</li>
 </ul>
 <p>This will adjust the colours in the browser.</p>
 <h3 id="information-and-status-for-pawel">Information and status for Pawel</h3>
+
 <ul>
 <li><a href="../pawel/">Information about Pawel</a></li>
 <li>Status: Tested and iterated multiple times</li>
 </ul>
-<h2 id="simone">Simone</h2><h3 id="simulate-simone-39-s-condition">Simulate Simone&rsquo;s condition</h3><p>To set up the simulation for Simone&rsquo;s condition:</p>
+<h2 id="simone">Simone</h2>
+<h3 id="simulate-simone-39-s-condition">Simulate Simone&rsquo;s condition</h3>
+<p>To set up the simulation for Simone&rsquo;s condition:</p>
 
 <ul>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a></li>
@@ -320,20 +349,24 @@
 <li>when Tampermonkey opens, select the &ldquo;Install&rdquo; button</li>
 </ul>
 <p>This will cause the letters in the browser to scramble.</p>
-<h3 id="use-simone-39-s-assistive-technology">Use Simone&rsquo;s assistive technology</h3><p>To set up the assistive technology used by Simone:</p>
+<h3 id="use-simone-39-s-assistive-technology">Use Simone&rsquo;s assistive technology</h3>
+<p>To set up the assistive technology used by Simone:</p>
 
 <ul>
-<li>install the extension <a href="https://chrome.google.com/webstore/detail/opendyslexic-font-for-chr/cdnapgfjopgaggbmfgbiinmmbdcglnam">OpenDyslexic Font for Chrome</a></li>
+<li>install the extension <a href="https://chrome.google.com/webstore/detail/dyslexia-friendly/miepjgfkkommhllbbjaedffcpkncboeo">Dyslexia Friendly</a></li>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/noverlay/clhfmmanmdkmblpljegdibilonemohdo">nOverlay</a> (yellow)</li>
 <li>go to the system menu and select: Accessibility &gt; Select-to-Speak (this should not be used while the simulation is running)</li>
 </ul>
 <p>This will give web pages a slight yellow tint, change the font and start a text to speech tool.</p>
 <h3 id="information-and-status-for-simone">Information and status for Simone</h3>
+
 <ul>
 <li><a href="../simone/">Information about Simone</a></li>
 <li>Status: Tested and iterated once</li>
 </ul>
-<h2 id="saleem">Saleem</h2><h3 id="simulate-saleem-39-s-condition">Simulate Saleem&rsquo;s condition</h3><p>To set up the simulation for Saleem&rsquo;s condition:</p>
+<h2 id="saleem">Saleem</h2>
+<h3 id="simulate-saleem-39-s-condition">Simulate Saleem&rsquo;s condition</h3>
+<p>To set up the simulation for Saleem&rsquo;s condition:</p>
 
 <ul>
 <li>install the extension <a href="https://chrome.google.com/webstore/detail/clever-mute/eadinjjkfelcokdlmoechclnmmmjnpdh">Clever Mute</a></li>
@@ -343,8 +376,10 @@
 <li>when Tampermonkey opens, select the &ldquo;Install&rdquo; button</li>
 </ul>
 <p>This will translate every text in the browser to Pig Latin.</p>
-<h3 id="use-saleem-39-s-assistive-technology">Use Saleem&rsquo;s assistive technology</h3><p>None</p>
+<h3 id="use-saleem-39-s-assistive-technology">Use Saleem&rsquo;s assistive technology</h3>
+<p>None</p>
 <h3 id="information-and-status-for-saleem">Information and status for Saleem</h3>
+
 <ul>
 <li><a href="../saleem/">Information about Saleem</a></li>
 <li>Status: Tested and iterated once</li>
@@ -356,7 +391,7 @@
           <aside>
               <ul class="contribution-banner">
                 <li><a href="https://github.com/alphagov/accessibility-personas/blob/master/source/setup/chromebook.html.md">View source</a></li>
-                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?labels=bug&amp;title=Re:%20'Setting%20up%20personas%20on%20Chromebooks'&amp;body=Problem%20with%20'Setting%20up%20personas%20on%20Chromebooks'%20(https://alphagov.github.io/accessibility-personas/setup/chromebook.html)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?body=Problem+with+%27Setting+up+personas+on+Chromebooks%27+%28https%3A%2F%2Falphagov.github.io%2Faccessibility-personas%2Fsetup%2Fchromebook.html%29&amp;labels=bug&amp;title=Re%3A+%27Setting+up+personas+on+Chromebooks%27">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/accessibility-personas">GitHub Repo</a></li>
               </ul>
           </aside>
@@ -408,6 +443,6 @@
     </div>
 
     
-    <script src="../javascripts/application-485def14.js"></script>
+    <script src="../javascripts/application-a35f3521.js"></script>
   </body>
 </html>

@@ -1,13 +1,13 @@
 /* ==UserStyle==
-@name         Light blur
+@name         Monochrome
 @namespace    https://github.com/alphagov/accessibility-personas
-@version      1.0.1
+@version      1.0.0
 @license      MIT
 @author       Crown Copyright (Government Digital Service)
-@description  Blur the screen lightly to simulate some form of a mild visual impairment
+@description  Remove colours and make everything monochrome to simulate some form of colour vision deficiency
 @homepageURL  https://alphagov.github.io/accessibility-personas/
 ==/UserStyle== */
 
-body {
-  filter: blur(.1em) brightness(120%);
+* {
+  filter: grayscale(1) !important;
 }

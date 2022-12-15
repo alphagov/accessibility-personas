@@ -36,7 +36,7 @@
 
     <div class="app-pane">
       <div class="app-pane__header toc-open-disabled">
-        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+        <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
         <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-header__container--full-width">
@@ -49,9 +49,9 @@
         <strong class="govuk-tag">Beta</strong>
     </div>
     <div class="govuk-header__content">
-      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-      <nav>
-        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="../">Personas</a>
             </li>
@@ -73,6 +73,7 @@
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <p><a href="index.html" class="govuk-back-link">Back</a></p>
 <h1 id="issues-for-chris">Issues for Chris</h1>
+
 <h2 id="country-register">Country register</h2>
 
 <div class="fullscreen-scrollable-table">
@@ -132,6 +133,19 @@
 </table>
 
 </div>
+<h2 id="click-the-green-button">Click the green button</h2>
+
+<form action="../success.html" method="get" class="game-button">
+  <button class="govuk-button" data-module="govuk-button">Submit</button>
+</form>
+
+<form action="../fail.html" method="get" class="game-button">
+  <button class="govuk-button blue" data-module="govuk-button">Save</button>
+</form>
+
+<form action="../fail.html" method="get" class="game-button">
+  <button class="govuk-button red" data-module="govuk-button">Cancel</button>
+</form>
 
             
           </main>
@@ -139,7 +153,7 @@
           <aside>
               <ul class="contribution-banner">
                 <li><a href="https://github.com/alphagov/accessibility-personas/blob/master/source/chris/bad.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?labels=bug&amp;title=Re:%20'Issues%20for%20Chris'&amp;body=Problem%20with%20'Issues%20for%20Chris'%20(https://alphagov.github.io/accessibility-personas/chris/bad.html)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?body=Problem+with+%27Issues+for+Chris%27+%28https%3A%2F%2Falphagov.github.io%2Faccessibility-personas%2Fchris%2Fbad.html%29&amp;labels=bug&amp;title=Re%3A+%27Issues+for+Chris%27">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/accessibility-personas">GitHub Repo</a></li>
               </ul>
           </aside>
@@ -191,6 +205,6 @@
     </div>
 
     
-    <script src="../javascripts/application-485def14.js"></script>
+    <script src="../javascripts/application-a35f3521.js"></script>
   </body>
 </html>

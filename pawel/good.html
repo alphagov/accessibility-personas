@@ -36,7 +36,7 @@
 
     <div class="app-pane">
       <div class="app-pane__header toc-open-disabled">
-        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+        <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
         <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-header__container--full-width">
@@ -49,9 +49,9 @@
         <strong class="govuk-tag">Beta</strong>
     </div>
     <div class="govuk-header__content">
-      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-      <nav>
-        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="../">Personas</a>
             </li>
@@ -73,6 +73,7 @@
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <p><a href="index.html" class="govuk-back-link">Back</a></p>
 <h1 id="issues-for-pawel">Issues for Pawel</h1>
+
 <script>
 
 function startTimer(duration, display) {
@@ -101,12 +102,18 @@ window.onload = function () {
 </script>
 
 <p>You have to finish this task in <strong id="time">02:00</strong> minutes!</p>
-<h2 id="how-bird-flu-is-treated-in-the-us">How Bird Flu is treated in the US</h2><p>The U.S. Government does not have a vaccine that can prevent humans getting avian influenza (Bird flu). However,  the Centers for Disease Control and Prevention (CDC) has research that suggests the antiviral medication Oseltamivir (brand name-Tamiflu) may be effective in treating Bird Flu.</p>
-<h3 id="prepare-for-a-bird-flu-outbreak-in-the-u-s">Prepare for a Bird Flu outbreak in the U.S.</h3><p>You can find guidance how to prepare for a Bird Flu outbreak, including stockpiling food, water, and medical supplies on the CDC and pandemicflu.gov websites.</p>
-<h3 id="what-to-do-if-you-re-a-u-s-government-employee">What to do if you’re a U.S. Government employee</h3><p>The Department of State is offering Tamiflu at its Embassies and Consulates worldwide, for eligible U.S. Government employees and their families serving abroad who become ill with Bird Flu. Contact your embassy for more information.</p>
-<h3 id="bird-flu-treatment-for-u-s-private-citizens-abroad">Bird Flu treatment for U.S. private citizens abroad</h3><p>The U.S. Government cannot make Tamiflu available to private U.S. citizens abroad. The State Department encourages American citizens traveling or living abroad to consult with their doctor about whether to buy Tamiflu before travelling or whether Tamiflu will be available in their destination.</p>
-<h3 id="be-aware-of-counterfeit-drugs">Be aware of counterfeit drugs</h3><p>American citizens should also be aware of the potential health risk posed by counterfeit drugs in foreign countries. Internet scam artists and countries with poor pharmaceuticals regulations may provide counterfeit tablets. Contact your local embassy or doctor if you are unsure about any treatment.</p>
+<h2 id="how-bird-flu-is-treated-in-the-us">How Bird Flu is treated in the US</h2>
+<p>The U.S. Government does not have a vaccine that can prevent humans getting avian influenza (Bird flu). However,  the Centers for Disease Control and Prevention (CDC) has research that suggests the antiviral medication Oseltamivir (brand name-Tamiflu) may be effective in treating Bird Flu.</p>
+<h3 id="prepare-for-a-bird-flu-outbreak-in-the-u-s">Prepare for a Bird Flu outbreak in the U.S.</h3>
+<p>You can find guidance how to prepare for a Bird Flu outbreak, including stockpiling food, water, and medical supplies on the CDC and pandemicflu.gov websites.</p>
+<h3 id="what-to-do-if-you-re-a-u-s-government-employee">What to do if you’re a U.S. Government employee</h3>
+<p>The Department of State is offering Tamiflu at its Embassies and Consulates worldwide, for eligible U.S. Government employees and their families serving abroad who become ill with Bird Flu. Contact your embassy for more information.</p>
+<h3 id="bird-flu-treatment-for-u-s-private-citizens-abroad">Bird Flu treatment for U.S. private citizens abroad</h3>
+<p>The U.S. Government cannot make Tamiflu available to private U.S. citizens abroad. The State Department encourages American citizens traveling or living abroad to consult with their doctor about whether to buy Tamiflu before travelling or whether Tamiflu will be available in their destination.</p>
+<h3 id="be-aware-of-counterfeit-drugs">Be aware of counterfeit drugs</h3>
+<p>American citizens should also be aware of the potential health risk posed by counterfeit drugs in foreign countries. Internet scam artists and countries with poor pharmaceuticals regulations may provide counterfeit tablets. Contact your local embassy or doctor if you are unsure about any treatment.</p>
 <h2 id="click-the-save-button">Click the Save button</h2>
+
 <form action="../fail.html" method="get" class="game-button">
   <button class="govuk-button" data-module="govuk-button">Submit</button>
 </form>
@@ -125,7 +132,7 @@ window.onload = function () {
           <aside>
               <ul class="contribution-banner">
                 <li><a href="https://github.com/alphagov/accessibility-personas/blob/master/source/pawel/good.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?labels=bug&amp;title=Re:%20'Issues%20for%20Pawel'&amp;body=Problem%20with%20'Issues%20for%20Pawel'%20(https://alphagov.github.io/accessibility-personas/pawel/good.html)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?body=Problem+with+%27Issues+for+Pawel%27+%28https%3A%2F%2Falphagov.github.io%2Faccessibility-personas%2Fpawel%2Fgood.html%29&amp;labels=bug&amp;title=Re%3A+%27Issues+for+Pawel%27">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/accessibility-personas">GitHub Repo</a></li>
               </ul>
           </aside>
@@ -177,6 +184,6 @@ window.onload = function () {
     </div>
 
     
-    <script src="../javascripts/application-485def14.js"></script>
+    <script src="../javascripts/application-a35f3521.js"></script>
   </body>
 </html>

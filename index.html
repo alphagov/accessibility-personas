@@ -31,7 +31,7 @@
 
     <div class="app-pane">
       <div class="app-pane__header toc-open-disabled">
-        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+        <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
         <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-header__container--full-width">
@@ -44,9 +44,9 @@
         <strong class="govuk-tag">Beta</strong>
     </div>
     <div class="govuk-header__content">
-      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-      <nav>
-        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
               <a class="govuk-header__link" href="./">Personas</a>
             </li>
@@ -66,14 +66,15 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="experience-the-web-as-personas-with-access-needs">Experience the web as personas with access needs</h1><p>The GDS Accessibility team has created 7 different accessibility personas. Each persona has different access needs. They are:</p>
+            <h1 id="experience-the-web-as-personas-with-access-needs">Experience the web as personas with access needs</h1>
+<p>The GDS Accessibility team has created 7 different accessibility personas. Each persona has different access needs. They are:</p>
 
 <ul>
 <li><a href="claudia/">Claudia</a> &ndash; a sight impaired screen magnifier user</li>
 <li><a href="ashleigh/">Ashleigh</a> &ndash; a severely sight impaired screenreader user</li>
 <li><a href="ron/">Ron</a> &ndash; an older user with multiple conditions</li>
 <li><a href="chris/">Chris</a> &ndash; a user with rheumatoid arthritis</li>
-<li><a href="pawel/">Pawel</a> &ndash; a user with Asperger&rsquo;s</li>
+<li><a href="pawel/">Pawel</a> &ndash; an autistic user</li>
 <li><a href="simone/">Simone</a> &ndash; a dyslexic user</li>
 <li><a href="saleem/">Saleem</a> &ndash; a profoundly deaf user</li>
 </ul>
@@ -81,7 +82,8 @@
 Each profile has a different simulation of their persona&rsquo;s condition and runs the assistive technology they use to help them.</p>
 <p>You can use these profiles to experience the web from the perspective of the personas and gain more understanding of accessibility issues. Each persona&rsquo;s page has a basic introduction to those personas and includes help how to use certain features and quick training tasks.</p>
 <p><a href="https://accessibility.blog.gov.uk/2019/02/11/using-persona-profiles-to-test-accessibility/">Read our blog post</a> to learn more about how we have used the personas so far.</p>
-<h2 id="caveats">Caveats</h2><p>This is not a substitute for including users with access needs into your user testing.</p>
+<h2 id="caveats">Caveats</h2>
+<p>This is not a substitute for including users with access needs into your user testing.</p>
 <p>A simulation is never a true representation of an impairment. It&rsquo;s only a tool trying to make some things roughly as difficult for someone without that impairment.</p>
 <p>The assistive technologies in this setup, especially the screen reader and voice control tool, are not appropriate for compatibility testing. Use <a href="https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies">mainstream tools</a> for that.</p>
 
@@ -91,7 +93,7 @@ Each profile has a different simulation of their persona&rsquo;s condition and r
           <aside>
               <ul class="contribution-banner">
                 <li><a href="https://github.com/alphagov/accessibility-personas/blob/master/source/index.html.md">View source</a></li>
-                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?labels=bug&amp;title=Re:%20'Accessibility%20Personas'&amp;body=Problem%20with%20'Accessibility%20Personas'%20(https://alphagov.github.io/accessibility-personas/)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?body=Problem+with+%27Accessibility+Personas%27+%28https%3A%2F%2Falphagov.github.io%2Faccessibility-personas%2F%29&amp;labels=bug&amp;title=Re%3A+%27Accessibility+Personas%27">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/accessibility-personas">GitHub Repo</a></li>
               </ul>
           </aside>
@@ -143,6 +145,6 @@ Each profile has a different simulation of their persona&rsquo;s condition and r
     </div>
 
     
-    <script src="javascripts/application-485def14.js"></script>
+    <script src="javascripts/application-a35f3521.js"></script>
   </body>
 </html>

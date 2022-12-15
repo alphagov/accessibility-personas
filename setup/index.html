@@ -31,7 +31,7 @@
 
     <div class="app-pane">
       <div class="app-pane__header toc-open-disabled">
-        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+        <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
         <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-header__container--full-width">
@@ -44,9 +44,9 @@
         <strong class="govuk-tag">Beta</strong>
     </div>
     <div class="govuk-header__content">
-      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-      <nav>
-        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="../">Personas</a>
             </li>
@@ -62,16 +62,16 @@
       </div>
 
         <div id="toc-heading" class="toc-show fixedsticky">
-          <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
+          <button type="button" class="toc-show__label js-toc-show" aria-controls="toc">
             Table of contents <span class="toc-show__icon"></span>
-          </a>
+          </button>
         </div>
 
       <div class="app-pane__body" data-module="in-page-navigation">
           <div class="app-pane__toc">
-            <div class="toc" data-module="table-of-contents">
+            <div class="toc" data-module="table-of-contents" tabindex="-1" aria-label="Table of contents" role="dialog">
               
-              <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
+              <button type="button" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></button>
               <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
                       <ul>
   <li>
@@ -97,52 +97,48 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="setting-up-personas">Setting up personas</h1><p>Here are instructions on how to set up various devices or browsers so you can log in as a persona.</p>
-<h2 id="chromebooks">Chromebooks</h2><p>Using <a href="chromebook.html">personas on Chromebooks</a> is currently the most effective setup.</p>
-<h2 id="chrome-browsers">Chrome browsers</h2><p>You can also set up <a href="chrome.html">personas in Chrome browsers</a> on any operating system. Some of the assistive technologies will not be as effective as on Chromebooks.</p>
-<h2 id="assistive-technology-and-simulations">Assistive technology and simulations</h2><div class="table-container">
+            <h1 id="setting-up-personas">Setting up personas</h1>
+<p>Here are instructions on how to set up various devices or browsers so you can log in as a persona.</p>
+<h2 id="chromebooks">Chromebooks</h2>
+<p>Using <a href="chromebook.html">personas on Chromebooks</a> is currently the most effective setup.</p>
+<h2 id="chrome-browsers">Chrome browsers</h2>
+<p>You can also set up <a href="chrome.html">personas in Chrome browsers</a> on any operating system. Some of the assistive technologies will not be as effective as on Chromebooks.</p>
+<h2 id="assistive-technology-and-simulations">Assistive technology and simulations</h2>
+<div class="table-container">
         <table>
           <tr>
 <th>Persona</th>
 <th>Use their assistive technology</th>
 <th>Simulate their condition</th>
-</tr>
-<tr>
+</tr><tr>
 <td>Claudia</td>
 <td>Magnifier, high contrast, etc</td>
 <td>(none)</td>
-</tr>
-<tr>
+</tr><tr>
 <td>Ashleigh</td>
 <td>Screen reader</td>
 <td>Blurred vision</td>
-</tr>
-<tr>
+</tr><tr>
 <td>Ron</td>
 <td>(none)</td>
 <td>Mildly blurred vision, wobbly pointer</td>
-</tr>
-<tr>
+</tr><tr>
 <td>Chris</td>
 <td>Voice control</td>
-<td>Disabled mouse or trackpad</td>
-</tr>
-<tr>
+<td>Disabled mouse or trackpad, grey colours</td>
+</tr><tr>
 <td>Pawel</td>
 <td>Soothing colours</td>
 <td>Distracting sounds, images and animations</td>
-</tr>
-<tr>
+</tr><tr>
 <td>Simone</td>
 <td>Tinted background, Dyslexia font</td>
 <td>Scrambled letters</td>
-</tr>
-<tr>
+</tr><tr>
 <td>Saleem</td>
 <td>(none)</td>
 <td>Translated to Pig Latin</td>
 </tr>
-
         </table>
       </div>
             
@@ -151,7 +147,7 @@
           <aside>
               <ul class="contribution-banner">
                 <li><a href="https://github.com/alphagov/accessibility-personas/blob/master/source/setup/index.html.md">View source</a></li>
-                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?labels=bug&amp;title=Re:%20'Setting%20up%20personas'&amp;body=Problem%20with%20'Setting%20up%20personas'%20(https://alphagov.github.io/accessibility-personas/setup/)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/accessibility-personas/issues/new?body=Problem+with+%27Setting+up+personas%27+%28https%3A%2F%2Falphagov.github.io%2Faccessibility-personas%2Fsetup%2F%29&amp;labels=bug&amp;title=Re%3A+%27Setting+up+personas%27">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/accessibility-personas">GitHub Repo</a></li>
               </ul>
           </aside>
@@ -203,6 +199,6 @@
     </div>
 
     
-    <script src="../javascripts/application-485def14.js"></script>
+    <script src="../javascripts/application-a35f3521.js"></script>
   </body>
 </html>
