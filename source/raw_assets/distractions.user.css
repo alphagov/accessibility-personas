@@ -43,89 +43,68 @@
       }
 }
 
-[class^="wds-text-element"] {
-  display: none !important;
-  position: fixed !important;
-  z-index: 10000 !important;
-
-  animation-name: stretch !important;
-  animation-duration: 1.5s !important;
+[class^="wds-text-element"],
+.wds-img-animation-1,
+.wds-heading-animation {
   animation-timing-function: ease-out !important;
   animation-delay: 0s !important;
   animation-direction: alternate !important;
   animation-iteration-count: infinite !important;
   animation-fill-mode: none !important;
   animation-play-state: running !important;
-  z-index: 10000 !important;
 }
 
-
-.wds-text-element-0.wds-text-animation-0 {
+[class^="wds-text-element"] {
+  display: none !important;
   position: fixed !important;
-  display: block !important;
-  color: red !important;
+  z-index: 10000 !important;
   font-weight: bold !important;
-  font-size: 80px !important;
   background-color: white !important;
   padding: 20px !important;
   width: auto !important;
   height: auto !important;
+
+  animation-name: stretch !important;
+  animation-duration: 1.5s !important;
+}
+
+
+.wds-text-element-0.wds-text-animation-0 {
+  display: block !important;
+  color: red !important;
+  font-size: 80px !important;
   top: 20% !important;
   left: 40% !important;
 }
 
 .wds-text-element-1.wds-text-animation-1  {
-  position: fixed !important;
   display: block !important;
   color: blue !important;
-  font-weight: bold !important;
   font-size: 60px !important;
-  background-color: white !important;
-  padding: 20px !important;
-  width: auto !important;
-  height: auto !important;
   top: 40% !important;
   left: 30% !important;
 }
 
 .wds-text-element-2.wds-text-animation-2  {
-  position: fixed !important;
   display: block !important;
   color: green !important;
-  font-weight: bold !important;
   font-size: 60px !important;
-  background-color: white !important;
-  padding: 20px !important;
-  width: auto !important;
-  height: auto !important;
   top: 30% !important;
   left: 20% !important;
 }
 
 .wds-text-element-3.wds-text-animation-3  {
-  position: fixed !important;
   display: block !important;
   color: purple !important;
-  font-weight: bold !important;
   font-size: 50px !important;
-  background-color: white !important;
-  padding: 20px !important;
-  width: auto !important;
-  height: auto !important;
   top: 50% !important;
   left: 20% !important;
 }
 
 .wds-text-element-4.wds-text-animation-4  {
-  position: fixed !important;
   display: block !important;
   color: black !important;
-  font-weight: bold !important;
   font-size: 50px !important;
-  background-color: white !important;
-  padding: 20px !important;
-  width: auto !important;
-  height: auto !important;
   top: 20% !important;
   left: 10% !important;
 }
@@ -134,13 +113,6 @@
 .wds-img-animation-1 {
   animation-name: stretch !important;
   animation-duration: 2s !important;
-  animation-timing-function: ease-out !important;
-  animation-delay: 0s !important;
-  animation-direction: alternate !important;
-  animation-iteration-count: infinite !important;
-  animation-fill-mode: none !important;
-  animation-play-state: running !important;
-
 }
 
 @keyframes stretch {
@@ -166,12 +138,6 @@
 .wds-heading-animation {
   animation-name: smallPulse !important;
   animation-duration: 2s !important;
-  animation-timing-function: ease-out !important;
-  animation-delay: 0s !important;
-  animation-direction: alternate !important;
-  animation-iteration-count: infinite !important;
-  animation-fill-mode: none !important;
-  animation-play-state: running !important;
 }
 
 @keyframes smallPulse {
