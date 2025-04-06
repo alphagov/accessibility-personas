@@ -19,16 +19,17 @@ Remove everything from the shelf/dock except Chrome. This helps people focus on 
 
 Select the following options from the system menu. Go to:
 
-* Settings > Advanced > Accessibility > Always show accessibility options in the system menu - this makes it easier to access the accessibility settings
-* Settings > Device > Power > When idle > Keep display on (once per device) - this makes sense if you put the Chromebooks on display for lots of people to use so you do not need to login again and share any passwords
-* Settings > Device > Power > Sleep when lid is closed > off (once per device) - this makes sense if you put the Chromebooks on display as people tend to close the lid and they would need to login again
-* Settings > People > Manage other people > Restrict sign-in to the following users... (once per device, can only be done by the owner account once every profile has logged in) - this restricts people adding their own profiles if the Chromebook is on display
-* Settings > People > Sync and Google services > Manage sync > untick 'Sync everything' first and then 'History', 'Open Tabs', 'Password', 'Addresses, phone numbers and more', 'Payment methods and addresses using Google Play' - this makes sure no-one accidentally shares their details when the persona is shared on multiple devices
-* Settings > Auto-fill > Passwords > untick 'Offer to save passwords' and 'Auto Sign-in' - this makes it less likely that people unintentionally share their passwords, which is especially useful when the devices are on display
-* Settings > Auto-fill > Payment methods > untick 'Save and fill payment methods'
-* Settings > Auto-fill > Addresses and more > untick 'Save and fill addresses'
-* Settings > enable Appearance: Show Home button > Enter custom web address: https://alphagov.github.io/accessibility-personas/[persona]/ - this makes it easier to go back to each persona's page
-* Settings > On start-up > Open a specific page or set of pages > Add a new page > https://alphagov.github.io/accessibility-personas/[persona]/ (Note that the settings are retained, but the pages only open during system start-up.) - this makes sure the persona's page is already showing whenever the Chromebook gets restarted
+* System settings > Accessibility > Show accessibility options in Quick Settings - this makes it easier to access the accessibility settings
+* System settings > System preferences > Power > While inactive and plugged in > Keep display on (once per device) - this makes sense if you put the Chromebooks on display for lots of people to use so you do not need to login again and share any passwords
+* System settings > System preferences > Power > Sleep when lid is closed > untick (once per device) - this makes sense if you put the Chromebooks on display as people tend to close the lid and they would need to login again
+* System settings > Privacy and security > Lock screen and sign-in > Lock when sleeping or lid is closed > off (once per device) - in addition to the above if you put the Chromebooks on display as people tend to close the lid and they would need to login again
+* System settings > Privacy and security > Manage other people > Limit who can sign in > Add use (once per device, can only be done by the owner account once every profile has logged in) - this restricts people adding their own profiles if the Chromebook is on display
+* Browser settings > You and Google > Sync and Google services > Manage what you sync > Customise sync > untick 'History', 'Open tabs', 'Saved tab groups', 'Passwords and passkeys', 'Addresses and more', 'Payment methods, offers and addresses using Google Play' - this makes sure no-one accidentally shares their details when the persona is shared on multiple devices
+* Browser settings > Autofill and passwords > Google Password Manager > Settings > Offer to save passwords > untick - this makes it less likely that people unintentionally share their passwords, which is especially useful when the devices are on display
+* Browser settings > Autofill and passwords > Payment methods > Safe and fill payment methods > untick
+* Browser settings > Autofill and passwords > Addresses and more > Safe and fill addresses > untick
+* Browser settings > Appearance > Show Home button > tick > Enter custom web address: https://alphagov.github.io/accessibility-personas/[persona]/ - this makes it easier to go back to each persona's page
+* Browser settings > On startup > Open a specific page or set of pages > Add a new page > https://alphagov.github.io/accessibility-personas/[persona]/ (Note that the settings are retained, but the pages only open during system start-up.) - this makes sure the persona's page is already showing whenever the Chromebook gets restarted
 
 
 
@@ -45,9 +46,9 @@ There is no technical simulation for this persona, but you can use low tech solu
 
 To set up the assistive technology used by Claudia go to the system menu and select:
 
-* Accessibility > High contrast mode
+* Accessibility > Colour inversion
 * Accessibility > Full-screen magnifier
-* Accessibility > Settings > Manage accessibility features > Full-screen zoom level: 4x (once per device)
+* Accessibility > Settings > Display and magnification > Zoom level: 4x (once per device)
 * Accessibility > Large mouse cursor
 * Accessibility > Highlight text caret
 * Accessibility > Highlight mouse cursor
@@ -105,6 +106,7 @@ To set up the simulation for Ron's condition:
 * open [light-blur.user.css](raw_assets/light-blur.user.css) in the browser
 * when Stylus opens, select the "Install style" button
 * install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* open chrome://extensions/ and enable 'Developer mode'
 * follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 * open [wobbly-mouse.user.js](raw_assets/wobbly-mouse.user.js) in the browser
 * when Tampermonkey opens, select on the "Install" button
@@ -174,6 +176,7 @@ To set up the simulation for Pawel's condition:
 * open [distractions.user.css](raw_assets/distractions.user.css) in the browser
 * when Stylus opens, select the "Install style" button
 * install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* open chrome://extensions/ and enable 'Developer mode'
 * follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 * open [distractions.user.js](raw_assets/distractions.user.js) in the browser
 * when Tampermonkey opens, select the "Install" button
@@ -204,6 +207,7 @@ Simone
 To set up the simulation for Simone's condition:
 
 * install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* open chrome://extensions/ and enable 'Developer mode'
 * follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 * open [scramble-letters.user.js](raw_assets/scramble-letters.user.js) in the browser
 * when Tampermonkey opens, select the "Install" button
@@ -237,6 +241,7 @@ To set up the simulation for Saleem's condition:
 
 * install the extension [Clever Mute](https://chrome.google.com/webstore/detail/clever-mute/eadinjjkfelcokdlmoechclnmmmjnpdh)
 * install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* open chrome://extensions/ and enable 'Developer mode'
 * follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
 * open [translate-to-piglatin.user.js](raw_assets/translate-to-piglatin.user.js) in the browser
 * when Tampermonkey opens, select the "Install" button
