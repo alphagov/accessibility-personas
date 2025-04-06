@@ -23,6 +23,8 @@ More about the [persona on GOV.UK](https://www.gov.uk/government/publications/un
 
 As Ron is not very technical, do not use anything which might help. For example, do not zoom into the page and do not use the keyboard to navigate.
 
+Because of that you might encounter issues which are not fixable. This is good for demonstrating that users have a worse experience when they don't know that there is assistive technology that would help them.
+
 
 ## Training tasks
 
