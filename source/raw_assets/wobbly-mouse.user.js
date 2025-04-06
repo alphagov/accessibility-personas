@@ -40,6 +40,7 @@ GM_addStyle('body * {cursor: none !important;}');
 GM_addStyle('#wds-parkinsonsCursor { position: absolute !important; z-index: 9999999 !important; width: 21px; height: 21px; pointer-events: none; transition: left 0.05s, top 0.05s; box-sizing: border-box; padding: 0; margin: 0; transform: rotate(-68deg) skew(-30deg, -30deg); }');
 GM_addStyle('#wds-parkinsonsCursor::before, #wds-parkinsonsCursor::after { display: block; content: ""; position: absolute; top: -10px; left: -10px; box-sizing: border-box; width: 0; height: 0; border-style: solid; border-bottom-color: transparent; border-left-color: transparent; }');
 GM_addStyle('#wds-parkinsonsCursor::before { color: #333; border-width: 10px; } #wds-parkinsonsCursor::after { top: -8px; left: -6px; color: #fff; border-width: 7px; }');
+GM_addStyle('#wds-parkinsonsCursor.mac::before { color: #fff; } #wds-parkinsonsCursor.mac::after { color: #333; }');
 
 function mousemoveHandler(e) {
   // Save the position of the fake cursor
