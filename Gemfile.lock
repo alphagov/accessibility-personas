@@ -1,11 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.4)
+    activesupport (6.1.7.10)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     autoprefixer-rails (10.4.7.0)
@@ -31,7 +32,7 @@ GEM
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
     concurrent-ruby (1.1.10)
-    contracts (0.17)
+    contracts (0.16.1)
     dotenv (2.8.1)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
@@ -169,6 +170,7 @@ GEM
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     webrick (1.7.0)
+    zeitwerk (2.6.18)
 
 PLATFORMS
   ruby
@@ -180,4 +182,4 @@ DEPENDENCIES
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   2.3.26
+   2.4.22
