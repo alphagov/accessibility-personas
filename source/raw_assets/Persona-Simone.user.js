@@ -3,13 +3,32 @@
 // @namespace    https://github.com/alphagov/accessibility-personas
 // @version      1.0.0
 // @license      MIT
-// @author       Crown Copyright (Government Digital Service), Victor Widell and Andrew Kennedy
-// @description  Simone, a dyslexic user - letters are scrambled within words to simulate some form of dyslexia, a tinted background and a ruler is used to help read better
+// @author       Crown Copyright (Government Digital Service), Victor Widell and Andrew Kennedy, Braille Institute of America
+// @description  Simone, a dyslexic user - letters are scrambled within words to simulate some form of dyslexia, a tinted background, a special font and a ruler is used to help read better
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
 // @include      *
 // @grant        GM_addStyle
 // @nocompat     Chrome
 // ==/UserScript==
+
+/**
+ * Change the font to a more readable font
+ * @author Crown Copyright (Government Digital Service)
+ * @author Braille Institute of America, Inc.
+ * @license OFL (for the font)
+ * @license MIT (for the code)
+ */
+
+let fontCss = `
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  font-family: "Atkinson Hyperlegible", sans-serif !important;
+}
+`
+
+GM_addStyle(fontCss);
+
 
 /**
  * Add tint
