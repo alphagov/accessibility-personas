@@ -4,12 +4,21 @@
 // @version      1.0.0
 // @license      MIT
 // @author       Crown Copyright (Government Digital Service)
-// @description  Claudia, a sight impaired screen magnifier user - highlights the mouse pointer
+// @description  Claudia, a sight impaired screen magnifier user - magnifies the screen, highlights the mouse pointer
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
 // @include      *
 // @grant        GM_addStyle
 // @nocompat     Chrome
 // ==/UserScript==
+
+/**
+ * Zoom in 400% and widen the page
+ * @author Crown Copyright (Government Digital Service)
+ * @license MIT
+ */
+
+GM_addStyle('body { zoom: 4 !important; min-width: 200vh !important; }');
+
 
 /**
  * Make focus more prominent
