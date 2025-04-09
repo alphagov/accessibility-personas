@@ -4,12 +4,62 @@
 // @version      1.0.0
 // @license      MIT
 // @author       Crown Copyright (Government Digital Service), Victor Widell and Andrew Kennedy
-// @description  Simone, a dyslexic user - letters are scrambled within words to simulate some form of dyslexia
+// @description  Simone, a dyslexic user - letters are scrambled within words to simulate some form of dyslexia, a ruler is used to help read better
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
 // @include      *
 // @grant        GM_addStyle
 // @nocompat     Chrome
 // ==/UserScript==
+
+/**
+ * Add ruler
+ * @author Crown Copyright (Government Digital Service)
+ * @license MIT
+ */
+
+let rulerCss = `
+#simone-ruler {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(102,102,102,0.5);
+  pointer-events: none;
+  width: 100%;
+  height: 30px;
+  margin-top:-20px;
+  border: solid rgba(255,255,255,0.5);
+  border-width: 5px 0;
+  z-index: 9999999;
+}
+`
+
+GM_addStyle(rulerCss);
+
+let ruler = null;
+
+function setStyle(element, style) {
+  for (var s in style) {
+    element.style[s] = style[s];
+  }
+}
+
+function mousemoveHandler(e) {
+  setStyle(ruler, {top: e.clientY + 'px'});
+}
+
+
+(function() {
+
+  'use strict';
+
+  ruler = document.createElement('div');
+  ruler.setAttribute('id', 'simone-ruler');
+  document.body.appendChild(ruler);
+
+  document.addEventListener('mousemove', mousemoveHandler);
+
+})();
+
 
 /**
  * Scramble letters
