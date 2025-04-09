@@ -12,6 +12,15 @@
 // ==/UserScript==
 
 /**
+ * Make focus more prominent
+ * @author Crown Copyright (Government Digital Service)
+ * @license MIT
+ */
+
+GM_addStyle('*:focus { outline: 5px solid #c00 !important; }');
+
+
+/**
  * Highlight the mouse pointer
  * @author Crown Copyright (Government Digital Service)
  * @license MIT
