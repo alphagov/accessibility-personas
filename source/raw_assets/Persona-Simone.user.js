@@ -4,7 +4,7 @@
 // @version      1.0.0
 // @license      MIT
 // @author       Crown Copyright (Government Digital Service), Victor Widell and Andrew Kennedy
-// @description  Simone, a dyslexic user - letters are scrambled within words to simulate some form of dyslexia, a ruler is used to help read better
+// @description  Simone, a dyslexic user - letters are scrambled within words to simulate some form of dyslexia, a tinted background and a ruler is used to help read better
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
 // @include      *
 // @grant        GM_addStyle
@@ -12,10 +12,35 @@
 // ==/UserScript==
 
 /**
+ * Add tint
+ * @author Crown Copyright (Government Digital Service)
+ * @license MIT
+ */
+
+let tintCss = `
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  background-color: rgba(255, 165, 0, 25%);
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 9999999;
+  pointer-events: none;
+}
+`
+
+GM_addStyle(tintCss);
+
+
+/**
  * Add ruler
  * @author Crown Copyright (Government Digital Service)
  * @license MIT
  */
+
 
 let rulerCss = `
 #simone-ruler {
