@@ -16,10 +16,10 @@ parent: /index.html
 
 * does not use any assistive technology
 
-More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ron-older-user-with-multiple-conditions) and [how to set it up](../setup/chromebook.html#ron)
+More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ron-older-user-with-multiple-conditions)
 
 
-## Chromebook help
+## Tips
 
 As Ron is not very technical, do not use anything which might help. For example, do not zoom into the page and do not use the keyboard to navigate.
 
