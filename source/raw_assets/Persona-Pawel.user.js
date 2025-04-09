@@ -2,7 +2,7 @@
 // @name         Persona Pawel
 // @namespace    https://github.com/alphagov/accessibility-personas
 // @version      1.0.0
-// @license      ISC
+// @license      mixed (ISC, CC BY-SA)
 // @author       Crown Copyright (Government Digital Service), Metamatrix AB, Houshalter and benrwb
 // @description  Pawel, an autistic user - has the screen cluttered with various distractions to simulate finding it hard to concentrate
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
@@ -10,6 +10,40 @@
 // @grant        GM_addStyle
 // @nocompat     Chrome
 // ==/UserScript==
+
+/**
+ * Beep (used within Distractions)
+ * @author Houshalter and benrwb [https://stackoverflow.com/a/29641185]
+ * @author Crown Copyright (Government Digital Service)
+ * @license CC BY-SA
+ */
+//if you have another AudioContext class use that one, as some browsers have a limit
+const audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
+
+//All arguments are optional:
+
+//start of the tone in milliseconds. Default is 0
+//duration of the tone in milliseconds. Default is 500
+//frequency of the tone in hertz. default is 440
+//volume of the tone. Default is 1, off is 0.
+//type of tone. Possible values are sine, square, sawtooth, triangle, and custom. Default is sine.
+//callback to use on end of tone
+function beep(start, duration, frequency, volume, type, callback) {
+  const oscillator = audioCtx.createOscillator();
+  const gainNode = audioCtx.createGain();
+
+  oscillator.connect(gainNode);
+  gainNode.connect(audioCtx.destination);
+
+  if (volume){gainNode.gain.value = volume;}
+  if (frequency){oscillator.frequency.value = frequency;}
+  if (type){oscillator.type = type;}
+  if (callback){oscillator.onended = callback;}
+
+  oscillator.start(audioCtx.currentTime + ((start || 0) / 1000));
+  oscillator.stop(audioCtx.currentTime + ((start || 0) / 1000) + ((duration || 500) / 1000));
+};
+
 
 /**
  * Distractions
@@ -250,6 +284,19 @@ const textAnimation_4 = "wds-text-animation-4";
     setTimeout(() => {
       removeClass(imgEl_0, imgAnimation_0);
       addClass(textEl_0 , textAnimation_0);
+      beep(0, 200, 523.3, 0.3, 'triangle');
+      beep(200, 200, 587.3, 0.3, 'triangle');
+      beep(400, 200, 554.4, 0.3, 'triangle');
+      beep(600, 200, 659.3, 0.3, 'triangle');
+      beep(800, 200, 622.3, 0.3, 'triangle');
+      beep(1000, 200, 740.0, 0.3, 'triangle');
+      beep(1200, 200, 698.5, 0.3, 'triangle');
+      beep(1400, 200, 830.6, 0.3, 'triangle');
+      beep(1600, 200, 784.0, 0.3, 'triangle');
+      beep(1800, 200, 932.3, 0.3, 'triangle');
+      beep(2000, 200, 880.0, 0.3, 'triangle');
+      beep(2200, 200, 1047, 0.3, 'triangle');
+      beep(2400, 200, 987.8, 0.3, 'triangle');
     }, 5000);
 
     setTimeout(() => {
@@ -260,11 +307,16 @@ const textAnimation_4 = "wds-text-animation-4";
     setTimeout(() => {
       removeClass(textEl_1, textAnimation_1);
       addClass(textEl_2, textAnimation_2);
+      beep(0, 5000, 220, 0.3, 'sawtooth');
     }, 20000);
 
     setTimeout(() => {
       removeClass(textEl_2, textAnimation_2);
       addClass(textEl_3, textAnimation_3);
+      beep(0, 500, 440, 0.5, 'sine');
+      beep(1000, 500, 440, 0.5, 'sine');
+      beep(2000, 500, 440, 0.5, 'sine');
+      beep(3000, 500, 440, 0.5, 'sine');
     }, 26000);
 
     setTimeout(() => {
