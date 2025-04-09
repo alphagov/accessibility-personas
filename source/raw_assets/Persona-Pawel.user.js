@@ -2,14 +2,23 @@
 // @name         Persona Pawel
 // @namespace    https://github.com/alphagov/accessibility-personas
 // @version      1.0.0
-// @license      mixed (ISC, CC BY-SA)
+// @license      mixed (MIT, ISC, CC BY-SA)
 // @author       Crown Copyright (Government Digital Service), Metamatrix AB, Houshalter and benrwb
-// @description  Pawel, an autistic user - has the screen cluttered with various distractions to simulate finding it hard to concentrate
+// @description  Pawel, an autistic user - has the screen cluttered with various distractions to simulate finding it hard to concentrate, uses soothing colours to reduce potential stress
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
 // @include      *
 // @grant        GM_addStyle
 // @nocompat     Chrome
 // ==/UserScript==
+
+/**
+ * Invert colours
+ * @author Crown Copyright (Government Digital Service)
+ * @license MIT
+ */
+
+GM_addStyle('html { filter: invert(1) hue-rotate(180deg) sepia(1) !important; } img, video, iframe, .wds-img-element.wds-img-animation-0::before { filter: invert(1) hue-rotate(180deg) !important; }');
+
 
 /**
  * Beep (used within Distractions)
