@@ -2,14 +2,23 @@
 // @name         Persona Ron
 // @namespace    https://github.com/alphagov/accessibility-personas
 // @version      1.0.0
-// @license      ISC
+// @license      mixed (ISC, MIT)
 // @author       Crown Copyright (Government Digital Service) and Metamatrix AB
-// @description  Ron is an older user with multiple conditions - the pointer wobbles to simulate having issues using a mouse
+// @description  Ron is an older user with multiple conditions - the pointer wobbles to simulate having issues using a mouse, the screen is blurred lightly to simulate some form of a mild visual impairment
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
 // @include      *
 // @grant        GM_addStyle
 // @nocompat     Chrome
 // ==/UserScript==
+
+/**
+ * Light blur
+ * @author Crown Copyright (Government Digital Service)
+ * @license MIT
+ */
+
+GM_addStyle('body { filter: blur(.1em) brightness(120%); }');
+
 
 /**
  * Wobbly Mouse
