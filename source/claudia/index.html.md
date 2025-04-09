@@ -16,12 +16,12 @@ parent: /index.html
 
 * uses a screen magnifier and changes colours to increase contrast
 
-More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/claudia-partially-sighted-screen-magnifier-user) and [how to set it up](../setup/chromebook.html#claudia)
+More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/claudia-partially-sighted-screen-magnifier-user)
 
 
-## Chromebook help
+## Tips
 
-If you get lost while using the screen magnifier, go back to the top left to re-orientate yourself.
+If you get lost on the page, go back to the top left to re-orientate yourself.
 
 
 ## Training tasks
