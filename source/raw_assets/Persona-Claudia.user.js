@@ -4,12 +4,21 @@
 // @version      1.0.0
 // @license      MIT
 // @author       Crown Copyright (Government Digital Service)
-// @description  Claudia, a sight impaired screen magnifier user - magnifies the screen, highlights the mouse pointer
+// @description  Claudia, a sight impaired screen magnifier user - magnifies the screen, changes colours to increase contrast, highlights the mouse pointer
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
 // @include      *
 // @grant        GM_addStyle
 // @nocompat     Chrome
 // ==/UserScript==
+
+/**
+ * Invert colours
+ * @author Crown Copyright (Government Digital Service)
+ * @license MIT
+ */
+
+GM_addStyle('html, img, video, iframe { filter: invert(1) hue-rotate(180deg) !important; }');
+
 
 /**
  * Zoom in 400% and widen the page
