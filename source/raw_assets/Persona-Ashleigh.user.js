@@ -12,7 +12,7 @@
 // ==/UserScript==
 
 /**
- * Blur the screen heavily
+ * Blur the screen heavily and display a hint to use your own screen reader
  * @author Crown Copyright (Government Digital Service)
  * @license MIT
  */
@@ -20,6 +20,18 @@
 let css = `
   body {
     filter: blur(7px) contrast(70%);
+  }
+
+  html::before {
+    content: "To use this persona, you have to use your own system's screen reader!";
+    display: block;
+    padding: 2px 0 4px;
+    background-color: #eee;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
   }
 }
 `
