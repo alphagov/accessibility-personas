@@ -19,7 +19,7 @@
  * @license MIT (for the code)
  */
 
-let fontCss = `
+const fontCss = `
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
@@ -36,7 +36,7 @@ GM_addStyle(fontCss);
  * @license MIT
  */
 
-let tintCss = `
+const tintCss = `
 body::before {
   content: "";
   display: block;
@@ -61,7 +61,7 @@ GM_addStyle(tintCss);
  */
 
 
-let rulerCss = `
+const rulerCss = `
 #simone-ruler {
   position: fixed;
   top: 0;
@@ -82,7 +82,7 @@ GM_addStyle(rulerCss);
 let ruler = null;
 
 function setStyle(element, style) {
-  for (var s in style) {
+  for (let s in style) {
     element.style[s] = style[s];
   }
 }
@@ -146,7 +146,7 @@ function mousemoveHandler(e) {
   }
 
   // create a list of text nodes to be messed up
-  var textNodes = walkNodeTree(document.body, {
+  const textNodes = walkNodeTree(document.body, {
     inspect: n => !['STYLE', 'SCRIPT'].includes(n.nodeName),
     collect: n => (n.nodeType === Node.TEXT_NODE)
   });
@@ -163,11 +163,11 @@ function mousemoveHandler(e) {
 
   // parse words out of a string and mess them up
   function messUpWords(str) {
-    var messedUpText = '';
+    let messedUpText = '';
 
     // iterate through each word and scramble it
-    var re = /\w+/g;
-    var word;
+    const re = /\w+/g;
+    let word;
     while ((word = re.exec(str)) != null) {
       // include any special characters before the word
       messedUpText += str.slice(messedUpText.length, word.index);
@@ -183,15 +183,15 @@ function mousemoveHandler(e) {
   // scramble the word, being sure to always keep the first and last letters
   // in-tact. this is important so the text can still be read.
   function scrambleWord(word) {
-    var scrambledWord = '';
+    let scrambledWord = '';
 
     // if it's a small word or ~randomness~, don't scramble it
     if (word.length < 3 || Math.random() > 1 / 10) {
       return word;
     }
 
-    var a = getRandomInt(1, word.length - 1);
-    var b = getRandomInt(a, word.length - 1);
+    const a = getRandomInt(1, word.length - 1);
+    const b = getRandomInt(a, word.length - 1);
 
     scrambledWord += word.slice(0, a);
     scrambledWord += word.slice(a, b).split('').reverse().join('');
