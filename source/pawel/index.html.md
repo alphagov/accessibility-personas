@@ -16,10 +16,10 @@ parent: /index.html
 
 * adjusts things, like colours, to reduce potential stress and distractions
 
-More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/pawel-user-with-aspergers) and [how to set it up](../setup/chromebook.html#pawel)
+More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/pawel-user-with-aspergers)
 
 
-## Chromebook help
+## Tips
 
 Use headphones and make them loud enough.
 
