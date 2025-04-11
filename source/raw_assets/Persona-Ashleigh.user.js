@@ -17,7 +17,7 @@
  * @license MIT
  */
 
-let css = `
+const css = `
   body {
     filter: blur(7px) contrast(70%);
   }
