@@ -7,9 +7,33 @@
 // @description  Saleem, a profoundly deaf user - everything on the page is translated into Pig Latin to simulate English as a second language
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
 // @include      *
-// @grant        none
+// @grant        GM_addStyle
 // @nocompat     Chrome
 // ==/UserScript==
+
+/**
+ * Display a reminder 
+ * @author Crown Copyright (Government Digital Service)
+ * @license MIT
+ */
+
+let css = `
+  html::before {
+    content: "Remember to turn off your sound";
+    display: block;
+    padding: 2px 0 4px;
+    background-color: #eee;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+`
+
+GM_addStyle(css);
+
 
 /**
  * Translate to Pig Latin
