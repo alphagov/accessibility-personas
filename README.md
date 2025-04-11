@@ -9,8 +9,8 @@ These pages include:
 
 ## Running the tool
 
-The tool is based on the [tech docs template](https://tdt-documentation.london.cloudapps.digital/).
-Read more in depth documentation on there.
+The tool is based on the [Tech Docs Template](https://github.com/alphagov/tech-docs-template).
+Read more about it on [its old documentation](https://github.com/alphagov/tdt-documentation).
 
 But in short...
 

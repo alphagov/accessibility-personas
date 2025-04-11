@@ -58,7 +58,7 @@ The content listed below is non-accessible for the following reasons.
 
 #### Non-compliance with the accessibility regulations
 
-Some parts of this website are not fully accessible because of [issues caused by our Technical Documentation Template](https://tdt-documentation.london.cloudapps.digital/accessibility/#using-the-technical-documentation-template-for-your-own-documentation).
+Some parts of this website are not fully accessible because of [issues caused by our Technical Documentation Template](https://github.com/alphagov/tdt-documentation/blob/main/source/accessibility/index.html.md.erb).
 
 Some pages have intentional accessibility issues to demonstrate those issues.
 
