@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         Wobbly mouse
 // @namespace    https://github.com/alphagov/accessibility-personas
-// @version      1.0.0
+// @version      1.0.1
 // @license      ISC
 // @author       Metamatrix AB [https://github.com/Metamatrix/web-disability-simulator] and Crown Copyright (Government Digital Service)
 // @description  Wobble the cursor to simulate having issues using a mouse
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
 // @include      *
-// @grant        none
+// @grant        GM_addStyle
 // @nocompat     Chrome
 // ==/UserScript==
 
@@ -25,6 +25,56 @@ let cursor = null,
   offsetY = 0,
   css = null,
   clickedElement = null;
+
+const css = `
+* {
+  cursor: none !important;
+}
+#wds-parkinsonsCursor {
+  position: absolute !important;
+  z-index: 9999999 !important;
+  width: 21px;
+  height: 21px;
+  pointer-events: none;
+  transition: left 0.05s, top 0.05s;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transform: rotate(-68deg) skew(-30deg, -30deg);
+}
+#wds-parkinsonsCursor::before,
+#wds-parkinsonsCursor::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  box-sizing: border-box;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+#wds-parkinsonsCursor::before {
+  color: #333;
+  border-width: 10px;
+}
+#wds-parkinsonsCursor::after {
+  top: -8px;
+  left: -6px;
+  color: #fff;
+  border-width: 7px;
+}
+#wds-parkinsonsCursor.mac::before {
+  color: #fff;
+}
+#wds-parkinsonsCursor.mac::after {
+  color: #333;
+}
+`
+
+GM_addStyle(css);
 
 function random(min, max) {
   return Math.floor(min + Math.random() * (max - min + 1));
@@ -76,23 +126,9 @@ function setOffset() {
   offsetY = random(-shakeSpeed, shakeSpeed);
 }
 
-function addStyles(css) {
-    var head, style;
-    head = document.getElementsByTagName('head')[0];
-    if (!head) { return; }
-    style = document.createElement('style');
-    style.type = 'text/css';
-    style.innerHTML = css;
-    head.appendChild(style);
-}
-
 (function() {
 
   'use strict';
-
-  addStyles('body * {cursor: none !important;}');
-  addStyles('#wds-parkinsonsCursor {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAVCAMAAABBhy+7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA+VBMVEUAAAAAAAD7+/sAAAD09PQAAAAAAAD09PTz8/PS0tJqampubm5+fn6np6cAAAD19fXw8PD39/cJCQkAAAAAAAAAAAAAAAD19fWzs7OgoKDX19cAAAD+/v6ysrIAAAAICAj29vb09PQAAAAAAADFxcUAAAAAAADR0dH8/Py2trYAAAAAAAAAAABRUVH29vb39/fJycni4uLp6emjo6MHBwcAAAAAAAAAAAD////T09MUFBTS0tIAAAAXFxfb29sbGxseHh4aGhrr6+vv7+/39/c5OTni4uIKCgqurq5BQUFmZmZDQ0PQ0NDW1tY9PT1tbW2np6cgICCioqIFyGmYAAAAOHRSTlMAAooIjg4QiH6dTUpBMQT92N4bFBILA/t4aU0B+3AgIt6zBQ1lGwqE/CMGCQcp9txCpsJpJQ8iGe73bXgAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAArUlEQVQY003P1xKCMBRFUaKCvSuWWFFsYG9Rr1jA3v3/jzGMwOS8rac9h0MuxDFzEw9rnixYC2S5YiwQYE0Ja82xSdhoXsSQ2ocYOrZo26Zlk1vY7XXdINSUh+MJzv5AMBSOUF6isSvc4olkKi1SZrK5O8AjLyKEOaFQLJUrT3hVJTNUq8sNofmGT6uNKTu8gtVu72v0B2YXi5hDqeFoPJk6txR5NuclbBOpyh8/ou0enbQh1QcAAAAASUVORK5CYII=");');
-  addStyles('#wds-parkinsonsCursor {position: absolute !important;z-index: 9999999 !important;width: 21px;height: 21px;pointer-events: none;background-repeat: no-repeat;transition: left 0.05s, top 0.05s;}');
 
   let cursorType = appVersion.includes('Mac') ? 'mac' : 'windows';
 
