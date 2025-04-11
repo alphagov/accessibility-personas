@@ -171,10 +171,6 @@ Pawel
 To set up the simulation for Pawel's condition:
 
 * install the extension [Chrome Sound Effects](https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla)
-* install extension: [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-* open its options, select a cloud provider under "Sync to cloud" and connect to it (once per device)
-* open [distractions.user.css](raw_assets/distractions.user.css) in the browser
-* when Stylus opens, select the "Install style" button
 * install the extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 * open chrome://extensions/ and enable 'Developer mode'
 * follow the [instructions to allow script syncing](https://tampermonkey.net/faq.php?ext=dhdg#Q105) (once per device)
