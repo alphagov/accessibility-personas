@@ -12,7 +12,7 @@
 // ==/UserScript==
 
 /**
- * Display a reminder 
+ * Display a reminder
  * @author Crown Copyright (Government Digital Service)
  * @license MIT
  */
