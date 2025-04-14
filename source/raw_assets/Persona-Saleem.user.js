@@ -17,7 +17,7 @@
  * @license MIT
  */
 
-let css = `
+const css = `
   html::before {
     content: "Remember to turn off your sound";
     display: block;
@@ -42,17 +42,18 @@ GM_addStyle(css);
  * @license MIT
  */
 
-(function() {
+
+(function () {
   'use strict';
 
   function translateWord(str) {
-    var wordArray = str.split('');
-    var vowels = 'AaEeIiOoUu';
-    var consonant;
+    const wordArray = str.split('');
+    const vowels = 'AaEeIiOoUu';
+    let consonant;
 
-    for (var i = 0; i < wordArray.length; i++) {
-      var wordStartsWithVowel = vowels.includes(wordArray[0]);
-      var wordStartsWithVowelOrY = wordStartsWithVowel || 'Yy'.includes(wordArray[0]);
+    for (let i = 0; i < wordArray.length; i++) {
+      const wordStartsWithVowel = vowels.includes(wordArray[0]);
+      const wordStartsWithVowelOrY = wordStartsWithVowel || 'Yy'.includes(wordArray[0]);
 
       if (wordStartsWithVowel) {
         str = wordArray.join('');
@@ -75,16 +76,16 @@ GM_addStyle(css);
   }
 
   function translatePhrase(str) {
-    var originalString = str;
-    var originalArray = originalString.split(' ');
-    var translatedArray = originalArray.map(function(word) {
+    const originalString = str;
+    const originalArray = originalString.split(' ');
+    const translatedArray = originalArray.map(function (word) {
       word = translateWord(word);
 
-      for (var i = 0; i < word.length; i++) {
+      for (let i = 0; i < word.length; i++) {
         if (!word[i].match(/[a-z]/i) && (i < word.length)) {
-          var punctuation = word[i];
-          var punctuatedWordArray = word.split('');
-          var removedPunctuation = punctuatedWordArray.splice(i, 1);
+          const punctuation = word[i];
+          const punctuatedWordArray = word.split('');
+          punctuatedWordArray.splice(i, 1);
           if (i === 0) {
             word = punctuation + punctuatedWordArray.join('');
           } else if (i !== 0) {
@@ -94,8 +95,8 @@ GM_addStyle(css);
 
         if (word.charCodeAt(i) >= 65 && word.charCodeAt(i) <= 90) {
           word = word.toLowerCase();
-          var firstLetter = word.slice(0, 1);
-          var capLetter = firstLetter.toUpperCase();
+          const firstLetter = word.slice(0, 1);
+          const capLetter = firstLetter.toUpperCase();
           word = word.replace(firstLetter, capLetter);
         }
       }
@@ -105,7 +106,7 @@ GM_addStyle(css);
   }
 
   function translatePage() {
-    var walker = document.createTreeWalker(
+    const walker = document.createTreeWalker(
       document.body,
       NodeFilter.SHOW_TEXT,
       null,
@@ -113,7 +114,7 @@ GM_addStyle(css);
     );
 
     while (walker.nextNode()) {
-      var elem = walker.currentNode.parentElement.nodeName;
+      const elem = walker.currentNode.parentElement.nodeName;
       if (walker.currentNode.nodeValue.trim() && elem !== 'SCRIPT' && elem !== 'STYLE') {
         walker.currentNode.nodeValue = translatePhrase(walker.currentNode.nodeValue);
       }
