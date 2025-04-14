@@ -11,6 +11,7 @@ phase: Beta
 header_links:
   Personas: /index.html
   Setup: /setup/index.html
+  Alternatives: /setup/alternatives.html
 footer_links:
   Accessibility: /accessibility.html
 
