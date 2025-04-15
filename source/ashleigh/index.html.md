@@ -16,17 +16,20 @@ parent: /index.html
 
 * uses a screen reader
 
-More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ashleigh-partially-sighted-screenreader-user) and [how to set it up](../setup/chromebook.html#ashleigh)
+More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ashleigh-partially-sighted-screenreader-user)
 
 
-## Chromebook help
+## Tips
 
 Screen reader quick guide:
 
 * press 'Tab' to go to the next link or form element
 * press 'Shift + Tab' to go back to the previous link or form element
-* press 'Search + Arrow Right/Left' to read text in between those (or 'Shift + Alt + Arrow Right/Left' on Windows or 'Cmd + Ctrl + Arrow Right/Left' on Mac)
-* learn more [shortcuts for Chromebooks](https://support.google.com/chromebook/answer/7031755) and [shortcuts for the Chrome extension](http://web.archive.org/web/20200121050553/https://www.chromevox.com/keyboard_shortcuts.html)
+* depending on the screen reader, use these to read text in between those elements
+  * Narrator, NVDA, etc: 'Down/Up Arrow'
+  * VoiceOver: 'Control + Option + Right/Left Arrow'
+  * ChromeVox: 'Search + Right/Left Arrow'
+* learn more [screen reader shortcuts](https://dequeuniversity.com/screenreaders/)
 
 
 ## Training tasks

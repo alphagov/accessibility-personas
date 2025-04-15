@@ -16,10 +16,10 @@ parent: /index.html
 
 * uses keyboard only, no mouse and just started using voice control
 
-More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/christopher-user-with-rheumatoid-arthritis) and [how to set it up](../setup/chromebook.html#chris)
+More about the [persona on GOV.UK](https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/christopher-user-with-rheumatoid-arthritis)
 
 
-## Chromebook help
+## Tips
 
 Navigate with the keyboard:
 
@@ -30,21 +30,13 @@ Navigate with the keyboard:
 * press 'Enter' to follow a link or submit a form
 * press 'Esc' to close things
 
-If you're stuck, use the touchscreen.<br />
-'Ctrl + Alt + /' shows keyboard shortcuts (only on a Chromebook).
+Use voice control commands:
 
-Start voice control:
-
-* it might already be running, say a command (see below) to find out, there should be a round microphone icon in the bottom left corner
-* if it's running but 'asleep', say "wake up"
-* if it's not running, click on the 'Handsfree for Web' icon <img src="https://www.handsfreeforweb.com/img/favicon-16x16.png" style="width: 16px; height: 16px;" alt="" /> next to the address bar
-* if it's unresponsive, restart the extension
-
-Use voice control commands (only in the browser):
-
-* say "click" and then follow the on-screen instructions, often saying a number
+* say "click [name of the thing, like the link text]" to click on something
 * say "scroll down" and "scroll up" to scroll the page
-* say "help" to show a list of useful commands
+* say "mousegrid" followed by saying one of the numbers that appear and then "click", if nothing else works
+* say "go to sleep" to stop it from listening, and say "wake up" to start using it again
+* say "what can I say" to show a list of useful commands
 
 
 ## Training tasks
