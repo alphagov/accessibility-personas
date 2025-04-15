@@ -53,6 +53,9 @@
             <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
               <a class="govuk-header__link" href="./">Setup</a>
             </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="alternatives.html">Alternatives</a>
+            </li>
         </ul>
       </nav>
     </div>
@@ -78,13 +81,35 @@
     <a href="#setting-up-personas"><span>Setting up personas</span></a>
     <ul>
       <li>
-        <a href="#chromebooks"><span>Chromebooks</span></a>
+        <a href="#step-1-install-a-userscript-manager"><span>Step 1: Install a userscript manager</span></a>
       </li>
       <li>
-        <a href="#chrome-browsers"><span>Chrome browsers</span></a>
+        <a href="#step-2-install-persona-userscripts"><span>Step 2: Install persona userscripts</span></a>
       </li>
       <li>
-        <a href="#assistive-technology-and-simulations"><span>Assistive technology and simulations</span></a>
+        <a href="#step-3-additional-setup"><span>Step 3: Additional setup</span></a>
+        <ul>
+          <li>
+            <a href="#use-a-screen-reader-for-ashleigh"><span>Use a screen reader for Ashleigh</span></a>
+          </li>
+          <li>
+            <a href="#turn-sound-off-for-saleem"><span>Turn sound off for Saleem</span></a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#additional-optional-setup"><span>Additional optional setup</span></a>
+      </li>
+      <li>
+        <a href="#setting-up-personas-on-chromebooks"><span>Setting up personas on Chromebooks</span></a>
+        <ul>
+          <li>
+            <a href="#change-settings-for-each-persona"><span>Change settings for each persona</span></a>
+          </li>
+          <li>
+            <a href="#further-changes-to-claudia-39-s-profile"><span>Further changes to Claudia’s profile</span></a>
+          </li>
+        </ul>
       </li>
     </ul>
   </li>
@@ -98,12 +123,8 @@
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <h1 id="setting-up-personas">Setting up personas</h1>
-<p>Here are instructions on how to set up various devices or browsers so you can log in as a persona.</p>
-<h2 id="chromebooks">Chromebooks</h2>
-<p>Using <a href="chromebook.html">personas on Chromebooks</a> is currently the most effective setup.</p>
-<h2 id="chrome-browsers">Chrome browsers</h2>
-<p>You can also set up <a href="chrome.html">personas in Chrome browsers</a> on any operating system. Some of the assistive technologies will not be as effective as on Chromebooks.</p>
-<h2 id="assistive-technology-and-simulations">Assistive technology and simulations</h2>
+<p>Here are instructions on how to set up the personas.</p>
+<p>They use the following assistive technology and simulations:</p>
 <div class="table-container">
         <table>
           <tr>
@@ -112,11 +133,11 @@
 <th>Simulate their condition</th>
 </tr><tr>
 <td>Claudia</td>
-<td>Magnifier, high contrast, etc</td>
+<td>Magnified screen, high contrast, highlighted pointer and focus</td>
 <td>(none)</td>
 </tr><tr>
 <td>Ashleigh</td>
-<td>Screen reader</td>
+<td>Screen reader (not provided!)</td>
 <td>Blurred vision</td>
 </tr><tr>
 <td>Ron</td>
@@ -124,7 +145,7 @@
 <td>Mildly blurred vision, wobbly pointer</td>
 </tr><tr>
 <td>Chris</td>
-<td>Voice control</td>
+<td>Voice control (optional)</td>
 <td>Disabled mouse or trackpad, grey colours</td>
 </tr><tr>
 <td>Pawel</td>
@@ -132,7 +153,7 @@
 <td>Distracting sounds, images and animations</td>
 </tr><tr>
 <td>Simone</td>
-<td>Tinted background, Dyslexia font</td>
+<td>Tinted background, more readable font, screen ruler</td>
 <td>Scrambled letters</td>
 </tr><tr>
 <td>Saleem</td>
@@ -140,7 +161,100 @@
 <td>Translated to Pig Latin</td>
 </tr>
         </table>
-      </div>
+      </div><h2 id="step-1-install-a-userscript-manager">Step 1: Install a userscript manager</h2>
+<p>The personas work with so-called &lsquo;userscripts&rsquo;. You need to install a userscript manager as a browser extension so you can use them. One such extension is <a href="https://www.tampermonkey.net/">Tampermonkey</a>, which is available for all major browsers and operating systems. But there are <a href="https://alternativeto.net/software/tampermonkey/">other userscript managers</a> you might be able to use instead.</p>
+<p>To install Tampermonkey:</p>
+
+<ol>
+<li>select your browser on <a href="https://www.tampermonkey.net/">Tampermonkey&rsquo;s website</a></li>
+<li>follow the link under &lsquo;Download&rsquo; that leads to your browser&rsquo;s add-on page</li>
+<li>click the main button to install the extension</li>
+<li>open chrome://extensions/ and enable &lsquo;Developer mode&rsquo;</li>
+<li>if you use these scripts on multiple devices or profiles using Chromebook or browser profiles, follow the <a href="https://tampermonkey.net/faq.php?ext=dhdg#Q105">instructions to allow script syncing</a></li>
+</ol>
+<h2 id="step-2-install-persona-userscripts">Step 2: Install persona userscripts</h2>
+<p>To install a persona userscript with Tampermonkey:</p>
+
+<ol>
+<li>open the relevant userscript in the browser (see links for different personas in the table below)</li>
+<li>when Tampermonkey opens, select the &ldquo;Install&rdquo; button</li>
+</ol>
+<div class="table-container">
+        <table>
+          <tr>
+<th>Script</th>
+<th>Additional setup</th>
+</tr><tr>
+<td><a href="../raw_assets/Persona-Claudia.user.js">Persona-Claudia.user.js</a></td>
+<td>(none)</td>
+</tr><tr>
+<td><a href="../raw_assets/Persona-Ashleigh.user.js">Persona-Ashleigh.user.js</a></td>
+<td>Use a screen reader</td>
+</tr><tr>
+<td><a href="../raw_assets/Persona-Ron.user.js">Persona-Ron.user.js</a></td>
+<td>(none)</td>
+</tr><tr>
+<td><a href="../raw_assets/Persona-Chris.user.js">Persona-Chris.user.js</a></td>
+<td>Optionally, use voice control</td>
+</tr><tr>
+<td><a href="../raw_assets/Persona-Pawel.user.js">Persona-Pawel.user.js</a></td>
+<td>(none)</td>
+</tr><tr>
+<td><a href="../raw_assets/Persona-Simone.user.js">Persona-Simone.user.js</a></td>
+<td>Optionally, use select to speak</td>
+</tr><tr>
+<td><a href="../raw_assets/Persona-Saleem.user.js">Persona-Saleem.user.js</a></td>
+<td>Turn sound off</td>
+</tr>
+        </table>
+      </div><h2 id="step-3-additional-setup">Step 3: Additional setup</h2>
+<h3 id="use-a-screen-reader-for-ashleigh">Use a screen reader for Ashleigh</h3>
+<p>Ashleigh&rsquo;s userstyle doesn&rsquo;t come with her relevant assistive technology, a screen reader, and is not usable without it.
+That means you have to use your own system&rsquo;s screen reader.
+For example, on Windows use &lsquo;Narrator&rsquo; or &lsquo;NVDA&rsquo;, on macOS use &lsquo;VoiceOver&rsquo; and on ChromeOS use &lsquo;ChromeVox&rsquo;.</p>
+<p>Familiarise yourself with the basics of how your screen reader works before you use Ashleigh&rsquo;s persona.
+To help with that see these <a href="https://dequeuniversity.com/screenreaders/">screen reader shortcuts</a>.</p>
+<h3 id="turn-sound-off-for-saleem">Turn sound off for Saleem</h3>
+<p>Before using Saleem&rsquo;s persona remember to turn the sound off.</p>
+<h2 id="additional-optional-setup">Additional optional setup</h2>
+<p>Chris&rsquo;s userstyle doesn&rsquo;t come with his relevant assistive technology, a voice control tool, either.
+Although using it is optional for Chris, so you can omit this step.
+Examples of voice control tools are &lsquo;Windows Speech Recognition&rsquo; on Windows and &lsquo;Voice Control&rsquo; on macOS.</p>
+<p>Simone would sometimes use a Select-to-Speak feature.
+But as that makes less sense while the letters are scrambled, using your own system&rsquo;s Select-to-Speak feature is optional.</p>
+<h2 id="setting-up-personas-on-chromebooks">Setting up personas on Chromebooks</h2>
+<p>Previous iterations of the persona setup were done on Chromebooks. This can still be done using the userscripts above instead. But if you plan on providing physical devices with easy to switch profiles, follow the following instructions as well.</p>
+<p>If you&rsquo;d like to use personas as different Chromebook or Chrome browser profiles, you need to create a Google account for each persona first. Be aware that setting up more than one account can be challenging.</p>
+<p>When you follow the instructions below to set up a profile you only need to do each action once, unless it explicitly states to do it once per device.</p>
+<h3 id="change-settings-for-each-persona">Change settings for each persona</h3>
+<p>Remove everything from the shelf/dock except Chrome. This helps people focus on the only app the persona should be using.</p>
+<p>Select the following options from the system menu. Go to:</p>
+
+<ul>
+<li>Settings &gt; Advanced &gt; Accessibility &gt; Always show accessibility options in the system menu - this makes it easier to access the accessibility settings</li>
+<li>Settings &gt; Device &gt; Power &gt; When idle &gt; Keep display on (once per device) - this makes sense if you put the Chromebooks on display for lots of people to use so you do not need to login again and share any passwords</li>
+<li>Settings &gt; Device &gt; Power &gt; Sleep when lid is closed &gt; off (once per device) - this makes sense if you put the Chromebooks on display as people tend to close the lid and they would need to login again</li>
+<li>Settings &gt; People &gt; Manage other people &gt; Restrict sign-in to the following users&hellip; (once per device, can only be done by the owner account once every profile has logged in) - this restricts people adding their own profiles if the Chromebook is on display</li>
+<li>Settings &gt; People &gt; Sync and Google services &gt; Manage sync &gt; untick &lsquo;Sync everything&rsquo; first and then &lsquo;History&rsquo;, &lsquo;Open Tabs&rsquo;, &lsquo;Password&rsquo;, &lsquo;Addresses, phone numbers and more&rsquo;, &lsquo;Payment methods and addresses using Google Play&rsquo; - this makes sure no-one accidentally shares their details when the persona is shared on multiple devices</li>
+<li>Settings &gt; Auto-fill &gt; Passwords &gt; untick &lsquo;Offer to save passwords&rsquo; and &lsquo;Auto Sign-in&rsquo; - this makes it less likely that people unintentionally share their passwords, which is especially useful when the devices are on display</li>
+<li>Settings &gt; Auto-fill &gt; Payment methods &gt; untick &lsquo;Save and fill payment methods&rsquo;</li>
+<li>Settings &gt; Auto-fill &gt; Addresses and more &gt; untick &lsquo;Save and fill addresses&rsquo;</li>
+<li>Settings &gt; enable Appearance: Show Home button &gt; Enter custom web address: https://alphagov.github.io/accessibility-personas/[persona]/ - this makes it easier to go back to each persona&rsquo;s page</li>
+<li>Settings &gt; On start-up &gt; Open a specific page or set of pages &gt; Add a new page &gt; https://alphagov.github.io/accessibility-personas/[persona]/ (Note that the settings are retained, but the pages only open during system start-up.) - this makes sure the persona&rsquo;s page is already showing whenever the Chromebook gets restarted</li>
+</ul>
+<h3 id="further-changes-to-claudia-39-s-profile">Further changes to Claudia&rsquo;s profile</h3>
+<p>If you are using a Chromebook you don&rsquo;t need to install the userscript but can instead use ChromeOS&rsquo;s own features. To set up the assistive technology used by Claudia go to the system menu and select:</p>
+
+<ul>
+<li>Accessibility &gt; High contrast mode</li>
+<li>Accessibility &gt; Full-screen magnifier</li>
+<li>Accessibility &gt; Settings &gt; Manage accessibility features &gt; Full-screen zoom level: 4x (once per device)</li>
+<li>Accessibility &gt; Large mouse cursor</li>
+<li>Accessibility &gt; Highlight text caret</li>
+<li>Accessibility &gt; Highlight mouse cursor</li>
+<li>Accessibility &gt; Highlight object with keyboard focus</li>
+</ul>
+
             
           </main>
 

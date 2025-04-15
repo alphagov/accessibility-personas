@@ -1,15 +1,31 @@
 // ==UserScript==
-// @name         Wobbly mouse
+// @name         Persona Ron
 // @namespace    https://github.com/alphagov/accessibility-personas
-// @version      1.0.1
-// @license      ISC
-// @author       Metamatrix AB [https://github.com/Metamatrix/web-disability-simulator] and Crown Copyright (Government Digital Service)
-// @description  Wobble the cursor to simulate having issues using a mouse
+// @version      1.0.0
+// @license      mixed (ISC, MIT)
+// @author       Crown Copyright (Government Digital Service) and Metamatrix AB
+// @description  Ron is an older user with multiple conditions - the pointer wobbles to simulate having issues using a mouse, the screen is blurred lightly to simulate some form of a mild visual impairment
 // @homepageURL  https://alphagov.github.io/accessibility-personas/
 // @include      *
 // @grant        GM_addStyle
 // @nocompat     Chrome
 // ==/UserScript==
+
+/**
+ * Light blur
+ * @author Crown Copyright (Government Digital Service)
+ * @license MIT
+ */
+
+GM_addStyle('body { filter: blur(.1em) brightness(120%); }');
+
+
+/**
+ * Wobbly Mouse
+ * @author Metamatrix AB [https://github.com/Metamatrix/web-disability-simulator]
+ * @author Crown Copyright (Government Digital Service)
+ * @license ISC
+ */
 
 const shakeSpeed = 40;
 const shakePositionInterval = 250;
@@ -23,7 +39,6 @@ let cursor = null,
   viewportPosY = 0,
   offsetX = 0,
   offsetY = 0,
-  css = null,
   clickedElement = null;
 
 const css = `
