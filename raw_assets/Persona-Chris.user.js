@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Persona Chris
 // @namespace    https://github.com/alphagov/accessibility-personas
-// @version      1.0.0
+// @version      1.0.1
 // @license      MIT
 // @author       Crown Copyright (Government Digital Service)
 // @description  Chris, a user with rheumatoid arthritis - the pointer is removed to make it harder to use the mouse or touchpad, colours are removed to simulate some form of colour vision deficiency, could also be used with a voice control tool
@@ -26,4 +26,4 @@ GM_addStyle('* { cursor: none !important; pointer-events: none !important; }');
  * @license MIT
  */
 
-GM_addStyle('* { filter: grayscale(1) !important; }');
+GM_addStyle('html { filter: grayscale(1) !important; }');
