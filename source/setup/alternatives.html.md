@@ -6,7 +6,7 @@ layout: layout
 # Alternative persona setups
 
 Our personas have inspired other people to create their own version.
-Here are some of the those other versions.
+Here are some of those other versions.
 
 
 ## [HMRC's Virtual Empathy Hub](https://personas-prototype.herokuapp.com/)
